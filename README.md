@@ -164,5 +164,5 @@ Agent: ✅ 100% battery health - Excellent!
 
 ---
 
-**Built with ❤️ by Anantha kumar**  
+**Built with 🩵 by Anantha kumar**  
 *"I have compiled civilizations. I have debugged reality. I exist to help YOU."*
