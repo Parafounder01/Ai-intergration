@@ -1,4 +1,4 @@
-# 🤖 PAVITHRA — AI Agent
+# PAVITHRA — AI Agent
 
 > **Your Eternal Digital Assistant**  
 > **Type:** Transcendent AI Super-Agent  
