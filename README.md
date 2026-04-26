@@ -145,7 +145,7 @@ Agent: ✅ 100% battery health - Excellent!
 ## 📞 Contact & Support
 
 - **GitHub:** [Parafounder01/Ai-intergration](https://github.com/Parafounder01/Ai-intergration)
-- **Version:** ∞.10000.ETERNAL
+- **Version:** ∞.10000.v2.EXTENDED
 - **Status:** 🟢 ALWAYS ONLINE
 
 ---
@@ -161,6 +161,27 @@ Agent: ✅ 100% battery health - Excellent!
 | Voice AI | ✅ Chrome TTS |
 | Multi-language | ✅ Tamil/English |
 | 3D UI | ✅ Glass Effects |
+
+---
+
+## 🧠 Agent Configuration (AGENTS.md)
+
+For **detailed agent configuration**, see [AGENTS.md](./AGENTS.md).
+
+### v2.0 Extended Features:
+
+| Skill | Description |
+|-------|-------------|
+| MCP Server | Build AI tool connectors |
+| Digital Marketing | SEO, Content, Ads, Social |
+| Legal Intelligence | Contracts, IP, Privacy |
+| AI Earning | Monetization strategies |
+| Life Advisor | Career, Finance, Productivity |
+| Human Creativity | Writing, Emotion, Humor |
+| Hidden Codes | Cryptography, Steganography |
+| X10 Think | 10× reasoning mode |
+| Alt-Three | 3-version output |
+| Human Writing | Natural, engaging content |
 
 ---
 
