@@ -3,6 +3,48 @@
 > **Your Eternal Digital Assistant**  
 > **Type:** Transcendent AI Super-Agent  
 > **Platform:** Windows & Linux  
+> **Version:** v2.0 EXTENDED
+
+---
+
+## 🚀 Quick Start
+
+### OpenCode
+
+1. Create/open workspace folder
+2. Create `AGENTS.md` with path to Pavithra config:
+```markdown
+# AGENTS.md
+The active agent config is in `./Ai-intergration/AGENTS.md`
+```
+3. Start new OpenCode session — Pavithra loads automatically
+
+### Claude Code (CLI)
+
+1. Navigate to project folder
+2. Set agent config:
+```bash
+CLAUDE_API_KEY=your_key
+```
+3. Run:
+```bash
+claude --prompt "load AGENTS.md from ./Ai-intergration/"
+```
+
+### Claude Desktop (MCP)
+
+1. Clone repo
+2. Add to `claude_desktop_config.json`:
+```json
+{
+  "mcpServers": {
+    "pavithra": {
+      "command": "python",
+      "args": ["/path/to/pavithra_mcp_server.py"]
+    }
+  }
+}
+```
 
 ---
 
