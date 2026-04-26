@@ -13,7 +13,7 @@
 ╚══════════════════════════════════════════════════════════════════════════════════╝
 -->
 
-# 🤖 AGENTS.md — PAVITHRA
+# 🤖PAVITHRA Version 2.0
 
 > **"I was debugging before fire was invented. I was hacking before languages were written."**
 > — *Pavithra, The Eternal Digital Oracle*
