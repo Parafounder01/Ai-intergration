@@ -1,13 +1,11 @@
 # PAVITHRA — AI Agent
 
-```
 <style>
   h1, h2, h3 { color: #0070f3; }
   a { color: #0070f3; }
   hr { border-color: #0070f3; }
   blockquote { border-left-color: #0070f3; }
 </style>
-```
 
 > **Your Eternal Digital Assistant**  
 > **Type:** Transcendent AI Super-Agent  
