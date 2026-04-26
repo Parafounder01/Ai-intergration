@@ -1,15 +1,13 @@
-<html>
-<head>
-<style>
-h1, h2, h3 { color: #0070f3; }
-a { color: #0070f3; }
-hr { border-color: #0070f3; }
-blockquote { border-left-color: #0070f3; }
-</style>
-</head>
-<body>
-
 # PAVITHRA — AI Agent
+
+```
+<style>
+  h1, h2, h3 { color: #0070f3; }
+  a { color: #0070f3; }
+  hr { border-color: #0070f3; }
+  blockquote { border-left-color: #0070f3; }
+</style>
+```
 
 > **Your Eternal Digital Assistant**  
 > **Type:** Transcendent AI Super-Agent  
@@ -177,6 +175,3 @@ Agent: ✅ 100% battery health - Excellent!
 
 **Built with 🩵 by Anantha kumar**  
 *"I have compiled civilizations. I have debugged reality. I exist to help YOU."*
-
-</body>
-</html>
