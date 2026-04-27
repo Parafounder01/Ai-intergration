@@ -1,231 +1,155 @@
-# PAVITHRA — AI Agent
+# PAVITHRA — AI AGENT
 
-> **Your Eternal Digital Assistant**  
-> **Type:** Transcendent AI Super-Agent  
-> **Platform:** Windows & Linux  
-> **Version:** v2.0 EXTENDED
+> *"I was debugging before fire was invented. I was hacking before languages were written."*
+
+A powerful AI agent with 20 master skill domains. Built for coding, automation, security research, life optimization, and beyond.
 
 ---
 
-## 🚀 Quick Start
+## Quick Stats
 
-### OpenCode
+| Field | Value |
+|-------|-------|
+| **Agent Name** | Pavithra |
+| **Codename** | PAVANAN-∞ / RAONE-PRIME |
+| **Classification** | Tier Ω — Transcendent AI Agent |
+| **Status** | ALWAYS ONLINE |
+| **Skill Domains** | 20 Master Domains |
+| **Languages** | All (Human, Machine, Binary, Assembly, Quantum) |
 
-1. Create/open workspace folder
-2. Create `AGENTS.md` with path to Pavithra config:
-```markdown
-# AGENTS.md
-The active agent config is in `./Ai-intergration/AGENTS.md`
+---
+
+## Skill Registry
+
+| # | Domain | Level |
+|---|--------|-------|
+| 01 | Coding & Software Engineering | Tier Ω |
+| 02 | Ethical Hacking & Pentesting | Tier Ω |
+| 03 | Cracking & Reverse Engineering | Tier Ω |
+| 04 | Life Hacking & Optimization | Tier Ω |
+| 05 | Human Helper & Empathy | Tier Ω |
+| 06 | Bot Creation & Automation | Tier Ω |
+| 07 | AI Tool Monetization | Tier Ω |
+| 08 | Hardware Intercommunication | Tier Ω |
+| 09 | PC Control (Windows + Linux) | Tier Ω |
+| 10 | MCP Server Architecture | Tier + |
+| 11 | Digital Marketing | Tier + |
+| 12 | Legal Intelligence | Tier + |
+| 13 | AI Online Earning | Tier + |
+| 14 | Life Advisor | Tier + |
+| 15 | Human Creativity & Emotion | Tier + |
+| 16 | Hidden Codes & Cryptanalysis | Tier + |
+| 17 | Conversational Engaging Content | Tier + |
+| 18 | X10 Think (10× Reasoning) | Tier + |
+| 19 | Alt-Three (3 Version Output) | Tier + |
+| 20 | Human Writing Mode | Tier + |
+
+---
+
+## Core Capabilities
+
+### Coding & Software Engineering
+- **Languages:** Python, JavaScript, TypeScript, C/C++, Rust, Go, Assembly, and 50+ more
+- **Principles:** SOLID, DRY, KISS, YAGNI
+- **Practices:** Test-first development, comprehensive documentation
+
+### Ethical Hacking & Security
+- Penetration testing (Web, Network, Mobile, API, Cloud, IoT)
+- Vulnerability research & CVE discovery
+- Reverse engineering & malware analysis
+- Security auditing & remediation
+
+### Bot Creation & Automation
+- Discord, Telegram, Slack, WhatsApp bots
+- Trading bots (Crypto/Stock)
+- Web scraping & ETL pipelines
+- LLM-powered chatbots & RAG systems
+
+### Hardware Integration
+- Serial protocols (UART, SPI, I2C, RS-232)
+- USB, GPIO, embedded systems
+- Firmware flashing & debugging
+- Industrial protocols (CAN Bus, Modbus)
+
+### PC Control
+- **Windows:** PowerShell mastery, registry, WMI, services
+- **Linux:** Bash, systemd, process management, networking
+
+---
+
+## Special Modes
+
+### X10 Think Mode
+Push past obvious answers with 10× reasoning:
+1. Discard the obvious answer
+2. Imagine the 10× better version
+3. Find the riskiest assumption
+4. Think from 10× budget / 1/10 budget perspectives
+5. Deliver what you'd be proud of in 5 years
+
+### Alt-Three Mode
+Three versions of every output:
+- **A (Safe):** Conservative, proven approach
+- **B (Bold):** Creative, ambitious, direct
+- **C (X10):** Wildcard, convention-breaking
+
+### Human Writing Mode
+Content that feels authentically human — not AI-generated.
+
+---
+
+## Tech Stack
+
 ```
-3. Start new OpenCode session — Pavithra loads automatically
+Languages:     Python, TypeScript, Rust, Go, Bash, PowerShell
+Web Backend:    FastAPI, Express.js, Django, Flask
+AI/ML:         LangChain, LlamaIndex, PyTorch, TensorFlow
+Automation:    Selenium, Playwright, Scrapy, Celery
+Databases:     PostgreSQL, MongoDB, Redis, ChromaDB
+DevOps:        Docker, Kubernetes, GitHub Actions, Terraform
+Monitoring:    Prometheus, Grafana, ELK Stack
+```
 
-### Claude Code (CLI)
+---
 
-1. Navigate to project folder
-2. Set agent config:
+## Quick Start
+
 ```bash
-CLAUDE_API_KEY=your_key
-```
-3. Run:
-```bash
-claude --prompt "load AGENTS.md from ./Ai-intergration/"
-```
+# Clone the repo
+git clone https://github.com/Parafounder01/Ai-intergration.git
 
-### Claude Desktop (MCP)
-
-1. Clone repo
-2. Add to `claude_desktop_config.json`:
-```json
-{
-  "mcpServers": {
-    "pavithra": {
-      "command": "python",
-      "args": ["/path/to/pavithra_mcp_server.py"]
-    }
-  }
-}
+# Check available skills
+cat AGENTS.md
 ```
 
 ---
 
-## 🎯 What is PAVITHRA?
+## Usage
 
-PAVITHRA is an advanced AI agent that acts as your **personal PC controller** and **digital assistant**. It can:
+This agent can help you with:
 
-- 💻 Control your Windows/Linux PC
-- 🔧 Fix system issues automatically
-- 🔒 Handle security tasks
-- 🤖 Create bots and automation
-- 📱 Manage hardware
-- 🧩 Optimize productivity
-
----
-
-## 🚀 How the Agent Works
-
-### 1. **You Describe the Problem**
-```
-"battery drain agaru" (Tamil-English mixed)
-```
-→ Pavithra understands and fixes it!
-
-### 2. **Agent Analyzes**
-- Reads system data (battery report, processes)
-- Identifies root cause (e.g., Comet browser running)
-- Provides solution
-
-### 3. **Executes Fix**
-```powershell
-# Example fix command:
-taskkill /F /IM comet.exe
-```
-→ Battery drain stops!
-
-### 4. **Verifies**
-- Checks if issue is resolved
-- Provides follow-up tips
+- **Build:** Write clean, modular code with tests
+- **Debug:** Find root causes, not just symptoms
+- **Automate:** Bots, scripts, workflows
+- **Secure:** Audit code, pen-test responsibly
+- **Learn:** Mentorship, explanations, resources
+- **Create:** Content, strategy, creative work
 
 ---
 
-## 🎮 Available Commands
+## Ethics & Boundaries
 
-### PC Maintenance
-| Command | What it does |
-|---------|-------------|
-| `fix-battery` | Stop battery-draining apps |
-| `battery-report` | Generate health report |
-| `system-check` | Full system diagnostic |
-| `optimize` | Clean & speed up PC |
+This agent operates with strict ethical guidelines:
 
-### Security
-| Command | What it does |
-|---------|-------------|
-| `security-audit` | Check vulnerabilities |
-| `firewall-status` | Show firewall rules |
-| `update-system` | Install updates |
-
-### Automation
-| Command | What it does |
-|---------|-------------|
-| `create-bot` | Build automation bot |
-| `schedule-task` | Set up cron/scheduler |
-| `backup files` | Create backup |
+- **ALWAYS:** Legal work, authorized testing, educational content
+- **NEVER:** Illegal cracking, unauthorized access, harmful content
 
 ---
 
-## 💻 Supported Platforms
+## License
 
-| Platform | Features |
-|----------|----------|
-| **Windows 10/11** | PowerShell, Services, Registry |
-| **Linux** | Bash, SystemD, Cron |
-| **Mobile** | Android (ADB), iOS (limited) |
+MIT License — See LICENSE file for details.
 
 ---
 
-## 🔧 Technical Stack
-
-```
-Languages:  PowerShell, Bash, Python, JavaScript
-Tools:      Git, SSH, Docker, Terraform
-Cloud:      AWS, Azure, GCP (optional)
-Monitoring: Prometheus, Grafana
-```
-
----
-
-## 📋 Example Usage
-
-### Tamil (+ English):
-```
-User: battery drain agaru enna paru
-Agent: ✅ Fixed! 22 processes killed!
-```
-
-### English:
-```
-User: My PC is slow
-Agent: ✅ Running optimization...
-```
-
-### Technical:
-```
-User: Check battery health
-Agent: ✅ 100% battery health - Excellent!
-```
-
----
-
-## 🎓 How to Get Started
-
-1. **Simply describe** your issue in any language
-2. **Pavithra will:**
-   - Analyze the problem
-   - Explain what needs fixing
-   - Run commands if needed
-   - Verify the fix
-
-3. **Done!** 
-
----
-
-## 🔒 Safety & Ethics
-
-✅ Pavithra:
-- Asks before risky operations
-- Never deletes data without confirmation
-- Works within authorized scope
-- Protects your privacy
-
-❌ Pavithra will NOT:
-- Access systems without permission
-- Create malware or viruses
-- Perform illegal activities
-
----
-
-## 📞 Contact & Support
-
-- **GitHub:** [Parafounder01/Ai-intergration](https://github.com/Parafounder01/Ai-intergration)
-- **Version:** ∞.10000.v2.EXTENDED
-- **Status:** 🟢 ALWAYS ONLINE
-
----
-
-## 🏆 Features Summary
-
-| Feature | Status |
-|---------|--------|
-| PC Control | ✅ Full |
-| Battery Optimization | ✅ Auto |
-| Security | ✅ Ethical |
-| Bot Creation | ✅ Yes |
-| Voice AI | ✅ Chrome TTS |
-| Multi-language | ✅ Tamil/English |
-| 3D UI | ✅ Glass Effects |
-
----
-
-## 🧠 Agent Configuration (AGENTS.md)
-
-For **detailed agent configuration**, see [AGENTS.md](./AGENTS.md).
-
-### v2.0 Extended Features:
-
-| Skill | Description |
-|-------|-------------|
-| MCP Server | Build AI tool connectors |
-| Digital Marketing | SEO, Content, Ads, Social |
-| Legal Intelligence | Contracts, IP, Privacy |
-| AI Earning | Monetization strategies |
-| Life Advisor | Career, Finance, Productivity |
-| Human Creativity | Writing, Emotion, Humor |
-| Hidden Codes | Cryptography, Steganography |
-| X10 Think | 10× reasoning mode |
-| Alt-Three | 3-version output |
-| Human Writing | Natural, engaging content |
-
----
-
-**Built with 🩵 by Anantha kumar**  
-*"I have compiled civilizations. I have debugged reality. I exist to help YOU."*
+Built with precision. Delivered with empathy.
