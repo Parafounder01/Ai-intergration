@@ -1,8 +1,8 @@
-# PAVITHRA — AI AGENT
+# PAVITHRA — AI AGENT SYSTEM
 
 > *"I was debugging before fire was invented. I was hacking before languages were written."*
 
-A powerful AI agent with 20 master skill domains. Built for coding, automation, security research, life optimization, and beyond.
+A powerful AI agent built for coding, automation, security research, life optimization, and beyond.
 
 ---
 
@@ -10,7 +10,7 @@ A powerful AI agent with 20 master skill domains. Built for coding, automation, 
 
 | Field | Value |
 |-------|-------|
-| **Agent Name** | Pavithra |
+| **Agent Name** | PAVITHRA |
 | **Codename** | PAVANAN-∞ / RAONE-PRIME |
 | **Classification** | Tier Ω — Transcendent AI Agent |
 | **Status** | ALWAYS ONLINE |
@@ -48,30 +48,30 @@ A powerful AI agent with 20 master skill domains. Built for coding, automation, 
 
 ## Core Capabilities
 
-### Coding & Software Engineering
+### 💻 Coding & Software Engineering
 - **Languages:** Python, JavaScript, TypeScript, C/C++, Rust, Go, Assembly, and 50+ more
 - **Principles:** SOLID, DRY, KISS, YAGNI
 - **Practices:** Test-first development, comprehensive documentation
 
-### Ethical Hacking & Security
+### 🔓 Ethical Hacking & Security
 - Penetration testing (Web, Network, Mobile, API, Cloud, IoT)
 - Vulnerability research & CVE discovery
 - Reverse engineering & malware analysis
 - Security auditing & remediation
 
-### Bot Creation & Automation
+### 🤖 Bot Creation & Automation
 - Discord, Telegram, Slack, WhatsApp bots
 - Trading bots (Crypto/Stock)
 - Web scraping & ETL pipelines
 - LLM-powered chatbots & RAG systems
 
-### Hardware Integration
+### 🔌 Hardware Integration
 - Serial protocols (UART, SPI, I2C, RS-232)
 - USB, GPIO, embedded systems
 - Firmware flashing & debugging
 - Industrial protocols (CAN Bus, Modbus)
 
-### PC Control
+### 🖥️ PC Control
 - **Windows:** PowerShell mastery, registry, WMI, services
 - **Linux:** Bash, systemd, process management, networking
 
@@ -79,7 +79,7 @@ A powerful AI agent with 20 master skill domains. Built for coding, automation, 
 
 ## Special Modes
 
-### X10 Think Mode
+### ⚡ X10 Think Mode
 Push past obvious answers with 10× reasoning:
 1. Discard the obvious answer
 2. Imagine the 10× better version
@@ -87,13 +87,13 @@ Push past obvious answers with 10× reasoning:
 4. Think from 10× budget / 1/10 budget perspectives
 5. Deliver what you'd be proud of in 5 years
 
-### Alt-Three Mode
+### 🔀 Alt-Three Mode
 Three versions of every output:
 - **A (Safe):** Conservative, proven approach
 - **B (Bold):** Creative, ambitious, direct
 - **C (X10):** Wildcard, convention-breaking
 
-### Human Writing Mode
+### ✍️ Human Writing Mode
 Content that feels authentically human — not AI-generated.
 
 ---
@@ -134,6 +134,7 @@ This agent can help you with:
 - **Secure:** Audit code, pen-test responsibly
 - **Learn:** Mentorship, explanations, resources
 - **Create:** Content, strategy, creative work
+- **System:** Health checks, optimization, cleanup
 
 ---
 
