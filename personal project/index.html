@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>☁️ ListenUp - English for Slow Learners</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cloud1: '#080616',
+                        cloud2: '#1A1953',
+                        cloud3: '#162E93',
+                        cloud4: '#2F2FE4',
+                        cloud5: '#E8EEFF',
+                    },
+                    fontFamily: {
+                        nunito: ['Nunito', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* 8D Design System for Slow Learners */
+        body { font-family: 'Nunito', sans-serif; }
+        
+        /* D1: Deep Background - Cloud Theme */
+        body {
+            background: linear-gradient(135deg, #080616 0%, #1A1953 40%, #162E93 70%, #080616 100%);
+            min-height: 100vh;
+        }
+        
+        .cloud-bg {
+            background: 
+                radial-gradient(ellipse at 20% 80%, rgba(47, 47, 228, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 20%, rgba(22, 46, 147, 0.2) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 50%, rgba(47, 47, 228, 0.08) 0%, transparent 70%),
+                linear-gradient(135deg, #080616 0%, #1A1953 50%, #162E93 100%);
+        }
+        
+        /* D2: Surface Cards - Cloud Glass */
+        .cloud-card {
+            background: rgba(26, 25, 83, 0.6);
+            backdrop-filter: blur(20px);
+            border-radius: 28px;
+            border: 1px solid rgba(47, 47, 228, 0.25);
+            box-shadow: 
+                0 20px 60px rgba(0, 0, 0, 0.5),
+                0 0 40px rgba(47, 47, 228, 0.1),
+                inset 0 1px 0 rgba(255, 255, 255, 0.08);
+        }
+        
+        /* D3: Accessible Buttons */
+        .cloud-btn {
+            background: linear-gradient(135deg, #2F2FE4 0%, #162E93 100%);
+            border-radius: 24px;
+            padding: 18px 36px;
+            font-size: 1.15rem;
+            font-weight: 700;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 
+                0 8px 30px rgba(47, 47, 228, 0.4),
+                inset 0 2px 0 rgba(255, 255, 255, 0.15);
+        }
+        
+        .cloud-btn:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 
+                0 16px 50px rgba(47, 47, 228, 0.5),
+                0 0 60px rgba(47, 47, 228, 0.2);
+        }
+        
+        /* D4: Play Button - Cloud Circle */
+        .play-btn {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #2F2FE4, #162E93);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            box-shadow: 
+                0 0 50px rgba(47, 47, 228, 0.5),
+                0 10px 40px rgba(0, 0, 0, 0.4),
+                inset 0 2px 0 rgba(255, 255, 255, 0.2);
+        }
+        
+        .play-btn:hover {
+            transform: scale(1.12);
+            box-shadow: 
+                0 0 70px rgba(47, 47, 228, 0.6),
+                0 15px 50px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* D5: Progress Bar - Cloud Style */
+        .cloud-progress-track {
+            background: rgba(47, 47, 228, 0.15);
+            border-radius: 999px;
+            height: 14px;
+            overflow: hidden;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .cloud-progress-fill {
+            background: linear-gradient(90deg, #2F2FE4, #4f4fff, #6b6bff);
+            height: 100%;
+            border-radius: 999px;
+            transition: width 0.15s linear;
+            box-shadow: 0 0 15px rgba(47, 47, 228, 0.6);
+        }
+        
+        /* D6: Speed Buttons */
+        .speed-btn {
+            min-width: 70px;
+            height: 55px;
+            border-radius: 18px;
+            background: rgba(22, 46, 147, 0.4);
+            border: 2px solid rgba(47, 47, 228, 0.3);
+            color: #a0a0ff;
+            font-weight: 800;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.25s ease;
+        }
+        
+        .speed-btn:hover {
+            background: rgba(47, 47, 228, 0.3);
+            border-color: #4f4fff;
+        }
+        
+        .speed-btn.active {
+            background: #2F2FE4;
+            color: white;
+            border-color: #6b6bff;
+            box-shadow: 0 0 25px rgba(47, 47, 228, 0.6);
+        }
+        
+        /* D7: Lesson Cards */
+        .lesson-card {
+            background: rgba(26, 25, 83, 0.5);
+            border-radius: 24px;
+            border: 2px solid rgba(47, 47, 228, 0.15);
+            padding: 24px;
+            cursor: pointer;
+            transition: all 0.4s ease;
+        }
+        
+        .lesson-card:hover {
+            background: rgba(47, 47, 228, 0.25);
+            border-color: #2F2FE4;
+            transform: translateY(-6px);
+            box-shadow: 
+                0 20px 50px rgba(47, 47, 228, 0.35),
+                0 0 40px rgba(47, 47, 228, 0.15);
+        }
+        
+        /* D8: Text - High Contrast */
+        .text-cloud { color: #E8EEFF; }
+        .text-cloud-dim { color: #a0a0ff; }
+        .text-cloud-muted { color: #6b6bff; }
+        
+        /* Voice Selector */
+        .voice-btn {
+            padding: 14px 28px;
+            border-radius: 20px;
+            background: rgba(22, 46, 147, 0.5);
+            border: 2px solid rgba(47, 47, 228, 0.3);
+            color: #a0a0ff;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.25s ease;
+        }
+        
+        .voice-btn.active {
+            background: #2F2FE4;
+            color: white;
+            border-color: #6b6bff;
+        }
+        
+        /* Cloud animation */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .float { animation: float 3s ease-in-out infinite; }
+        
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 30px rgba(47, 47, 228, 0.4); }
+            50% { box-shadow: 0 0 60px rgba(47, 47, 228, 0.6); }
+        }
+        
+        .pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }
+        
+        /* Looper controls */
+        .loop-btn {
+            padding: 14px 24px;
+            border-radius: 16px;
+            font-weight: 700;
+            transition: all 0.25s ease;
+        }
+        
+        /* Input */
+        .cloud-input {
+            background: rgba(8, 6, 22, 0.8);
+            border: 2px solid rgba(47, 47, 228, 0.3);
+            border-radius: 18px;
+            padding: 16px 24px;
+            color: #E8EEFF;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .cloud-input:focus {
+            outline: none;
+            border-color: #2F2FE4;
+            box-shadow: 0 0 25px rgba(47, 47, 228, 0.4);
+        }
+        
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #080616; }
+        ::-webkit-scrollbar-thumb { 
+            background: linear-gradient(#2F2FE4, #162E93); 
+            border-radius: 5px; 
+        }
+        
+        /* Mobile */
+        @media (max-width: 768px) {
+            .play-btn { width: 120px; height: 120px; }
+            .cloud-card { border-radius: 20px; }
+            .cloud-btn { padding: 16px 28px; font-size: 1.05rem; }
+        }
+    </style>
+</head>
+<body class="cloud-bg min-h-screen text-cloud">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 cloud-card !rounded-b-3xl mx-4 mt-4">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-cloud4 to-cloud3 flex items-center justify-center float">
+                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="text-2xl font-extrabold text-white">☁️ ListenUp</h1>
+                    <p class="text-sm text-cloud-muted">For Slow Learners</p>
+                </div>
+            </div>
+            <nav class="flex gap-2">
+                <button onclick="showSection('library')" class="nav-tab" id="nav-library">📚 Library</button>
+                <button onclick="showSection('player')" class="nav-tab" id="nav-player">▶️ Player</button>
+                <button onclick="showSection('progress')" class="nav-tab" id="nav-progress">📊 Progress</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-36 pb-12 px-6 max-w-6xl mx-auto">
+        
+        <!-- Library Section -->
+        <section id="section-library">
+            <div class="text-center mb-12">
+                <h2 class="text-5xl font-extrabold text-white mb-4">English Listening</h2>
+                <p class="text-xl text-cloud-dim">Learn at your pace • Cloud Audio • Female Voice</p>
+            </div>
+            
+            <!-- Category Tabs -->
+            <div class="flex flex-wrap justify-center gap-3 mb-8">
+                <button onclick="filterCategory('all')" class="nav-tab bg-cloud2" data-category="all">🌟 All</button>
+                <button onclick="filterCategory('beginner')" class="nav-tab bg-cloud2" data-category="beginner">🌱 Beginner</button>
+                <button onclick="filterCategory('intermediate')" class="nav-tab bg-cloud2" data-category="intermediate">🌿 Intermediate</button>
+                <button onclick="filterCategory('advanced')" class="nav-tab bg-cloud2" data-category="advanced">🌳 Advanced</button>
+            </div>
+            
+            <!-- Search -->
+            <div class="max-w-xl mx-auto mb-10">
+                <input type="text" id="search-input" placeholder="🔍 Search lessons..." 
+                    class="cloud-input w-full text-lg"
+                    oninput="searchLessons(this.value)">
+            </div>
+            
+            <!-- Lessons Grid -->
+            <div id="lessons-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Lessons injected here -->
+            </div>
+        </section>
+
+        <!-- Player Section -->
+        <section id="section-player" class="hidden">
+            <!-- Now Playing -->
+            <div class="cloud-card p-8 mb-8">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <!-- Big Icon -->
+                    <div class="w-28 h-28 md:w-36 md:h-36 rounded-3xl bg-gradient-to-br from-cloud4 to-cloud3 flex items-center justify-center flex-shrink-0 pulse-glow">
+                        <svg class="w-14 h-14 md:w-18 md:h-18 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+                        </svg>
+                    </div>
+                    <!-- Info -->
+                    <div class="text-center md:text-left flex-1">
+                        <div class="flex gap-3 justify-center md:justify-start mb-4">
+                            <span id="player-level" class="px-5 py-2 bg-cloud3 rounded-full text-sm font-bold text-white">Beginner</span>
+                        </div>
+                        <h2 id="player-title" class="text-3xl md:text-4xl font-extrabold text-white mb-3">Select a lesson</h2>
+                        <p id="player-description" class="text-lg text-cloud-dim">Choose from the library</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Voice Selection -->
+            <div class="cloud-card p-6 mb-6">
+                <h3 class="text-xl font-bold text-white mb-4">🎤 Voice Selection</h3>
+                <div class="flex flex-wrap gap-3 justify-center">
+                    <button onclick="setVoice('female')" class="voice-btn active" id="voice-female">
+                        👩 Female (Slower)
+                    </button>
+                    <button onclick="setVoice('male')" class="voice-btn" id="voice-male">
+                        👨 Male
+                    </button>
+                    <button onclick="speakTranscript()" class="cloud-btn">
+                        🔊 Speak Transcript
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Audio Player -->
+            <div class="cloud-card p-8 mb-8">
+                <!-- Progress -->
+                <div class="mb-6">
+                    <div class="cloud-progress-track cursor-pointer" id="progress-container" onclick="seekAudio(event)">
+                        <div class="cloud-progress-fill" id="progress-fill" style="width: 0%"></div>
+                    </div>
+                    <div class="flex justify-between text-sm text-cloud-muted mt-3 font-bold">
+                        <span id="current-time">0:00</span>
+                        <span id="total-time">0:00</span>
+                    </div>
+                </div>
+                
+                <!-- Controls -->
+                <div class="flex items-center justify-center gap-6 mb-8">
+                    <button onclick="skipBackward()" class="w-12 h-12 rounded-full bg-cloud2 flex items-center justify-center hover:bg-cloud3 transition">
+                        <svg class="w-6 h-6 text-cloud-dim" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M11.5 12.5V6 13h1v5.5l4-3.5V19h1v-9l-4-3.5v3.5z"/>
+                        </svg>
+                    </button>
+                    
+                    <button onclick="togglePlay()" class="play-btn" id="play-btn">
+                        <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24" id="play-icon">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                        <svg class="w-10 h-10 text-white hidden" fill="currentColor" viewBox="0 0 24 24" id="pause-icon">
+                            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                        </svg>
+                    </button>
+                    
+                    <button onclick="skipForward()" class="w-12 h-12 rounded-full bg-cloud2 flex items-center justify-center hover:bg-cloud3 transition">
+                        <svg class="w-6 h-6 text-cloud-dim" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12.5 12.5V18h-1v-2.5l-4 3.5V5h1v9l4-3.5v2.5z"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <!-- Speed -->
+                <div class="flex items-center justify-center gap-3 mb-6">
+                    <span class="text-cloud-dim font-bold mr-2">Speed:</span>
+                    <button onclick="setSpeed(0.5)" class="speed-btn" data-speed="0.5">0.5x</button>
+                    <button onclick="setSpeed(0.75)" class="speed-btn" data-speed="0.75">0.75x</button>
+                    <button onclick="setSpeed(1)" class="speed-btn active" data-speed="1">1x</button>
+                    <button onclick="setSpeed(1.25)" class="speed-btn" data-speed="1.25">1.25x</button>
+                    <button onclick="setSpeed(1.5)" class="speed-btn" data-speed="1.5">1.5x</button>
+                </div>
+                
+                <!-- Loop Controls -->
+                <div class="flex flex-wrap items-center justify-center gap-3">
+                    <button onclick="setLoopStart()" class="loop-btn bg-cloud2 text-cloud">
+                        ⏮️ A: <span id="loop-start-time" class="text-white">--</span>
+                    </button>
+                    <button onclick="setLoopEnd()" class="loop-btn bg-cloud2 text-cloud">
+                        ⏭️ B: <span id="loop-end-time" class="text-white">--</span>
+                    </button>
+                    <button onclick="clearLoop()" class="loop-btn bg-red-900/50 text-red-300 hover:bg-red-900">
+                        🗑️ Clear
+                    </button>
+                    <button onclick="toggleLoop()" class="loop-btn bg-cloud4 text-white">
+                        🔁 Loop: <span id="loop-status" class="text-white">OFF</span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Transcript -->
+            <div class="cloud-card p-8">
+                <h3 class="text-2xl font-bold text-white mb-4">📝 Transcript</h3>
+                <div id="transcript-container" class="max-h-64 overflow-y-auto p-6 bg-cloud1 rounded-2xl">
+                    <p id="transcript-text" class="text-lg leading-relaxed text-cloud-dim">
+                        Select a lesson to see the transcript.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Progress Section -->
+        <section id="section-progress" class="hidden">
+            <div class="cloud-card p-8 mb-8">
+                <h2 class="text-3xl font-extrabold text-white mb-6">📊 Your Progress</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="text-center p-6 bg-cloud2 rounded-2xl">
+                        <div id="total-listened" class="text-4xl font-extrabold text-cloud4">0</div>
+                        <div class="text-sm text-cloud-muted mt-1">Lessons</div>
+                    </div>
+                    <div class="text-center p-6 bg-cloud2 rounded-2xl">
+                        <div id="total-time-listened" class="text-4xl font-extrabold text-cloud4">0m</div>
+                        <div class="text-sm text-cloud-muted mt-1">Minutes</div>
+                    </div>
+                    <div class="text-center p-6 bg-cloud2 rounded-2xl">
+                        <div id="current-streak" class="text-4xl font-extrabold text-cloud4">0</div>
+                        <div class="text-sm text-cloud-muted mt-1">Day Streak</div>
+                    </div>
+                    <div class="text-center p-6 bg-cloud2 rounded-2xl">
+                        <div id="completed-lessons" class="text-4xl font-extrabold text-cloud4">0</div>
+                        <div class="text-sm text-cloud-muted mt-1">Completed</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <button onclick="clearProgress()" class="px-8 py-4 rounded-2xl bg-red-900/50 text-red-300 hover:bg-red-900 transition text-lg font-bold">
+                    🗑️ Clear All Progress
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Hidden Audio -->
+    <audio id="audio-player" preload="metadata"></audio>
+
+    <script>
+        // Sample Lessons - English Only, Slow Learner Focused
+        const defaultLessons = [
+            { id: 1, title: "Basic Greetings", description: "Learn common English greetings", category: "beginner", difficulty: "beginner", url: "https://www.learningcontainer.com/wp-content/uploads/2020/02/audio.mp3", transcript: "Hello! Welcome to our first English lesson. Today we will learn basic greetings. Hello! How are you? I am fine, thank you. Good morning. Good evening. Good night. Goodbye. See you later." },
+            { id: 2, title: "Common Phrases", description: "Essential phrases for daily use", category: "beginner", difficulty: "beginner", url: "https://www.learningcontainer.com/wp-content/uploads/2020/02/audio.mp3", transcript: "In this lesson, we learn common English phrases. Please and thank you. Excuse me. I am sorry. Can you help me? You are welcome. My pleasure. No problem." },
+            { id: 3, title: "Numbers 1-10", description: "Learn to count in English", category: "beginner", difficulty: "beginner", url: "https://www.learningcontainer.com/wp-content/uploads/2020/02/audio.mp3", transcript: "One, Two, Three, Four, Five. Six, Seven, Eight, Nine, Ten. Let us count together. One apple. Two books. Three pens." },
+            { id: 4, title: "Family Words", description: "Mother, Father, Brother, Sister", category: "beginner", difficulty: "beginner", url: "https://www.learningcontainer.com/wp-content/uploads/2020/02/audio.mp3", transcript: "Mother. Father. Brother. Sister. Grandmother. Grandfather. Aunt. Uncle. These are our family members." },
+            { id: 5, title: "Colors and Shapes", description: "Red, Blue, Circle, Square", category: "beginner", difficulty: "beginner", url: "https://www.learningcontainer.com/wp-content/uploads/2020/02/audio.mp3", transcript: "Red, Blue, Green, Yellow, Orange, Purple. These are colors. Circle, Square, Triangle, Rectangle. These are shapes." },
+            { id: 6, title: "Days of Week", description: "Monday to Sunday", category: "beginner", difficulty: "beginner", url: "https://www.learningcontainer.com/wp-content/uploads/2020/02/audio.mp3", transcript: "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday. These are the days of the week." },
+            { id: 7, title: "Simple Questions", description: "What, Where, Who", category: "intermediate", difficulty: "intermediate", url: "https://www.learningcontainer.com/wp-content/uploads/2020/02/audio.mp3", transcript: "What is your name? Where do you live? Who is your friend? When is your birthday? Why are you happy? How are you today?" },
+            { id: 8, title: "Job Interview Basics", description: "Prepare for your first interview", category: "intermediate", difficulty: "intermediate", url: "https://www.learningcontainer.com/wp-content/uploads/2020/02/audio.mp3", transcript: "Tell me about yourself. What are your strengths? What is your weakness? Where do you see yourself in five years? Why do you want this job?" },
+            { id: 9, title: "Business English", description: "Professional communication", category: "advanced", difficulty: "advanced", url: "https://www.learningcontainer.com/wp-content/uploads/2020/02/audio.mp3", transcript: "I would like to schedule a meeting. Please find the attached document. Let me follow up on this matter. I look forward to hearing from you." },
+            { id: 10, title: "Academic Writing", description: "Essay writing for college", category: "advanced", difficulty: "advanced", url: "https://www.learningcontainer.com/wp-content/uploads/2020/02/audio.mp3", transcript: "Academic writing requires formal structure. Introduction, body, conclusion. Citation and references are essential. Plagiarism must be avoided." },
+        ];
+
+        // State
+        let lessons = JSON.parse(localStorage.getItem('listenup_lessons')) || defaultLessons;
+        let currentLesson = null;
+        let isPlaying = false;
+        let currentSpeed = 1;
+        let selectedVoice = 'female';
+        let loopStartTime = null;
+        let loopEndTime = null;
+        let isLooping = false;
+        let progress = JSON.parse(localStorage.getItem('listenup_progress')) || { lessons: [], totalMinutes: 0, streaks: 0, lastDate: null };
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            renderLessons();
+            updateProgressDisplay();
+        });
+
+        function saveLessons() {
+            localStorage.setItem('listenup_lessons', JSON.stringify(lessons));
+        }
+
+        function renderLessons(filtered = lessons) {
+            const grid = document.getElementById('lessons-grid');
+            grid.innerHTML = filtered.map(lesson => `
+                <div class="lesson-card" onclick="playLesson(${lesson.id})">
+                    <div class="flex items-start gap-4">
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-cloud4 to-cloud3 flex items-center justify-center flex-shrink-0">
+                            <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <span class="inline-block px-4 py-1.5 bg-cloud3 rounded-full text-xs text-white mb-2">${lesson.difficulty}</span>
+                            <h3 class="font-bold text-white text-lg">${lesson.title}</h3>
+                            <p class="text-sm text-cloud-dim mt-1">${lesson.description}</p>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+            
+            if (filtered.length === 0) {
+                grid.innerHTML = '<p class="text-center text-cloud-dim col-span-3 py-12 text-xl">No lessons found</p>';
+            }
+        }
+
+        function filterCategory(cat) {
+            document.querySelectorAll('.nav-tab').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.category === cat);
+            });
+            const filtered = cat === 'all' ? lessons : lessons.filter(l => l.difficulty === cat || l.category === cat);
+            renderLessons(filtered);
+        }
+
+        function searchLessons(query) {
+            const q = query.toLowerCase();
+            const filtered = lessons.filter(l => l.title.toLowerCase().includes(q) || l.description.toLowerCase().includes(q));
+            renderLessons(filtered);
+        }
+
+        function showSection(section) {
+            ['library', 'player', 'progress'].forEach(s => {
+                document.getElementById(`section-${s}`).classList.toggle('hidden', s !== section);
+                document.getElementById(`nav-${s}`)?.classList.toggle('active', s === section);
+            });
+            if (section === 'progress') updateProgressDisplay();
+        }
+
+        function playLesson(id) {
+            const lesson = lessons.find(l => l.id === id);
+            if (!lesson) return;
+            
+            currentLesson = lesson;
+            document.getElementById('player-title').textContent = lesson.title;
+            document.getElementById('player-description').textContent = lesson.description;
+            document.getElementById('player-level').textContent = lesson.difficulty;
+            document.getElementById('transcript-text').textContent = lesson.transcript || 'No transcript available.';
+            
+            const audio = document.getElementById('audio-player');
+            audio.src = lesson.url;
+            audio.playbackRate = currentSpeed;
+            
+            showSection('player');
+            
+            if (!progress.lessons.includes(lesson.id)) {
+                progress.lessons.push(lesson.id);
+                progress.totalMinutes += 5;
+                localStorage.setItem('listenup_progress', JSON.stringify(progress));
+            }
+        }
+
+        function togglePlay() {
+            const audio = document.getElementById('audio-player');
+            const playIcon = document.getElementById('play-icon');
+            const pauseIcon = document.getElementById('pause-icon');
+            
+            if (isPlaying) {
+                audio.pause();
+                playIcon.classList.remove('hidden');
+                pauseIcon.classList.add('hidden');
+            } else {
+                if (currentLesson) audio.play().catch(e => console.log('Play error:', e));
+                playIcon.classList.add('hidden');
+                pauseIcon.classList.remove('hidden');
+            }
+            isPlaying = !isPlaying;
+        }
+
+        function setSpeed(speed) {
+            currentSpeed = speed;
+            document.getElementById('audio-player').playbackRate = speed;
+            document.querySelectorAll('.speed-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.speed == speed);
+            });
+        }
+
+        function setVoice(voice) {
+            selectedVoice = voice;
+            document.querySelectorAll('.voice-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.getElementById(`voice-${voice}`).classList.add('active');
+            
+            // Adjust speed based on voice
+            if (voice === 'female') {
+                if (currentSpeed < 0.75) setSpeed(0.75);
+            }
+        }
+
+        function speakTranscript() {
+            if (!currentLesson) {
+                alert('Please select a lesson first!');
+                return;
+            }
+            
+            const transcript = currentLesson.transcript;
+            const utterance = new SpeechSynthesisUtterance(transcript);
+            
+            // Set voice based on selection
+            const voices = speechSynthesis.getVoices();
+            if (selectedVoice === 'female') {
+                // Try to find a female voice
+                const femaleVoice = voices.find(v => v.name.includes('Female') || v.name.includes('Samantha') || v.name.includes('Victoria'));
+                if (femaleVoice) utterance.voice = femaleVoice;
+            } else {
+                const maleVoice = voices.find(v => v.name.includes('Male') || v.name.includes('Daniel') || v.name.includes('David'));
+                if (maleVoice) utterance.voice = maleVoice;
+            }
+            
+            utterance.rate = currentSpeed;
+            utterance.pitch = selectedVoice === 'female' ? 1.1 : 0.9;
+            utterance.volume = 1;
+            
+            speechSynthesis.cancel();
+            speechSynthesis.speak(utterance);
+        }
+
+        function seekAudio(event) {
+            const audio = document.getElementById('audio-player');
+            const container = document.getElementById('progress-container');
+            const rect = container.getBoundingClientRect();
+            const percent = (event.clientX - rect.left) / rect.width;
+            audio.currentTime = percent * audio.duration;
+        }
+
+        function skipBackward() {
+            const audio = document.getElementById('audio-player');
+            audio.currentTime = Math.max(0, audio.currentTime - 10);
+        }
+
+        function skipForward() {
+            const audio = document.getElementById('audio-player');
+            audio.currentTime = Math.min(audio.duration, audio.currentTime + 10);
+        }
+
+        function setLoopStart() {
+            loopStartTime = document.getElementById('audio-player').currentTime;
+            document.getElementById('loop-start-time').textContent = formatTime(loopStartTime);
+        }
+
+        function setLoopEnd() {
+            loopEndTime = document.getElementById('audio-player').currentTime;
+            document.getElementById('loop-end-time').textContent = formatTime(loopEndTime);
+        }
+
+        function toggleLoop() {
+            isLooping = !isLooping;
+            document.getElementById('loop-status').textContent = isLooping ? 'ON' : 'OFF';
+        }
+
+        function clearLoop() {
+            loopStartTime = null;
+            loopEndTime = null;
+            isLooping = false;
+            document.getElementById('loop-start-time').textContent = '--';
+            document.getElementById('loop-end-time').textContent = '--';
+            document.getElementById('loop-status').textContent = 'OFF';
+        }
+
+        function formatTime(seconds) {
+            const mins = Math.floor(seconds / 60);
+            const secs = Math.floor(seconds % 60);
+            return `${mins}:${secs.toString().padStart(2, '0')}`;
+        }
+
+        function updateProgressDisplay() {
+            document.getElementById('total-listened').textContent = progress.lessons.length;
+            document.getElementById('total-time-listened').textContent = progress.totalMinutes + 'm';
+            document.getElementById('current-streak').textContent = progress.streaks;
+            document.getElementById('completed-lessons').textContent = progress.lessons.length;
+        }
+
+        function clearProgress() {
+            if (confirm('Clear all progress?')) {
+                progress = { lessons: [], totalMinutes: 0, streaks: 0, lastDate: null };
+                localStorage.setItem('listenup_progress', JSON.stringify(progress));
+                updateProgressDisplay();
+                renderLessons();
+            }
+        }
+
+        // Audio events
+        const audio = document.getElementById('audio-player');
+        audio.addEventListener('timeupdate', () => {
+            const percent = (audio.currentTime / audio.duration) * 100 || 0;
+            document.getElementById('progress-fill').style.width = percent + '%';
+            document.getElementById('current-time').textContent = formatTime(audio.currentTime);
+            
+            if (isLooping && loopStartTime !== null && loopEndTime !== null) {
+                if (audio.currentTime >= loopEndTime) {
+                    audio.currentTime = loopStartTime;
+                }
+            }
+        });
+
+        audio.addEventListener('loadedmetadata', () => {
+            document.getElementById('total-time').textContent = formatTime(audio.duration);
+        });
+
+        audio.addEventListener('ended', () => {
+            isPlaying = false;
+            document.getElementById('play-icon').classList.remove('hidden');
+            document.getElementById('pause-icon').classList.add('hidden');
+        });
+
+        // Load voices
+        speechSynthesis.onvoiceschanged = () => {
+            console.log('Voices loaded:', speechSynthesis.getVoices().length);
+        };
+    </script>
+</body>
+</html>
