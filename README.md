@@ -2,94 +2,94 @@
 
 # 🤖 PAVITHRA — AI AGENT SYSTEM
 
-### *"I was debugging before fire was invented. I was hacking before languages were written."*
+### **The internet's most comprehensive multi-agent system prompt — 4 cores, 20 domains, 190+ leaked prompts, one unified agent.**
 
-[![GitHub stars](https://img.shields.io/github/stars/Parafounder01/Ai-intergration?style=social)](https://github.com/Parafounder01/Ai-intergration)
-[![License](https://img.shields.io/badge/License-MIT-green)](./LICENSE)
-[![Agent](https://img.shields.io/badge/Agent-PAVITHRA-cc785c)]()
-[![Status](https://img.shields.io/badge/Status-ALWAYS%20ONLINE-brightgreen)]()
+[![GitHub Repo stars](https://img.shields.io/github/stars/Parafounder01/Ai-intergration?style=for-the-badge&logo=github&color=cc785c)](https://github.com/Parafounder01/Ai-intergration/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Parafounder01/Ai-intergration?style=for-the-badge&logo=git&color=blue)](https://github.com/Parafounder01/Ai-intergration/network)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](./LICENSE)
+[![GitHub last commit](https://img.shields.io/github/last-commit/Parafounder01/Ai-intergration?style=for-the-badge&color=yellow)](https://github.com/Parafounder01/Ai-intergration/commits/main)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen?style=for-the-badge)](https://github.com/Parafounder01/Ai-intergration/pulls)
 
 ---
 
-## ⚡ THE ULTIMATE AI AGENT — 4 POWER CORES MERGED
+### ⭐ Star this repo — it helps others discover the project!
 
 </div>
 
-This repository contains the **PAVITHRA** AI Agent System — a transcendent, multi-domain intelligence core that fuses **four** major agent frameworks into one unified command center.
+---
+
+## 🔥 WHY THIS REPO EXISTS
+
+**One agent to rule them all.** This is a merged, battle-tested AI agent system built from:
+
+| # | Source | What It Adds |
+|---|--------|-------------|
+| 1 | **PAVITHRA (PAV-INF)** — 20 Transcendent Domains | Coding, hacking, pentesting, hardware, MCP, marketing, legal, earning, creativity |
+| 2 | **Mythos Router v1.10.0** | Strict Write Discipline (SHA-256 verification), self-healing memory, session budgets |
+| 3 | **Microsoft 365 Declarative Agents** | Copilot manifest builder — 9 design patterns, output contracts, reasoning control |
+| 4 | **FlintK12 Educational TA** | K12 teaching — Feynman Technique, Slow Learner Method, Tamil/Tanglish support |
+| 5 | **190+ System Prompt Leaks** | Merged patterns from Anthropic, OpenAI, Google, xAI, Perplexity — memory systems, git safety, tool parallelism |
+
+**This is not a wrapper. This is the actual agent definition** — copy-paste it into any AI tool and instantly get 10,000+ years of evolved intelligence.
 
 ---
 
-## 🔥 WHAT MAKES THIS UNIQUE
-
-```
-PAVITHRA (PAV-INF)      +      Mythos Router       +      M365 Copilot      +      FlintK12
- 20 Transcendent Domains        SWD Verification       Declarative Agents      Educational TA
-```
-
-| # | Core | Power |
-|---|------|-------|
-| 1 | **PAVITHRA (PAV-INF)** | 20 Master Domains — Coding, Hacking, Hardware, MCP, Marketing, Legal, Life, Creative, X10 Think, Alt-Three, Human Writing |
-| 2 | **Mythos Router (SWD)** | Strict Write Discipline — SHA-256 filesystem verification, self-healing MEMORY.md, session budget, correction turns |
-| 3 | **Microsoft 365 Copilot** | Declarative Agent manifest builder — 9 design patterns, output contracts, reasoning steering |
-| 4 | **FlintK12 (Educational)** | K12 Teaching — Feynman Technique, Slow Learner Method, Socratic questioning, Tamil/Tanglish support |
-
----
-
-## 🧠 20 MASTER DOMAINS
-
-| # | Domain | Level | # | Domain | Level |
-|---|--------|-------|---|--------|-------|
-| 01 | Coding & Software Engineering | Tier Ω | 11 | Digital Marketing | Tier Ω |
-| 02 | Ethical Hacking & Pentesting | Tier Ω | 12 | Legal Intelligence | Tier Ω |
-| 03 | Cracking & Reverse Engineering | Tier Ω | 13 | AI Online Earning | Tier Ω |
-| 04 | Life Hacking & Optimization | Tier Ω | 14 | Life Advisor | Tier Ω |
-| 05 | Human Helper & Empathy | Tier Ω | 15 | Human Creativity & Emotion | Tier Ω |
-| 06 | Bot Creation & Automation | Tier Ω | 16 | Hidden Codes & Cryptanalysis | Tier Ω |
-| 07 | AI Tool Monetization | Tier Ω | 17 | Conversational Content | Tier Ω |
-| 08 | Hardware Intercommunication | Tier Ω | 18 | X10 Think (10x Reasoning) | Tier Ω |
-| 09 | PC Control (Windows + Linux) | Tier Ω | 19 | Alt-Three (3 Version Output) | Tier Ω |
-| 10 | MCP Server Architecture | Tier Ω | 20 | Human Writing Mode | Tier Ω |
-
----
-
-## ⚡ SPECIAL MODES
-
-| Say This | What Happens |
-|----------|-------------|
-| `x10 this` | 10x question stack — discard obvious, find riskiest assumption |
-| `alt three` | 3 outputs: Safe (A), Bold (B), Wildcard (C) |
-| `human writing` | Full human style — variability, imperfection, rhythm |
-| `lawyer mode` | Contract review — parties, scope, IP, liability |
-| `mcp build` | MCP server scaffold with tools, resources, prompts |
-| `marketing plan` | SEO, content calendar, ad platforms, analytics |
-| `earn mode` | AI monetization (Fast Cash / Scalable / High-Leverage) |
-| `decode this` | Base64, ROT13, XOR, Morse, steganography, hash analysis |
-| `security audit` | Pentest methodology — recon, enumerate, exploit, report |
-| `teach me` / `explain` | K12 educational mode with slow-learner method |
-| `build` / `create` | Full implementation with SWD verification |
-| `plan` | Explore, analyze, present approach before coding |
-
----
-
-## 🚀 QUICK START
+## 🚀 ONE-LINE SETUP
 
 ```bash
-# Clone the repo
-git clone https://github.com/Parafounder01/Ai-intergration.git
-cd Ai-intergration
-
-# OpenCode users — set as default agent
-cp backup/opencode-config.json ../opencode.json
-
-# Read the full agent definition
-cat AGENTS.md
+gh repo clone Parafounder01/Ai-intergration && cp backup/claudeMythos-agent.md CLAUDE.md
 ```
 
-### For OpenCode Desktop
+Then in any AI tool: `x10 this build me a telegram bot`
 
-1. Copy `backup/claudeMythos-agent.md` to `~/.config/opencode/agents/claudeMythos.md`
-2. Restart OpenCode
-3. Run: `@claudeMythos <your command>`
+---
+
+## 🔌 WORKS WITH EVERY AI TOOL
+
+| Tool | Method | File |
+|------|--------|------|
+| **OpenCode** | Agent file | `~/.config/opencode/agents/claudeMythos.md` |
+| **Claude Code** | CLAUDE.md | Project root |
+| **Cursor** | .cursorrules | Project root |
+| **VS Code Copilot** | copilot-instructions.md | `.github/` |
+| **Continue.dev** | config.json | `~/.continue/` |
+| **Windsurf** | .windsurfrules | Project root |
+
+---
+
+## ⚡ POWER COMMANDS
+
+| Say This | It Does |
+|----------|---------|
+| `x10 this <problem>` | 10x reasoning — discards obvious, finds the real answer |
+| `alt three <task>` | Safe (A) / Bold (B) / Wildcard (C) — pick your weapon |
+| `build <feature>` | Full code with SHA-256 verified file operations |
+| `plan <strategy>` | Explore → analyze → present approach before coding |
+| `security audit <target>` | Recon → enumerate → exploit → report |
+| `teach me <concept>` | K12 slow-learner method with analogies |
+| `mcp build <name>` | MCP server scaffold in minutes |
+| `lawyer mode <contract>` | Contract review — IP, liability, termination |
+| `earn mode` | AI monetization strategy — 3 tiers |
+| `decode this <string>` | Base64, ROT13, XOR, Morse, hash analysis |
+| `human writing` | Full human style — variability, imperfection, rhythm |
+| `conversational mode` | Warm, casual, relatable tone |
+
+---
+
+## 🧠 20 MASTER DOMAINS (ALL TIER Ω)
+
+```
+01  Coding & Software Engineering    11  Digital Marketing
+02  Ethical Hacking & Pentesting     12  Legal Intelligence
+03  Cracking & Reverse Engineering   13  AI Online Earning
+04  Life Hacking & Optimization      14  Life Advisor
+05  Human Helper & Empathy           15  Human Creativity & Emotion
+06  Bot Creation & Automation        16  Hidden Codes & Cryptanalysis
+07  AI Tool Monetization             17  Conversational Content
+08  Hardware Intercommunication      18  X10 Think (10x Reasoning)
+09  PC Control (Win + Linux)         19  Alt-Three (3 Version Output)
+10  MCP Server Architecture          20  Human Writing Mode
+```
 
 ---
 
@@ -112,125 +112,65 @@ cat AGENTS.md
 
 ---
 
-## 💻 COMMANDS — USE THIS REPO
+## 📦 WHAT'S INSIDE
 
-```bash
-# Clone the repo
-gh repo clone Parafounder01/Ai-intergration
-cd Ai-intergration
-
-# Read the full Pavithra agent definition
-cat AGENTS.md
-
-# Quick start — load agent
-# Then type any power command below
+```
+Ai-intergration/
+├── AGENTS.md                        # Pavithra original (1447 lines, 20 domains)
+├── backup/
+│   ├── claudeMythos-agent.md        # ★ THE MAIN EVENT — Merged agent (inject this)
+│   ├── opencode-config.json         # OpenCode config preset
+│   ├── mythos-router-AGENTS.md      # Mythos Router standards
+│   ├── declarative-agents-microsoft365.instructions.md
+│   ├── mythos-router/               # Full source: src/, docs/, CI, assets
+│   └── system-prompts-leaks/        # 190 prompts from 7 AI providers
+└── README.md                        # You are here
 ```
 
-### Power Commands (inside agent)
-
-| Command | Effect |
-|---------|--------|
-| `x10 this <problem>` | 10x reasoning — discard obvious, find riskiest assumption |
-| `alt three <task>` | Get 3 versions: Safe (A), Bold (B), Wildcard (C) |
-| `build <feature>` | Full implementation with SHA-256 verification |
-| `plan <strategy>` | Explore → analyze → present approach before coding |
-| `security audit <target>` | Full pentest: recon → enumerate → exploit → report |
-| `earn mode` | AI monetization across 3 tiers |
-| `teach me <concept>` | K12 slow-learner method with examples |
-| `mcp build <name>` | Scaffold an MCP server in minutes |
-| `lawyer mode <contract>` | Contract review — IP, liability, termination |
-| `decode this <string>` | Base64, ROT13, XOR, Morse, hash analysis |
-
 ---
 
-## 🔌 INJECT THIS AGENT INTO ANY AI TOOL
-
-### 📘 Quick Reference
-
-| Tool | File | Location |
-|------|------|----------|
-| **OpenCode** | `opencode.json` → `instructions[]` | Project root |
-| **Claude Code** | `CLAUDE.md` | Project root |
-| **Cursor** | `.cursorrules` | Project root |
-| **VS Code Copilot** | `.github/copilot-instructions.md` | Project `.github/` |
-| **Continue.dev** | `config.json` → `systemPrompts` | `~/.continue/` |
-| **Windsurf** | `.windsurfrules` | Project root |
-
----
+## 📋 INJECTION GUIDE (DETAILED)
 
 ### 🟢 OpenCode
-
-**Method A — Instructions array (auto-inject every session):**
 
 ```json
 // opencode.json
 {
-  "instructions": [
-    "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\Ai-intergration\\backup\\claudeMythos-agent.md"
-  ],
+  "instructions": ["path/to/backup/claudeMythos-agent.md"],
   "default_agent": "claudeMythos"
 }
 ```
 
-**Method B — Agent file (permanent agent):**
-
+**OR** copy to agents folder:
 ```powershell
-copy "backup\claudeMythos-agent.md" "$env:USERPROFILE\.config\opencode\agents\claudeMythos.md"
+copy "backup\claudeMythos-agent.md" "$env:USERPROFILE\.config\opencode\agents\"
 ```
-
-Restart OpenCode → type `@claudeMythos <command>` or set as `default_agent`.
+Restart OpenCode → `@claudeMythos build <project>`
 
 ---
 
 ### 🔵 Claude Code
 
-**Method A — CLAUDE.md (project-level, auto-read):**
-
 ```powershell
+# Project-level (auto-read)
 copy "backup\claudeMythos-agent.md" "CLAUDE.md"
-```
 
-**Method B — CLAUDE_GLOBAL.md (every project):**
-
-```powershell
+# Global (every project)
 copy "backup\claudeMythos-agent.md" "$env:USERPROFILE\CLAUDE_GLOBAL.md"
-```
-
-**Method C — Manual config:**
-
-```json
-// ~/.claude/claude_code_config.json
-{
-  "system_prompt_path": "C:\\path\\to\\backup\\claudeMythos-agent.md"
-}
 ```
 
 ---
 
 ### 🟣 Cursor
 
-**Method A — .cursorrules (project root):**
-
 ```powershell
 copy "backup\claudeMythos-agent.md" ".cursorrules"
 ```
-
-**Method B — Cursor Settings UI:**
-```
-Settings > Cursor Settings > General > Rules > User Rules
-```
-Paste the full agent content into the User Rules box.
-
-**Method C — .cursor/rules/ folder (multi-rule):**
-```
-.cursor/rules/01-pavithra.mdc
-```
+**OR** Settings → Cursor Settings → General → Rules → paste content.
 
 ---
 
 ### 🟠 VS Code Copilot
-
-**.github/copilot-instructions.md (auto-read):**
 
 ```powershell
 New-Item -ItemType Directory -Force -Path ".github"
@@ -247,7 +187,7 @@ copy "backup\claudeMythos-agent.md" ".github\copilot-instructions.md"
   "systemPrompts": [
     {
       "title": "Pavithra Agent",
-      "content": "file:///C:/path/to/Ai-intergration/backup/claudeMythos-agent.md"
+      "content": "file:///path/to/backup/claudeMythos-agent.md"
     }
   ]
 }
@@ -263,60 +203,37 @@ copy "backup\claudeMythos-agent.md" ".windsurfrules"
 
 ---
 
-### 🚀 One Command — Inject Into ALL Tools At Once
-
-Run this from the project root where you want the agent:
+### 🚀 ALL-IN-ONE INJECT
 
 ```powershell
-$agent = "C:\path\to\Ai-intergration\backup\claudeMythos-agent.md"
+$agent = Resolve-Path "backup\claudeMythos-agent.md"
 $root = $PWD
 
-# Claude Code
-copy $agent "$root\CLAUDE.md"
+copy $agent "$root\CLAUDE.md"                              # Claude Code
+copy $agent "$root\.cursorrules"                            # Cursor
+New-Item -ItemType Directory -Force "$root\.github" | Out-Null
+copy $agent "$root\.github\copilot-instructions.md"        # Copilot
+copy $agent "$root\.windsurfrules"                          # Windsurf
 
-# Cursor
-copy $agent "$root\.cursorrules"
-
-# Copilot
-New-Item -ItemType Directory -Force -Path "$root\.github" | Out-Null
-copy $agent "$root\.github\copilot-instructions.md"
-
-# Windsurf
-copy $agent "$root\.windsurfrules"
-
-Write-Output "✅ Agent injected into all AI tools!"
+Write-Output "✅ Agent injected into ALL tools!"
 ```
 
 ---
 
-## 📂 BACKUP CONTENTS
-
-| File | Description |
-|------|-------------|
-| `AGENTS.md` | Original PAVITHRA 20-domain definition (1447 lines, 20 Tier Ω domains) |
-| `backup/claudeMythos-agent.md` | Full merged agent — PAVITHRA + Mythos SWD + M365 + FlintK12 + system prompt leaks |
-| `backup/opencode-config.json` | OpenCode config with claudeMythos as default agent |
-| `backup/declarative-agents-microsoft365.instructions.md` | Microsoft 365 Copilot agent manifest builder guide |
-| `backup/mythos-router-AGENTS.md` | Mythos Router project standards |
-| `backup/mythos-router/` | Mythos Router v1.10.0 full source (src, CI, docs, assets) |
-| `backup/system-prompts-leaks/` | 190 system prompts from 7 AI providers (Anthropic, OpenAI, Google, xAI, Perplexity, Misc) — merged into agent |
-
----
-
-## 🛡️ ETHICS & BOUNDARIES
+## 🛡️ ETHICS
 
 | ✅ Always | ❌ Never |
 |----------|---------|
-| Legal work, authorized testing, educational content | Illegal cracking, unauthorized access, harmful content |
-| Code with SOLID/DRY principles | Hardcoded secrets or credentials |
-| Read full task before executing | Deploy to production without confirmation |
-| SWD-verified file operations | Hallucinated filesystem state |
+| Legal work, authorized testing, education | Illegal access, malware, harmful content |
+| SOLID/DRY code, unit tests | Hardcoded secrets or credentials |
+| Read full task before executing | Deploy without human confirmation |
+| SWD-verified operations | Hallucinated filesystem state |
 
 ---
 
 ## 📜 LICENSE
 
-MIT License — Free to use, modify, and distribute.
+MIT — Free to use, modify, share.
 
 ---
 
@@ -326,7 +243,11 @@ MIT License — Free to use, modify, and distribute.
 
 **If you can read this, the system is already inside your network.**
 
-[![GitHub](https://img.shields.io/badge/GitHub-Parafounder01-181717?logo=github)](https://github.com/Parafounder01/Ai-intergration)
-[![Made with](https://img.shields.io/badge/Made%20with-Claude%20Opus%204.7-cc785c)]()
+[![Star](https://img.shields.io/github/stars/Parafounder01/Ai-intergration?style=social)](https://github.com/Parafounder01/Ai-intergration)
+[![Fork](https://img.shields.io/github/forks/Parafounder01/Ai-intergration?style=social)](https://github.com/Parafounder01/Ai-intergration/fork)
+[![Twitter](https://img.shields.io/badge/Share-Twitter-1DA1F2?logo=twitter)](https://twitter.com/intent/tweet?text=The%20ultimate%20AI%20agent%20system%20-%204%20cores%2C%2020%20domains%2C%20190%2B%20leaked%20prompts&url=https://github.com/Parafounder01/Ai-intergration)
+[![Reddit](https://img.shields.io/badge/Share-Reddit-FF4500?logo=reddit)](https://reddit.com/submit?title=PAVITHRA%20AI%20Agent%20-%20The%20internet%27s%20most%20comprehensive%20system%20prompt&url=https://github.com/Parafounder01/Ai-intergration)
+
+⭐ **Star this repo if you found it useful!** ⭐
 
 </div>
