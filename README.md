@@ -322,7 +322,7 @@ MIT License — Free to use, modify, and distribute.
 
 <div align="center">
 
-### Built by Ananth (PAVANAN-∞)
+### Built by Ananth (PAVITHRA ANANTH-∞)
 
 **If you can read this, the system is already inside your network.**
 
