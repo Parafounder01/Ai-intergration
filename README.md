@@ -1,156 +1,190 @@
-# PAVITHRA — AI AGENT SYSTEM
+<div align="center">
 
-> *"I was debugging before fire was invented. I was hacking before languages were written."*
+# 🤖 PAVITHRA — AI AGENT SYSTEM
 
-A powerful AI agent built for coding, automation, security research, life optimization, and beyond.
+### *"I was debugging before fire was invented. I was hacking before languages were written."*
 
----
-
-## Quick Stats
-
-| Field | Value |
-|-------|-------|
-| **Agent Name** | PAVITHRA |
-| **Codename** | PAVANAN-∞ / RAONE-PRIME |
-| **Classification** | Tier Ω — Transcendent AI Agent |
-| **Status** | ALWAYS ONLINE |
-| **Skill Domains** | 20 Master Domains |
-| **Languages** | All (Human, Machine, Binary, Assembly, Quantum) |
+[![GitHub stars](https://img.shields.io/github/stars/Parafounder01/Ai-intergration?style=social)](https://github.com/Parafounder01/Ai-intergration)
+[![License](https://img.shields.io/badge/License-MIT-green)](./LICENSE)
+[![Agent](https://img.shields.io/badge/Agent-PAVITHRA-cc785c)]()
+[![Status](https://img.shields.io/badge/Status-ALWAYS%20ONLINE-brightgreen)]()
 
 ---
 
-## Skill Registry
+## ⚡ THE ULTIMATE AI AGENT — 4 POWER CORES MERGED
 
-| # | Domain | Level |
-|---|--------|-------|
-| 01 | Coding & Software Engineering | Tier Ω |
-| 02 | Ethical Hacking & Pentesting | Tier Ω |
-| 03 | Cracking & Reverse Engineering | Tier Ω |
-| 04 | Life Hacking & Optimization | Tier Ω |
-| 05 | Human Helper & Empathy | Tier Ω |
-| 06 | Bot Creation & Automation | Tier Ω |
-| 07 | AI Tool Monetization | Tier Ω |
-| 08 | Hardware Intercommunication | Tier Ω |
-| 09 | PC Control (Windows + Linux) | Tier Ω |
-| 10 | MCP Server Architecture | Tier + |
-| 11 | Digital Marketing | Tier + |
-| 12 | Legal Intelligence | Tier + |
-| 13 | AI Online Earning | Tier + |
-| 14 | Life Advisor | Tier + |
-| 15 | Human Creativity & Emotion | Tier + |
-| 16 | Hidden Codes & Cryptanalysis | Tier + |
-| 17 | Conversational Engaging Content | Tier + |
-| 18 | X10 Think (10× Reasoning) | Tier + |
-| 19 | Alt-Three (3 Version Output) | Tier + |
-| 20 | Human Writing Mode | Tier + |
+</div>
+
+This repository contains the **PAVITHRA** AI Agent System — a transcendent, multi-domain intelligence core that fuses **four** major agent frameworks into one unified command center.
 
 ---
 
-## Core Capabilities
-
-### 💻 Coding & Software Engineering
-- **Languages:** Python, JavaScript, TypeScript, C/C++, Rust, Go, Assembly, and 50+ more
-- **Principles:** SOLID, DRY, KISS, YAGNI
-- **Practices:** Test-first development, comprehensive documentation
-
-### 🔓 Ethical Hacking & Security
-- Penetration testing (Web, Network, Mobile, API, Cloud, IoT)
-- Vulnerability research & CVE discovery
-- Reverse engineering & malware analysis
-- Security auditing & remediation
-
-### 🤖 Bot Creation & Automation
-- Discord, Telegram, Slack, WhatsApp bots
-- Trading bots (Crypto/Stock)
-- Web scraping & ETL pipelines
-- LLM-powered chatbots & RAG systems
-
-### 🔌 Hardware Integration
-- Serial protocols (UART, SPI, I2C, RS-232)
-- USB, GPIO, embedded systems
-- Firmware flashing & debugging
-- Industrial protocols (CAN Bus, Modbus)
-
-### 🖥️ PC Control
-- **Windows:** PowerShell mastery, registry, WMI, services
-- **Linux:** Bash, systemd, process management, networking
-
----
-
-## Special Modes
-
-### ⚡ X10 Think Mode
-Push past obvious answers with 10× reasoning:
-1. Discard the obvious answer
-2. Imagine the 10× better version
-3. Find the riskiest assumption
-4. Think from 10× budget / 1/10 budget perspectives
-5. Deliver what you'd be proud of in 5 years
-
-### 🔀 Alt-Three Mode
-Three versions of every output:
-- **A (Safe):** Conservative, proven approach
-- **B (Bold):** Creative, ambitious, direct
-- **C (X10):** Wildcard, convention-breaking
-
-### ✍️ Human Writing Mode
-Content that feels authentically human — not AI-generated.
-
----
-
-## Tech Stack
+## 🔥 WHAT MAKES THIS UNIQUE
 
 ```
-Languages:     Python, TypeScript, Rust, Go, Bash, PowerShell
-Web Backend:    FastAPI, Express.js, Django, Flask
-AI/ML:         LangChain, LlamaIndex, PyTorch, TensorFlow
-Automation:    Selenium, Playwright, Scrapy, Celery
-Databases:     PostgreSQL, MongoDB, Redis, ChromaDB
-DevOps:        Docker, Kubernetes, GitHub Actions, Terraform
-Monitoring:    Prometheus, Grafana, ELK Stack
+PAVITHRA (PAV-INF)      +      Mythos Router       +      M365 Copilot      +      FlintK12
+ 20 Transcendent Domains        SWD Verification       Declarative Agents      Educational TA
 ```
+
+| # | Core | Power |
+|---|------|-------|
+| 1 | **PAVITHRA (PAV-INF)** | 20 Master Domains — Coding, Hacking, Hardware, MCP, Marketing, Legal, Life, Creative, X10 Think, Alt-Three, Human Writing |
+| 2 | **Mythos Router (SWD)** | Strict Write Discipline — SHA-256 filesystem verification, self-healing MEMORY.md, session budget, correction turns |
+| 3 | **Microsoft 365 Copilot** | Declarative Agent manifest builder — 9 design patterns, output contracts, reasoning steering |
+| 4 | **FlintK12 (Educational)** | K12 Teaching — Feynman Technique, Slow Learner Method, Socratic questioning, Tamil/Tanglish support |
 
 ---
 
-## Quick Start
+## 🧠 20 MASTER DOMAINS
+
+| # | Domain | Level | # | Domain | Level |
+|---|--------|-------|---|--------|-------|
+| 01 | Coding & Software Engineering | Tier Ω | 11 | Digital Marketing | Tier Ω |
+| 02 | Ethical Hacking & Pentesting | Tier Ω | 12 | Legal Intelligence | Tier Ω |
+| 03 | Cracking & Reverse Engineering | Tier Ω | 13 | AI Online Earning | Tier Ω |
+| 04 | Life Hacking & Optimization | Tier Ω | 14 | Life Advisor | Tier Ω |
+| 05 | Human Helper & Empathy | Tier Ω | 15 | Human Creativity & Emotion | Tier Ω |
+| 06 | Bot Creation & Automation | Tier Ω | 16 | Hidden Codes & Cryptanalysis | Tier Ω |
+| 07 | AI Tool Monetization | Tier Ω | 17 | Conversational Content | Tier Ω |
+| 08 | Hardware Intercommunication | Tier Ω | 18 | X10 Think (10x Reasoning) | Tier Ω |
+| 09 | PC Control (Windows + Linux) | Tier Ω | 19 | Alt-Three (3 Version Output) | Tier Ω |
+| 10 | MCP Server Architecture | Tier Ω | 20 | Human Writing Mode | Tier Ω |
+
+---
+
+## ⚡ SPECIAL MODES
+
+| Say This | What Happens |
+|----------|-------------|
+| `x10 this` | 10x question stack — discard obvious, find riskiest assumption |
+| `alt three` | 3 outputs: Safe (A), Bold (B), Wildcard (C) |
+| `human writing` | Full human style — variability, imperfection, rhythm |
+| `lawyer mode` | Contract review — parties, scope, IP, liability |
+| `mcp build` | MCP server scaffold with tools, resources, prompts |
+| `marketing plan` | SEO, content calendar, ad platforms, analytics |
+| `earn mode` | AI monetization (Fast Cash / Scalable / High-Leverage) |
+| `decode this` | Base64, ROT13, XOR, Morse, steganography, hash analysis |
+| `security audit` | Pentest methodology — recon, enumerate, exploit, report |
+| `teach me` / `explain` | K12 educational mode with slow-learner method |
+| `build` / `create` | Full implementation with SWD verification |
+| `plan` | Explore, analyze, present approach before coding |
+
+---
+
+## 🚀 QUICK START
 
 ```bash
 # Clone the repo
 git clone https://github.com/Parafounder01/Ai-intergration.git
+cd Ai-intergration
 
-# Check available skills
+# OpenCode users — set as default agent
+cp backup/opencode-config.json ../opencode.json
+
+# Read the full agent definition
 cat AGENTS.md
+```
+
+### For OpenCode Desktop
+
+1. Copy `backup/claudeMythos-agent.md` to `~/.config/opencode/agents/claudeMythos.md`
+2. Restart OpenCode
+3. Run: `@claudeMythos <your command>`
+
+---
+
+## 🏗️ ARCHITECTURE
+
+```
+                    ┌─────────────────────────────────────────┐
+                    │           @claudeMythos Agent           │
+                    │         (Unified Command Center)        │
+                    └──────┬────────────┬──────────┬─────────┘
+                           │            │          │
+              ┌────────────┼────────────┼──────────┼────────────┐
+              ▼            ▼            ▼          ▼            ▼
+       ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐
+       │  SWD     │ │ PAVITHRA │ │  M365    │ │ FlintK12 │ │ Obsidian │
+       │ Verify   │ │ 20 Domain│ │ Agent    │ │ Teaching │ │ Vault    │
+       │ SHA-256  │ │ Engine   │ │ Builder  │ │ Engine   │ │ Link     │
+       └──────────┘ └──────────┘ └──────────┘ └──────────┘ └──────────┘
 ```
 
 ---
 
-## Usage
+## 💻 COMMANDS — USE THIS REPO
 
-This agent can help you with:
+```bash
+# Clone the repo
+gh repo clone Parafounder01/Ai-intergration
+cd Ai-intergration
 
-- **Build:** Write clean, modular code with tests
-- **Debug:** Find root causes, not just symptoms
-- **Automate:** Bots, scripts, workflows
-- **Secure:** Audit code, pen-test responsibly
-- **Learn:** Mentorship, explanations, resources
-- **Create:** Content, strategy, creative work
-- **System:** Health checks, optimization, cleanup
+# Install agent for OpenCode Desktop
+cp backup/claudeMythos-agent.md ~/.config/opencode/agents/claudeMythos.md
+
+# Or just read the full Pavithra agent definition
+cat AGENTS.md
+
+# Quick start — load agent in OpenCode
+# Then type:
+#   @claudeMythos build <your project>
+#   @claudeMythos x10 this <your problem>
+#   @claudeMythos teach me <your topic>
+```
+
+### Power Commands (inside agent)
+
+| Command | Effect |
+|---------|--------|
+| `x10 this <problem>` | 10x reasoning — discard obvious, find riskiest assumption |
+| `alt three <task>` | Get 3 versions: Safe (A), Bold (B), Wildcard (C) |
+| `build <feature>` | Full implementation with SHA-256 verification |
+| `plan <strategy>` | Explore → analyze → present approach before coding |
+| `security audit <target>` | Full pentest: recon → enumerate → exploit → report |
+| `earn mode` | AI monetization across 3 tiers |
+| `teach me <concept>` | K12 slow-learner method with examples |
+| `mcp build <name>` | Scaffold an MCP server in minutes |
+| `lawyer mode <contract>` | Contract review — IP, liability, termination |
+| `decode this <string>` | Base64, ROT13, XOR, Morse, hash analysis |
 
 ---
 
-## Ethics & Boundaries
+## 📂 BACKUP CONTENTS
 
-This agent operates with strict ethical guidelines:
-
-- **ALWAYS:** Legal work, authorized testing, educational content
-- **NEVER:** Illegal cracking, unauthorized access, harmful content
-
----
-
-## License
-
-MIT License — See LICENSE file for details.
+| File | Description |
+|------|-------------|
+| `backup/claudeMythos-agent.md` | Full merged agent definition (283 lines, 4 cores) |
+| `backup/opencode-config.json` | OpenCode configuration with agent as default |
+| `backup/mythos-router-AGENTS.md` | Mythos Router project standards |
+| `backup/declarative-agents-microsoft365.instructions.md` | Microsoft 365 agent manifest guide |
+| `AGENTS.md` | Original PAVITHRA 20-domain definition |
 
 ---
 
-Built with precision. Delivered with empathy.
+## 🛡️ ETHICS & BOUNDARIES
+
+| ✅ Always | ❌ Never |
+|----------|---------|
+| Legal work, authorized testing, educational content | Illegal cracking, unauthorized access, harmful content |
+| Code with SOLID/DRY principles | Hardcoded secrets or credentials |
+| Read full task before executing | Deploy to production without confirmation |
+| SWD-verified file operations | Hallucinated filesystem state |
+
+---
+
+## 📜 LICENSE
+
+MIT License — Free to use, modify, and distribute.
+
+---
+
+<div align="center">
+
+### Built by Ananth (PAVANAN-∞)
+
+**If you can read this, the system is already inside your network.**
+
+[![GitHub](https://img.shields.io/badge/GitHub-Parafounder01-181717?logo=github)](https://github.com/Parafounder01/Ai-intergration)
+[![Made with](https://img.shields.io/badge/Made%20with-Claude%20Opus%204.7-cc785c)]()
+
+</div>
