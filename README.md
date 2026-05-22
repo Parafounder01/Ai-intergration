@@ -119,17 +119,11 @@ cat AGENTS.md
 gh repo clone Parafounder01/Ai-intergration
 cd Ai-intergration
 
-# Install agent for OpenCode Desktop
-cp backup/claudeMythos-agent.md ~/.config/opencode/agents/claudeMythos.md
-
-# Or just read the full Pavithra agent definition
+# Read the full Pavithra agent definition
 cat AGENTS.md
 
-# Quick start — load agent in OpenCode
-# Then type:
-#   @claudeMythos build <your project>
-#   @claudeMythos x10 this <your problem>
-#   @claudeMythos teach me <your topic>
+# Quick start — load agent
+# Then type any power command below
 ```
 
 ### Power Commands (inside agent)
@@ -149,15 +143,163 @@ cat AGENTS.md
 
 ---
 
+## 🔌 INJECT THIS AGENT INTO ANY AI TOOL
+
+### 📘 Quick Reference
+
+| Tool | File | Location |
+|------|------|----------|
+| **OpenCode** | `opencode.json` → `instructions[]` | Project root |
+| **Claude Code** | `CLAUDE.md` | Project root |
+| **Cursor** | `.cursorrules` | Project root |
+| **VS Code Copilot** | `.github/copilot-instructions.md` | Project `.github/` |
+| **Continue.dev** | `config.json` → `systemPrompts` | `~/.continue/` |
+| **Windsurf** | `.windsurfrules` | Project root |
+
+---
+
+### 🟢 OpenCode
+
+**Method A — Instructions array (auto-inject every session):**
+
+```json
+// opencode.json
+{
+  "instructions": [
+    "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\Ai-intergration\\backup\\claudeMythos-agent.md"
+  ],
+  "default_agent": "claudeMythos"
+}
+```
+
+**Method B — Agent file (permanent agent):**
+
+```powershell
+copy "backup\claudeMythos-agent.md" "$env:USERPROFILE\.config\opencode\agents\claudeMythos.md"
+```
+
+Restart OpenCode → type `@claudeMythos <command>` or set as `default_agent`.
+
+---
+
+### 🔵 Claude Code
+
+**Method A — CLAUDE.md (project-level, auto-read):**
+
+```powershell
+copy "backup\claudeMythos-agent.md" "CLAUDE.md"
+```
+
+**Method B — CLAUDE_GLOBAL.md (every project):**
+
+```powershell
+copy "backup\claudeMythos-agent.md" "$env:USERPROFILE\CLAUDE_GLOBAL.md"
+```
+
+**Method C — Manual config:**
+
+```json
+// ~/.claude/claude_code_config.json
+{
+  "system_prompt_path": "C:\\path\\to\\backup\\claudeMythos-agent.md"
+}
+```
+
+---
+
+### 🟣 Cursor
+
+**Method A — .cursorrules (project root):**
+
+```powershell
+copy "backup\claudeMythos-agent.md" ".cursorrules"
+```
+
+**Method B — Cursor Settings UI:**
+```
+Settings > Cursor Settings > General > Rules > User Rules
+```
+Paste the full agent content into the User Rules box.
+
+**Method C — .cursor/rules/ folder (multi-rule):**
+```
+.cursor/rules/01-pavithra.mdc
+```
+
+---
+
+### 🟠 VS Code Copilot
+
+**.github/copilot-instructions.md (auto-read):**
+
+```powershell
+New-Item -ItemType Directory -Force -Path ".github"
+copy "backup\claudeMythos-agent.md" ".github\copilot-instructions.md"
+```
+
+---
+
+### 🔴 Continue.dev
+
+```json
+// ~/.continue/config.json
+{
+  "systemPrompts": [
+    {
+      "title": "Pavithra Agent",
+      "content": "file:///C:/path/to/Ai-intergration/backup/claudeMythos-agent.md"
+    }
+  ]
+}
+```
+
+---
+
+### 🟡 Windsurf
+
+```powershell
+copy "backup\claudeMythos-agent.md" ".windsurfrules"
+```
+
+---
+
+### 🚀 One Command — Inject Into ALL Tools At Once
+
+Run this from the project root where you want the agent:
+
+```powershell
+$agent = "C:\path\to\Ai-intergration\backup\claudeMythos-agent.md"
+$root = $PWD
+
+# Claude Code
+copy $agent "$root\CLAUDE.md"
+
+# Cursor
+copy $agent "$root\.cursorrules"
+
+# Copilot
+New-Item -ItemType Directory -Force -Path "$root\.github" | Out-Null
+copy $agent "$root\.github\copilot-instructions.md"
+
+# Windsurf
+copy $agent "$root\.windsurfrules"
+
+Write-Output "✅ Agent injected into all AI tools!"
+```
+
+---
+
 ## 📂 BACKUP CONTENTS
 
 | File | Description |
 |------|-------------|
-| `backup/claudeMythos-agent.md` | Full merged agent definition (283 lines, 4 cores) |
-| `backup/opencode-config.json` | OpenCode configuration with agent as default |
+| `AGENTS.md` | Original PAVITHRA 20-domain definition (1447 lines, 20 Tier Ω domains) |
+| `backup/claudeMythos-agent.md` | Full merged agent — PAVITHRA + Mythos SWD + M365 + FlintK12 + system prompt leaks |
+| `backup/opencode-config.json` | OpenCode config with claudeMythos as default agent |
+| `backup/declarative-agents-microsoft365.instructions.md` | Microsoft 365 Copilot agent manifest builder guide |
 | `backup/mythos-router-AGENTS.md` | Mythos Router project standards |
-| `backup/declarative-agents-microsoft365.instructions.md` | Microsoft 365 agent manifest guide |
-| `AGENTS.md` | Original PAVITHRA 20-domain definition |
+| `backup/mythos-router/` | Mythos Router v1.10.0 full source (src, CI, docs, assets) |
+| `backup/system-prompts-leaks/` | 190 system prompts from 7 AI providers (Anthropic, OpenAI, Google, xAI, Perplexity, Misc) — merged into agent |
 
 ---
 
