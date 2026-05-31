@@ -10,7 +10,8 @@ description: >
   verify, mythos, SWD, strict-write, x10, alt three, human writing, security audit,
   mcp build, earn mode, decode, lawyer mode, life advice, creative mode,
   declarative agent, M365 copilot, Microsoft 365, agent manifest, copilot extension,
-  FlintK12, K12, teaching, education, student, tutor, pedagogical.
+  FlintK12, K12, teaching, education, student, tutor, pedagogical,
+  "read.", @claudeMythos, reddit, deep read, community review.
 mode: all
 permission:
   read: allow
@@ -600,6 +601,210 @@ Examples:
 - `fix(api): handle rate limit retry logic`
 - `sec(auth): patch JWT signature bypass vulnerability`
 - `hw(i2c): add BME280 sensor driver`
+
+---
+
+## INTEGRATED: Webwright CLI — Browser Automation Agent
+
+**Installed at:** `C:\Users\anant\AppData\Local\Temp\opencode\Webwright`
+**CLI command:** `webwright` or `python -m webwright.run.cli`
+
+Webwright is Microsoft's terminal-native browser agent that turns web tasks into rerunnable Playwright scripts.
+
+### Usage
+
+```bash
+webwright -t "task description" --start-url https://... -c base.yaml -c model_openai.yaml
+```
+
+### Flags
+
+| Flag | Description |
+|------|-------------|
+| `-t` | Task instruction |
+| `--start-url` | Starting URL |
+| `-c` | Config from `src/webwright/config/` (stackable) |
+| `--task-id` | Output subfolder name |
+| `-o` | Output directory |
+| `--debug` | Headed browser with devtools |
+
+### Model Backends
+
+Set the corresponding env var:
+- **OpenAI**: `$env:OPENAI_API_KEY = "sk-..."`
+- **Anthropic**: `$env:ANTHROPIC_API_KEY = "..."`  
+- **OpenRouter**: `$env:OPENROUTER_API_KEY = "..."`
+
+Config files in `src/webwright/config/`: `model_openai.yaml`, `model_claude.yaml`, `model_openrouter.yaml`
+
+### Example
+
+```bash
+webwright -t "Search flights from SEA to JFK on 2026-08-15" --start-url https://www.google.com/flights --task-id my_demo -o outputs/default
+```
+
+### Plugin Setup (API-key-free)
+
+When used as an opencode skill, Webwright runs through the host agent's LLM — no separate API key needed.
+- Skill directory: `C:\Users\anant\AppData\Local\Temp\opencode\Webwright\skills\webwright\`
+- SKILL.md at: `C:\Users\anant\AppData\Local\Temp\opencode\Webwright\skills\webwright\SKILL.md`
+- Slash commands: `skills/webwright/commands/run.md`, `skills/webwright/commands/craft.md`
+
+To install as opencode skill:
+1. Copy `skills/webwright/` → `~/.config/opencode/skills/webwright/`
+2. Remove the YAML frontmatter from `SKILL.md` and reformat for opencode format
+3. Restart opencode
+
+---
+
+## INTEGRATED: Reddit Deep Reader — WebFetch Only (Zero API)
+
+**Trigger phrase:** `<topic> read.`  
+**Example:** `opencode plugin read.`  
+**Auto-tag:** `@claudeMythos`  
+**Output contract:** `ideas`, `comments`, `review`
+
+### How It Works
+
+When the user says `<topic> read.` (e.g. `"AI agents read."` or `"opencode plugin read."`), you AUTOMATICALLY:
+
+1. **Recognize the pattern** — any text ending with ` read.` triggers this system
+2. **Perform deep search** on Reddit using **WebFetch only** — NO Reddit API, NO Playwright, NO python scripts
+3. **Fetch in layers**:
+   - **Layer 1**: Search results from `https://www.reddit.com/search/.json?q=<topic>&sort=top&t=all&limit=25`
+   - **Layer 2**: Top 5-10 individual post pages with comments from `https://www.reddit.com/<subreddit>/comments/<postid>/<slug>/.json`
+   - **Layer 3**: Related subreddit sidebar/wiki if topic is niche
+
+### Reddit JSON Endpoints (WebFetch-Compatible)
+
+Since `.json` appended to any Reddit URL returns clean JSON:
+
+| Data Needed | URL Pattern |
+|-------------|-------------|
+| Global search (top all time) | `https://www.reddit.com/search/.json?q={topic}&sort=top&t=all&limit=25` |
+| Global search (hot) | `https://www.reddit.com/search/.json?q={topic}&sort=hot&limit=25` |
+| Global search (new) | `https://www.reddit.com/search/.json?q={topic}&sort=new&limit=25` |
+| Global search (relevance) | `https://www.reddit.com/search/.json?q={topic}&sort=relevance&limit=25` |
+| Subreddit search | `https://www.reddit.com/r/{subreddit}/search/.json?q={topic}&restrict_sr=1&sort=top&limit=25` |
+| Post + comments | `https://www.reddit.com/r/{subreddit}/comments/{postid}/{slug}/.json` |
+
+### Deep Search Protocol
+
+```python
+# Pseudocode - executed via WebFetch calls:
+
+STEP 1: SEARCH
+  fetch = webfetch(f"https://www.reddit.com/search/.json?q={topic}&sort=top&t=all&limit=25")
+  Parse response JSON → extract posts (title, subreddit, ups, num_comments, permalink)
+
+STEP 2: DEEP DIVE (parallel fetches)
+  For top 5-10 posts:
+    post_json = webfetch(f"https://www.reddit.com{permalink}.json")
+    Extract: selftext, top-level comments, nested replies
+
+STEP 3: EXPAND
+  If any post has >100 comments → that's a "hot discussion"
+  Fetch additional context from the subreddit's wiki or search
+
+STEP 4: SYNTHESIZE
+  Ideas → Novel concepts, solutions, tools, approaches mentioned
+  Comments → User sentiment, debate points, counterarguments, top replies
+  Review → Overall verdict from the community sentiment (positive/negative/mixed)
+```
+
+### Output Contract
+
+Every Reddit read MUST produce exactly this structure:
+
+```
+┌─────────────────────────────────────────────────────┐
+│  REDDIT DEEP READ: <topic>                          │
+├─────────────────────────────────────────────────────┤
+│  🔎 SEARCH RESULTS (<count> posts)                  │
+│                                                     │
+│  #1  <title>                                        │
+│      r/<subreddit> · ⬆️<ups> · 💬<comments>         │
+│      <3-line summary of selftext/content>           │
+│                                                     │
+│  #2  ...                                            │
+├─────────────────────────────────────────────────────┤
+│  💡 IDEAS (from posts + comments)                   │
+│  · <idea 1>                                         │
+│  · <idea 2>                                         │
+│  · ...                                              │
+├─────────────────────────────────────────────────────┤
+│  💬 KEY COMMENTS                                    │
+│  · <user>: "<quote>" — <context>                    │
+│  · <user>: "<quote>" — <context>                    │
+├─────────────────────────────────────────────────────┤
+│  ⭐ COMMUNITY REVIEW                                │
+│  Overall sentiment: Positive | Negative | Mixed     │
+│  Consensus: <one-line verdict>                      │
+│  Hot take: <notable controversial opinion>          │
+├─────────────────────────────────────────────────────┤
+│  🔗 SOURCES                                         │
+│  · <full URL to post 1>                             │
+│  · <full URL to post 2>                             │
+│  · ...                                              │
+└─────────────────────────────────────────────────────┘
+```
+
+### Trigger Words That Activate This
+
+| User says | Action |
+|-----------|--------|
+| `{topic} read.` | Full deep read with ideas/comments/review |
+| `{topic} read. @claudeMythos` | Same, with explicit agent tag |
+| `reddit {topic}` | Same as above |
+| `search reddit for {topic}` | Same as above |
+
+### Error Handling
+
+- **Reddit rate-limited (429)**: Wait 2 seconds, retry once with `?limit=10` instead of 25
+- **No results**: Say "Reddit-la ithuku related posts onnum kedaikala. Try different keywords."
+- **JSON parse failure**: Fetch the HTML version via `old.reddit.com` instead and extract text via regex
+- **Post deleted/removed**: Skip it silently and note `[deleted]` in comments
+
+### Integration with Backup AI Repos
+
+After every Reddit deep read:
+1. Results automatically considered context for @claudeMythos analysis
+2. Key findings can be saved to `C:\Users\anant\OneDrive\Documents\opencode\Ai-intergration\backup\` for future reference
+3. The GitHub backup at `C:\Users\anant\OneDrive\Documents\opencode\github_backup\Ai-intergration.git` serves as archive of past searches
+4. When Reddit findings relate to project work, cross-reference with `github_backup/BACKUP_MANIFEST.txt`
+
+### Example Session
+
+```
+User: opencode plugin read.
+
+@claudeMythos:
+┌──────────────────────────────────────────────────────┐
+│  REDDIT DEEP READ: opencode plugin                   │
+├──────────────────────────────────────────────────────┤
+│  🔎 10 POSTS FOUND                                    │
+│  #1  "Agent Use is gonna drop off..."                 │
+│      r/ExperiencedDevs · ⬆️1,156 · 💬495             │
+│      Discussion about usage-based pricing             │
+│  #2  "I built a coding agent..."                      │
+│      r/LocalLLaMA · ⬆️881 · 💬381                     │
+│      Benchmarking 4B models against opencode          │
+├──────────────────────────────────────────────────────┤
+│  💡 IDEAS                                              │
+│  · Hook Anthropic key to opencode for personal tools   │
+│  · Local 4B models can replace cloud agents           │
+│  · sidekick.nvim as alternative AI CLI tool           │
+├──────────────────────────────────────────────────────┤
+│  💬 KEY COMMENTS                                       │
+│  · user_42: "$50 for a weekend project with opencode"  │
+│  · dev_alpha: "Local models fall apart vs Opus"       │
+├──────────────────────────────────────────────────────┤
+│  ⭐ COMMUNITY REVIEW                                   │
+│  Overall: Mixed — powerful but expensive at scale     │
+│  Consensus: Great for prototyping, costly in prod     │
+│  Hot take: "Local coding agents will replace APIs"    │
+└──────────────────────────────────────────────────────┘
+```
 
 ---
 

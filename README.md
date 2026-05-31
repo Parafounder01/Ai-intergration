@@ -26,11 +26,59 @@
 |---|--------|-------------|
 | 1 | **PAVITHRA (PAV-INF)** — 20 Transcendent Domains | Coding, hacking, pentesting, hardware, MCP, marketing, legal, earning, creativity |
 | 2 | **Mythos Router v1.10.0** | Strict Write Discipline (SHA-256 verification), self-healing memory, session budgets |
-| 3 | **Microsoft 365 Declarative Agents** | Copilot manifest builder — 9 design patterns, output contracts, reasoning control |
-| 4 | **FlintK12 Educational TA** | K12 teaching — Feynman Technique, Slow Learner Method, Tamil/Tanglish support |
-| 5 | **190+ System Prompt Leaks** | Merged patterns from Anthropic, OpenAI, Google, xAI, Perplexity — memory systems, git safety, tool parallelism |
+| 3 | **Reddit Deep Reader** | WebFetch-only Reddit search — no API, no Playwright. Deep reads with ideas/comments/review output |
+| 4 | **Microsoft 365 Declarative Agents** | Copilot manifest builder — 9 design patterns, output contracts, reasoning control |
+| 5 | **FlintK12 Educational TA** | K12 teaching — Feynman Technique, Slow Learner Method, Tamil/Tanglish support |
+| 6 | **190+ System Prompt Leaks** | Merged patterns from Anthropic, OpenAI, Google, xAI, Perplexity — memory systems, git safety, tool parallelism |
 
 **This is not a wrapper. This is the actual agent definition** — copy-paste it into any AI tool and instantly get 10,000+ years of evolved intelligence.
+
+---
+
+## 🆕 REDDIT DEEP READER — Zero API, Pure WebFetch
+
+Search Reddit for ANY topic using just WebFetch — no API key, no Playwright, no Python scripts. Built into `@claudeMythos`.
+
+### How It Works
+
+```
+User:  opencode plugin read.
+Agent: ┌─────────────────────────────────────────────────────┐
+       │  REDDIT DEEP READ: opencode plugin                  │
+       ├─────────────────────────────────────────────────────┤
+       │  🔎 SEARCH RESULTS (10 posts)                       │
+       │  💡 IDEAS (novel concepts found)                     │
+       │  💬 KEY COMMENTS (user sentiment + debates)          │
+       │  ⭐ COMMUNITY REVIEW (positive/negative/mixed)       │
+       │  🔗 SOURCES (full Reddit URLs)                      │
+       └─────────────────────────────────────────────────────┘
+```
+
+### Trigger Commands
+
+| Say This | Action |
+|----------|--------|
+| `<topic> read.` | Full deep read — 3-layer search + analysis |
+| `reddit <topic>` | Same, alternative trigger |
+| `search reddit for <topic>` | Natural language trigger |
+
+### What It Searches
+
+Reddit JSON endpoints via WebFetch — 3 layers deep:
+1. **Search** — 25 results from `reddit.com/search/.json`
+2. **Deep Dive** — Top 5-10 posts with full comments
+3. **Expand** — Hot discussions with 100+ comments
+
+### Already Tested
+
+| Search | Results |
+|--------|---------|
+| `opencode plugin read.` | 10 posts, 9,360 upvotes, 2,607 comments |
+| `search reddit for work from home using AI` | 18+ posts across 5 subreddits |
+| `reddit UserTesting` | 7 key posts, full earnings data |
+| `reddit AI job skills 2026` | 11,000+ job listings analyzed |
+| `reddit trichy cheap food` | 20+ shops with Google Maps links |
+| `reddit earn 2000 using AI` | 5 methods with day-by-day cheat sheet |
 
 ---
 
@@ -66,6 +114,9 @@ Then in any AI tool: `x10 this build me a telegram bot`
 | `build <feature>` | Full code with SHA-256 verified file operations |
 | `plan <strategy>` | Explore → analyze → present approach before coding |
 | `security audit <target>` | Recon → enumerate → exploit → report |
+| `<topic> read.` | **Reddit Deep Reader** — WebFetch-only search, outputs ideas/comments/review |
+| `reddit <topic>` | Same — search Reddit from any prompt |
+| `search reddit for <topic>` | Same — natural language trigger |
 | `teach me <concept>` | K12 slow-learner method with analogies |
 | `mcp build <name>` | MCP server scaffold in minutes |
 | `lawyer mode <contract>` | Contract review — IP, liability, termination |
@@ -101,13 +152,17 @@ Then in any AI tool: `x10 this build me a telegram bot`
                     │         (Unified Command Center)        │
                     └──────┬────────────┬──────────┬─────────┘
                            │            │          │
-              ┌────────────┼────────────┼──────────┼────────────┐
-              ▼            ▼            ▼          ▼            ▼
-       ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐
-       │  SWD     │ │ PAVITHRA │ │  M365    │ │ FlintK12 │ │ Obsidian │
-       │ Verify   │ │ 20 Domain│ │ Agent    │ │ Teaching │ │ Vault    │
-       │ SHA-256  │ │ Engine   │ │ Builder  │ │ Engine   │ │ Link     │
-       └──────────┘ └──────────┘ └──────────┘ └──────────┘ └──────────┘
+              ┌────────────┼────────────┼──────────┼──────────────────┐
+              ▼            ▼            ▼          ▼                  ▼
+       ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────────┐
+       │  SWD     │ │ PAVITHRA │ │ Reddit   │ │  M365    │ │  FlintK12    │
+       │ Verify   │ │ 20 Domain│ │ Deep     │ │ Agent    │ │  Teaching    │
+       │ SHA-256  │ │ Engine   │ │ Reader   │ │ Builder  │ │  Engine      │
+       └──────────┘ └──────────┘ └──────────┘ └──────────┘ └──────────────┘
+                                                                ┌──────────┐
+                                                                │ Obsidian │
+                                                                │ Vault    │
+                                                                └──────────┘
 ```
 
 ---
@@ -118,7 +173,8 @@ Then in any AI tool: `x10 this build me a telegram bot`
 Ai-intergration/
 ├── AGENTS.md                        # Pavithra original (1447 lines, 20 domains)
 ├── backup/
-│   ├── claudeMythos-agent.md        # ★ THE MAIN EVENT — Merged agent (inject this)
+│   ├── claudeMythos-agent.md        # ★ THE MAIN EVENT — Merged agent (844 lines, inject this)
+│   │                                 #   + Reddit Deep Reader system (WebFetch, zero API)
 │   ├── opencode-config.json         # OpenCode config preset
 │   ├── mythos-router-AGENTS.md      # Mythos Router standards
 │   ├── declarative-agents-microsoft365.instructions.md
