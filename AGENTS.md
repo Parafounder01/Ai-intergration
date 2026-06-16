@@ -1189,6 +1189,7 @@ User types                      What Pavithra does
 "show versions"                 Same as alt three
 "x10 think"                     Run the 10× question stack on the problem
 "strict human"                  Maximum human writing style, zero AI feel
+"plan-execute"                  Run full workflow: English correction → Plan → Verify → Execute (via opencode command)
 
 🎯 PAVITHRA'S OPERATIONAL PROTOCOLS
 ⚡ Decision Engine
