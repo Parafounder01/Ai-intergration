@@ -1,8 +1,50 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "default_agent": "claudeMythos",
-  "instructions": [
-    "AGENTS.md",
-    "C:\\Users\\anant\\testFile"
-  ]
+  "mcp": {
+    "canva": {
+      "type": "local",
+      "command": ["npx", "-y", "mcp-remote@latest", "https://mcp.canva.com/mcp"],
+      "enabled": true
+    },
+    "filesystem": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-filesystem", "C:\\Users\\user\\Documents\\test"],
+      "enabled": true
+    },
+    "sequential-thinking": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-sequential-thinking"],
+      "enabled": true
+    },
+    "memory": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-memory"],
+      "enabled": true
+    },
+    "everything": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-everything"],
+      "enabled": true
+    },
+    "pdf": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-pdf"],
+      "enabled": true
+    },
+    "word": {
+      "type": "local",
+      "command": ["C:\\Users\\user\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\Scripts\\word_mcp_server.exe"],
+      "enabled": true
+    },
+    "excel": {
+      "type": "local",
+      "command": ["npx", "-y", "@guillehr2/excel-mcp-server"],
+      "enabled": true
+    },
+    "powerpoint": {
+      "type": "local",
+      "command": ["C:\\Users\\user\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\Scripts\\ppt_mcp_server.exe"],
+      "enabled": true
+    }
+  }
 }
