@@ -1,0 +1,39 @@
+{
+  "agent_id": 1,
+  "determined_at": "2026-06-17T15:04:36.709900",
+  "task": {
+    "type": "deep-read",
+    "params": {
+      "path": "."
+    }
+  },
+  "task_scope": {
+    "description": "Deep-read files at .",
+    "estimated_work": "Read all files, analyze structure, report findings",
+    "complexity": "medium"
+  },
+  "required_data": [
+    {
+      "type": "file_path",
+      "value": ".",
+      "purpose": "Target for reading/analysis"
+    }
+  ],
+  "methods": [
+    "read_tool",
+    "glob_tool",
+    "grep_tool",
+    "file_analysis"
+  ],
+  "output_format": {
+    "type": "markdown",
+    "sections": [
+      "summary",
+      "file_analysis",
+      "cross_references",
+      "recommendations"
+    ]
+  },
+  "risks": [],
+  "determination_hash": "6e799c16cc5d3c4e642174c03c5b1b2553365150b47bc533847f880c45d61bc2"
+}

@@ -1,0 +1,359 @@
+{
+  "pipeline_id": "36db3c91c4e5",
+  "run_id": "25a5d3ef",
+  "agent_count": 5,
+  "tasks_submitted": 5,
+  "agents_completed": 5,
+  "agents_failed": 0,
+  "outputs_verified": 5,
+  "outputs_accepted": 5,
+  "outputs_rejected": 0,
+  "accepted_results": {
+    "1": [
+      {
+        "filename": "output_20260617_150515.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150515.json",
+        "size": 11198,
+        "modified": "2026-06-17T20:35:15.700582"
+      },
+      {
+        "filename": "output_20260617_150523.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150523.json",
+        "size": 1525,
+        "modified": "2026-06-17T20:35:23.151271"
+      },
+      {
+        "filename": "output_20260617_150524.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150524.json",
+        "size": 1767,
+        "modified": "2026-06-17T20:35:24.872277"
+      },
+      {
+        "filename": "output_20260617_150525.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150525.json",
+        "size": 796,
+        "modified": "2026-06-17T20:35:25.817449"
+      },
+      {
+        "filename": "output_20260617_150552.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150552.json",
+        "size": 19938,
+        "modified": "2026-06-17T20:35:52.634607"
+      },
+      {
+        "filename": "output_20260617_150605.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150605.json",
+        "size": 1767,
+        "modified": "2026-06-17T20:36:05.846533"
+      },
+      {
+        "filename": "output_20260617_150607.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150607.json",
+        "size": 796,
+        "modified": "2026-06-17T20:36:07.156046"
+      },
+      {
+        "filename": "OUTPUT_REPORT.md",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\OUTPUT_REPORT.md",
+        "size": 746,
+        "modified": "2026-06-17T20:36:07.158973"
+      }
+    ],
+    "2": [
+      {
+        "filename": "output_20260617_150523.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\output_20260617_150523.json",
+        "size": 1882,
+        "modified": "2026-06-17T20:35:23.166047"
+      },
+      {
+        "filename": "output_20260617_150524.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\output_20260617_150524.json",
+        "size": 394,
+        "modified": "2026-06-17T20:35:24.932124"
+      },
+      {
+        "filename": "output_20260617_150525.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\output_20260617_150525.json",
+        "size": 2156,
+        "modified": "2026-06-17T20:35:25.846044"
+      },
+      {
+        "filename": "output_20260617_150552.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\output_20260617_150552.json",
+        "size": 1882,
+        "modified": "2026-06-17T20:35:52.651068"
+      },
+      {
+        "filename": "output_20260617_150605.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\output_20260617_150605.json",
+        "size": 344,
+        "modified": "2026-06-17T20:36:05.857735"
+      },
+      {
+        "filename": "output_20260617_150607.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\output_20260617_150607.json",
+        "size": 796,
+        "modified": "2026-06-17T20:36:07.172706"
+      },
+      {
+        "filename": "OUTPUT_REPORT.md",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\OUTPUT_REPORT.md",
+        "size": 746,
+        "modified": "2026-06-17T20:36:07.175541"
+      }
+    ],
+    "3": [
+      {
+        "filename": "output_20260617_150553.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-3\\output_20260617_150553.json",
+        "size": 8450,
+        "modified": "2026-06-17T20:35:53.716110"
+      },
+      {
+        "filename": "output_20260617_150607.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-3\\output_20260617_150607.json",
+        "size": 796,
+        "modified": "2026-06-17T20:36:07.187236"
+      },
+      {
+        "filename": "OUTPUT_REPORT.md",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-3\\OUTPUT_REPORT.md",
+        "size": 746,
+        "modified": "2026-06-17T20:36:07.219322"
+      }
+    ],
+    "4": [
+      {
+        "filename": "output_20260617_150607.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-4\\output_20260617_150607.json",
+        "size": 796,
+        "modified": "2026-06-17T20:36:07.320834"
+      },
+      {
+        "filename": "OUTPUT_REPORT.md",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-4\\OUTPUT_REPORT.md",
+        "size": 746,
+        "modified": "2026-06-17T20:36:07.322843"
+      }
+    ],
+    "5": [
+      {
+        "filename": "output_20260617_150607.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-5\\output_20260617_150607.json",
+        "size": 796,
+        "modified": "2026-06-17T20:36:07.397281"
+      },
+      {
+        "filename": "OUTPUT_REPORT.md",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-5\\OUTPUT_REPORT.md",
+        "size": 746,
+        "modified": "2026-06-17T20:36:07.400304"
+      }
+    ]
+  },
+  "verification_details": [
+    {
+      "agent_id": 1,
+      "verifier_id": 2,
+      "verdict": "PASS",
+      "checks": [
+        {
+          "check": "schema_check",
+          "passed": true,
+          "details": "Schema valid",
+          "weight": 0.3
+        },
+        {
+          "check": "isolation_check",
+          "passed": true,
+          "details": "No isolation violations",
+          "weight": 0.2
+        },
+        {
+          "check": "consistency_check",
+          "passed": true,
+          "details": "Consistency checks passed",
+          "weight": 0.2
+        },
+        {
+          "check": "completeness_check",
+          "passed": true,
+          "details": "All fields present and non-null",
+          "weight": 0.2
+        },
+        {
+          "check": "security_check",
+          "passed": true,
+          "details": "Security scan clean",
+          "weight": 0.1
+        }
+      ],
+      "score": 1.0,
+      "summary": "Verification PASSED: 5/5 checks passed (score: 1.00)",
+      "retries": 0
+    },
+    {
+      "agent_id": 2,
+      "verifier_id": 3,
+      "verdict": "PASS",
+      "checks": [
+        {
+          "check": "schema_check",
+          "passed": true,
+          "details": "Schema valid",
+          "weight": 0.3
+        },
+        {
+          "check": "isolation_check",
+          "passed": true,
+          "details": "No isolation violations",
+          "weight": 0.2
+        },
+        {
+          "check": "consistency_check",
+          "passed": true,
+          "details": "Consistency checks passed",
+          "weight": 0.2
+        },
+        {
+          "check": "completeness_check",
+          "passed": true,
+          "details": "All fields present and non-null",
+          "weight": 0.2
+        },
+        {
+          "check": "security_check",
+          "passed": true,
+          "details": "Security scan clean",
+          "weight": 0.1
+        }
+      ],
+      "score": 1.0,
+      "summary": "Verification PASSED: 5/5 checks passed (score: 1.00)",
+      "retries": 0
+    },
+    {
+      "agent_id": 3,
+      "verifier_id": 4,
+      "verdict": "PASS",
+      "checks": [
+        {
+          "check": "schema_check",
+          "passed": true,
+          "details": "Schema valid",
+          "weight": 0.3
+        },
+        {
+          "check": "isolation_check",
+          "passed": true,
+          "details": "No isolation violations",
+          "weight": 0.2
+        },
+        {
+          "check": "consistency_check",
+          "passed": true,
+          "details": "Consistency checks passed",
+          "weight": 0.2
+        },
+        {
+          "check": "completeness_check",
+          "passed": true,
+          "details": "All fields present and non-null",
+          "weight": 0.2
+        },
+        {
+          "check": "security_check",
+          "passed": true,
+          "details": "Security scan clean",
+          "weight": 0.1
+        }
+      ],
+      "score": 1.0,
+      "summary": "Verification PASSED: 5/5 checks passed (score: 1.00)",
+      "retries": 0
+    },
+    {
+      "agent_id": 4,
+      "verifier_id": 5,
+      "verdict": "PASS",
+      "checks": [
+        {
+          "check": "schema_check",
+          "passed": true,
+          "details": "Schema valid",
+          "weight": 0.3
+        },
+        {
+          "check": "isolation_check",
+          "passed": true,
+          "details": "No isolation violations",
+          "weight": 0.2
+        },
+        {
+          "check": "consistency_check",
+          "passed": true,
+          "details": "Consistency checks passed",
+          "weight": 0.2
+        },
+        {
+          "check": "completeness_check",
+          "passed": true,
+          "details": "All fields present and non-null",
+          "weight": 0.2
+        },
+        {
+          "check": "security_check",
+          "passed": true,
+          "details": "Security scan clean",
+          "weight": 0.1
+        }
+      ],
+      "score": 1.0,
+      "summary": "Verification PASSED: 5/5 checks passed (score: 1.00)",
+      "retries": 0
+    },
+    {
+      "agent_id": 5,
+      "verifier_id": 1,
+      "verdict": "PASS",
+      "checks": [
+        {
+          "check": "schema_check",
+          "passed": true,
+          "details": "Schema valid",
+          "weight": 0.3
+        },
+        {
+          "check": "isolation_check",
+          "passed": true,
+          "details": "No isolation violations",
+          "weight": 0.2
+        },
+        {
+          "check": "consistency_check",
+          "passed": true,
+          "details": "Consistency checks passed",
+          "weight": 0.2
+        },
+        {
+          "check": "completeness_check",
+          "passed": true,
+          "details": "All fields present and non-null",
+          "weight": 0.2
+        },
+        {
+          "check": "security_check",
+          "passed": true,
+          "details": "Security scan clean",
+          "weight": 0.1
+        }
+      ],
+      "score": 1.0,
+      "summary": "Verification PASSED: 5/5 checks passed (score: 1.00)",
+      "retries": 0
+    }
+  ],
+  "elapsed_seconds": 0.71,
+  "completed_at": "2026-06-17T15:06:07.646943"
+}

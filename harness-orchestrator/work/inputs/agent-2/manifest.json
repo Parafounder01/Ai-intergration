@@ -1,0 +1,36 @@
+{
+  "agent_id": 2,
+  "created_at": "2026-06-17T15:30:04.687651",
+  "task": {
+    "type": "analysis",
+    "params": {
+      "path": ".",
+      "target": "."
+    }
+  },
+  "isolation_boundary": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\inputs\\agent-2",
+  "allowed_read_paths": [
+    "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\inputs\\agent-2"
+  ],
+  "allowed_write_paths": [
+    "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-2",
+    "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\inputs\\agent-2"
+  ],
+  "restricted_paths": [
+    "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-1",
+    "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1",
+    "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\inputs\\agent-1\\manifest.json",
+    "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-3",
+    "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-3",
+    "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\inputs\\agent-3\\manifest.json",
+    "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-4",
+    "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-4",
+    "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\inputs\\agent-4\\manifest.json",
+    "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-5",
+    "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-5",
+    "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\inputs\\agent-5\\manifest.json",
+    "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-6",
+    "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-6",
+    "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\inputs\\agent-6\\manifest.json"
+  ]
+}

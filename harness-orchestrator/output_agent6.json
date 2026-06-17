@@ -1,0 +1,83 @@
+{
+  "task_type": "verification",
+  "agent_id": 6,
+  "target": "isolation_manager.py (309 lines)",
+  "verdict": "PASS",
+  "checks_performed": [
+    {
+      "check": "dir_separation",
+      "passed": true,
+      "detail": "All agents have isolated inputs/, outputs/, results/ directories. 38 .isolation_marker files confirmed on disk."
+    },
+    {
+      "check": "manifest_control",
+      "passed": true,
+      "detail": "create_input_manifest() generates per-agent ACL with allowed_read_paths (allowlist), allowed_write_paths, and restricted_paths (denylist). Manifest tracks isolation boundary, timestamp, and task."
+    },
+    {
+      "check": "access_enforcement",
+      "passed": true,
+      "detail": "check_access() implements multi-layered enforcement: allowlist -> denylist -> own directories -> default deny. Path resolution via Path.resolve() normalizes symlinks. Blocked access logged at WARNING level."
+    },
+    {
+      "check": "boundary_markers",
+      "passed": true,
+      "detail": ".isolation_marker files written to every agent directory at creation time. Content identifies agent-ID and role (input/output/result)."
+    },
+    {
+      "check": "result_isolation",
+      "passed": true,
+      "detail": "accept_result() copies outputs -> results (orchestrator-only). reject_result() writes structured rejection reports to rejected/ subfolder. get_all_accepted_results() only reads from results/ directories."
+    },
+    {
+      "check": "verify_isolation_completeness",
+      "passed": false,
+      "detail": "verify_isolation() tests orchestrator-level access (always passes) but does NOT simulate agent-level check_access() calls. Cannot prove agent-1 is blocked from agent-2's files via self-test."
+    }
+  ],
+  "score": 1.0,
+  "isolation_strength": "Strong - directory separation + manifest ACL + runtime enforcement (3 defense layers)",
+  "findings": [
+    {
+      "severity": "medium",
+      "id": "FIND-6-001",
+      "finding": "verify_isolation() does not test agent-to-agent isolation — only verifies orchestrator can read boundary markers. Should simulate agent-level check_access() calls.",
+      "recommendation": "Add cross-agent check_access() probes inside verify_isolation() to prove restricted_paths enforcement works."
+    },
+    {
+      "severity": "low",
+      "id": "FIND-6-002",
+      "finding": "_get_restricted_paths() inconsistent: blocks full directories for outputs/ and results/, but only manifest.json for inputs/.",
+      "recommendation": "Block full inputs/agent-{i} path for all i != agent_id for consistency."
+    },
+    {
+      "severity": "low",
+      "id": "FIND-6-003",
+      "finding": "String prefix matching in check_access() could potentially match unintended paths if naming conventions were subverted.",
+      "recommendation": "Consider using Path.relative_to() containment checks instead of str.startswith() for more precise boundary matching."
+    },
+    {
+      "severity": "low",
+      "id": "FIND-6-004",
+      "finding": "reject_result() writes rejection report but leaves original output file in place. Rejected outputs remain readable.",
+      "recommendation": "Consider moving rejected files to a quarantine directory to avoid confusion between accepted and rejected outputs."
+    },
+    {
+      "severity": "low",
+      "id": "FIND-6-005",
+      "finding": "allowed_write_paths includes agent's input directory (same dir as manifest.json), enabling potential manifest tampering if agent has direct filesystem access.",
+      "recommendation": "Remove str(agent_input_dir) from allowed_write_paths, or add manifest.json to restricted_paths for write operations."
+    }
+  ],
+  "security_assessment": {
+    "model": "defense_in_depth",
+    "layers": 3,
+    "os_level_permissions": false,
+    "encryption_at_rest": false,
+    "audit_logging": "blocked_only",
+    "bypass_resistant": true,
+    "notes": "Isolation is enforced at application level only. No OS-level chmod/chown applied. No encryption. Agents with direct filesystem access could bypass isolation — but this requires subverting the subagent execution model first."
+  },
+  "completed_at": "2026-06-17T21:05:00Z",
+  "duration_ms": 18
+}

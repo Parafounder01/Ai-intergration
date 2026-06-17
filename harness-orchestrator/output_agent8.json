@@ -1,0 +1,93 @@
+{
+  "task_type": "deep-read",
+  "agent_id": 8,
+  "target": "agent_template.py + orchestrator.py",
+  "files_analyzed": 4,
+  "files_detailed": [
+    "agent_template.py (629 lines)",
+    "orchestrator.py (755 lines)",
+    "isolation_manager.py (309 lines)",
+    "adversary.py (473 lines)"
+  ],
+  "integration_points": [
+    {
+      "from": "orchestrator.py:34 → from agent_template import create_subagent, PavithraSubagent",
+      "to": "agent_template.py:605-611 (create_subagent factory)",
+      "contract": "import-level dependency; orchestrator holds list[PavithraSubagent] at line 63"
+    },
+    {
+      "from": "orchestrator._fan_out() → create_subagent(agent_id, task, base_dir)",
+      "to": "agent_template.create_subagent(agent_id, task, base_dir)",
+      "contract": "agent_id: int, task: dict, base_dir: str → PavithraSubagent instance",
+      "details": "Also calls isolation.create_input_manifest(agent_id, task) before agent creation to set isolation boundaries"
+    },
+    {
+      "from": "orchestrator._execute_all() → agent.determine()",
+      "to": "PavithraSubagent.determine() at agent_template.py:59-101",
+      "contract": "void input → dict output (determination with scope, data_reqs, methods, format, risks, hash)",
+      "details": "Agent must be in CREATED state first; auto-calls determine if not DETERMINED. Writes DETERMINATION.md + determination.json."
+    },
+    {
+      "from": "orchestrator._execute_all() → agent.execute()",
+      "to": "PavithraSubagent.execute() at agent_template.py:229-279",
+      "contract": "void input → dict output (task-specific data, completed_at ISO timestamp)",
+      "details": "Routes to _execute_deep_read / _execute_thread_analysis / _execute_summary / _execute_search / _execute_analysis / _execute_verification / _execute_generic based on task.type. Writes output_YYYYMMDD_HHMMSS.json + OUTPUT_REPORT.md. Sets status to COMPLETED or FAILED."
+    },
+    {
+      "from": "orchestrator._verify_all() → adversary.verify_output()",
+      "to": "adversary.verify_output(output, verifier_id, target_agent_id, required_fields, task_type) at adversary.py:130-203",
+      "contract": "output: dict, verifier_id: int, target_agent_id: int, required_fields: list[str]?, task_type: str? → dict{verdict, score, checks, summary}",
+      "details": "Round-robin verifier assignment (next agent in list). Runs 5 checks: schema, isolation, consistency, completeness, security. Weighted score >= 0.7 = PASS. On FAIL, triggers retry loop up to max_retries (default 3)."
+    },
+    {
+      "from": "orchestrator._verify_all() → isolation.accept_result(agent_id, filename)",
+      "to": "IsolationManager.accept_result() at isolation_manager.py:165-180",
+      "contract": "agent_id: int, filename: str → bool",
+      "details": "Copies output file from outputs/agent-{id}/ to results/agent-{id}/. Called on PASS verdict for both output_*.json and OUTPUT_REPORT.md."
+    },
+    {
+      "from": "orchestrator._verify_all() → isolation.reject_result(agent_id, filename, reason)",
+      "to": "IsolationManager.reject_result() at isolation_manager.py:182-206",
+      "contract": "agent_id: int, filename: str, reason: str → bool",
+      "details": "Moves output to outputs/agent-{id}/rejected/ and writes rejection JSON report. Triggered on FAIL verdict."
+    },
+    {
+      "from": "orchestrator._collect_accepted() → isolation.get_all_accepted_results()",
+      "to": "IsolationManager.get_all_accepted_results() at isolation_manager.py:208-229",
+      "contract": "void → dict[int, list[dict]] where int=agent_id, list contains {filename, path, size, modified}",
+      "details": "Iterates all agent results directories, collects accepted files. Orchestrator-only operation."
+    },
+    {
+      "from": "orchestrator.run_fast_pipeline() → adversary.quick_verify()",
+      "to": "adversary.quick_verify(output) at adversary.py:402-414",
+      "contract": "output: dict → str ('PASS' | 'FAIL')",
+      "details": "Ultra-lightweight check: verifies output is dict, has task_type, has completed_at. No file I/O, no module weight. Designed for 20ms target throughput."
+    },
+    {
+      "from": "orchestrator._get_required_fields(task_type) → used in verify_all()",
+      "to": "Agent output schema contract at orchestrator.py:297-307",
+      "contract": "task_type: str → list[str] of required field names for that task type",
+      "details": "Field map mirrors agent_template.py output dict structures. Matching orchestrator.py:299-306 with adversary.py:51-111 schema definitions."
+    }
+  ],
+  "data_flow": "Harness → Orchestrator → Fan-Out → PavithraSubagent.determine() → PavithraSubagent.execute() → Adversary.verify_output() → IsolationManager.accept/reject → IsolationManager.get_all_accepted_results() → Collect → Return",
+  "fast_mode_flow": "Harness → Orchestrator.run_fast_pipeline() → in-memory determine → in-memory execute → adversary.quick_verify() → fast result dict (no file I/O, no isolation manager, no retries)",
+  "contract_summary": {
+    "input_contract": "task: dict{type: str, params: dict}",
+    "determine_contract": "→ dict{agent_id, determined_at, task, task_scope, required_data, methods, output_format, risks, determination_hash}",
+    "execute_contract": "→ dict{task_type, ..., completed_at}  (task-type-specific fields)",
+    "verification_contract": "→ dict{verdict, score, checks, summary, verifier_id, target_agent_id, verified_at}",
+    "accepted_results_contract": "→ dict<int, list<{filename, path, size, modified}>>",
+    "fast_mode_contract": "→ dict{pipeline_id, mode, agent_count, total_elapsed_ms, avg_elapsed_ms, throughput_target_met, cpu_impact, gpu_impact, results}"
+  },
+  "key_observations": [
+    "Orchestrator holds a list[PavithraSubagent] (line 63) created via create_subagent() factory (agent_template.py:605)",
+    "Execution is fully sequential (for agent in self.agents: determine() then execute()) — NOT truly parallel fan-out in the current implementation",
+    "Verification uses round-robin: verifier_id = agent_ids[(i + 1) % len(agent_ids)] (orchestrator.py:177)",
+    "Retry loop calls agent.execute() only (not re-determine) — preserves original determination",
+    "Fast 20ms mode skips all file I/O, isolation manager, and retry logic — pure in-memory pipeline with quick_verify()",
+    "Error recovery: exceptions in execute() are caught and recorded as FAILED status, pipeline continues to next agent",
+    "Output files are written with timestamp filenames: output_YYYYMMDD_HHMMSS.json + OUTPUT_REPORT.md (overwritten each time)"
+  ],
+  "completed_at": "2026-06-17T12:00:00.000000"
+}

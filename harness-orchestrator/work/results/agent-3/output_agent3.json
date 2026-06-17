@@ -1,0 +1,165 @@
+{
+  "task_type": "summary",
+  "agent_id": 3,
+  "target": "Harness Orchestrator system architecture documentation",
+  "structure": [
+    {
+      "name": "architecture.md",
+      "type": "file",
+      "path": "harness-orchestrator/architecture.md",
+      "size_lines": 111,
+      "sections": [
+        "Architecture Overview (ASCII flow diagram)",
+        "The 3 Core Rules (DETERMINE, CONTENT ISOLATION, ADVERSARIAL VERIFICATION)",
+        "Data Flow (8-step pipeline)",
+        "System Components (9-component table)"
+      ]
+    },
+    {
+      "name": "README.md",
+      "type": "file",
+      "path": "harness-orchestrator/README.md",
+      "size_lines": 336,
+      "sections": [
+        "Overview & ASCII flow chart",
+        "The 3 Rules",
+        "Quick Start (Windows/Linux)",
+        "Architecture & File Structure",
+        "10 Test Cases",
+        "GitHub Backup Process",
+        "Requirements",
+        "Step-by-step How It Works",
+        "5 Example Prompts",
+        "Environment Variables",
+        "Troubleshooting"
+      ]
+    }
+  ],
+  "total_entries": 2,
+  "system_components": [
+    {
+      "name": "Harness",
+      "files": ["harness.ps1", "harness.sh"],
+      "role": "Entry point CLI — validates environment, parses arguments, invokes Orchestrator",
+      "platform": ["Windows (PowerShell)", "Linux (Bash)"]
+    },
+    {
+      "name": "Orchestrator",
+      "file": "orchestrator.py",
+      "role": "Master controller — decomposes tasks, spawns subagents, enforces rules, collects results"
+    },
+    {
+      "name": "Agent Template",
+      "file": "agent_template.py",
+      "role": "Base class for PavithraSubagent — provides DETERMINE/EXECUTE/OUTPUT lifecycle"
+    },
+    {
+      "name": "Adversary",
+      "file": "adversary.py",
+      "role": "Verification engine — cross-checks outputs for accuracy, completeness, consistency, security"
+    },
+    {
+      "name": "Isolation Manager",
+      "file": "isolation_manager.py",
+      "role": "Sandbox/fence per agent — enforces CONTENT ISOLATION rule with per-agent directories"
+    },
+    {
+      "name": "Test Runner",
+      "file": "test_runner.py",
+      "role": "Executes all 10 test cases sequentially or individually"
+    },
+    {
+      "name": "GitHub Backup",
+      "files": ["github_backup.ps1"],
+      "role": "Commits and pushes accepted results to GitHub with timestamped tags"
+    },
+    {
+      "name": "CI Pipeline",
+      "file": ".github/workflows/harness-ci.yml",
+      "role": "GitHub Actions automation for continuous integration"
+    }
+  ],
+  "key_patterns": [
+    "Harness -> Orchestrator -> Fan-Out pipeline (linear decomposition into N subagents)",
+    "3 Core Rules: DETERMINE (scope), CONTENT ISOLATION (sandbox), ADVERSARIAL VERIFICATION (cross-check)",
+    "10 Test Cases: progressive complexity from single-agent to full pipeline with GitHub backup",
+    "Fast 20ms Mode: zero-disk-I/O, in-memory execution targeting ~6ms for 10 agents",
+    "Round-robin adversary pairing: verifier_j = (subagent_i + 1) % N",
+    "Retry-on-reject: failed outputs trigger original agent re-execution with feedback",
+    "GitHub backup with timestamped tags and gh CLI authentication",
+    "Per-agent isolation directory structure: work/{inputs,outputs,results}/agent-N/"
+  ],
+  "three_core_rules": {
+    "rule_1_determine": {
+      "description": "Each subagent must analyze its assigned task and document scope, data needs, tools, and output format as DETERMINATION.md",
+      "enforced_by": "agent_template.py (DETERMINE phase)"
+    },
+    "rule_2_content_isolation": {
+      "description": "Each subagent runs in its own sandboxed directory with no cross-agent file reads or variable sharing; only Orchestrator can read all outputs",
+      "enforced_by": "isolation_manager.py"
+    },
+    "rule_3_adversarial_verification": {
+      "description": "Every subagent output is cross-checked by another agent (round-robin) for accuracy, completeness, consistency, and security; failures trigger retry",
+      "enforced_by": "adversary.py"
+    }
+  },
+  "test_cases": [
+    {"id": 1, "name": "Single Agent", "description": "1 subagent, simple deep-read task"},
+    {"id": 2, "name": "Dual Agent", "description": "2 subagents, independent files"},
+    {"id": 3, "name": "Triple Agent", "description": "3 subagents, different tasks"},
+    {"id": 4, "name": "Adversary Pass", "description": "Output passes verification"},
+    {"id": 5, "name": "Adversary Reject", "description": "Output fails first, retries, then passes"},
+    {"id": 6, "name": "Content Isolation", "description": "Agent1 blocked from Agent2's data"},
+    {"id": 7, "name": "Large Fan-Out", "description": "5 subagents in parallel"},
+    {"id": 8, "name": "Mixed Tasks", "description": "Deep-read + analysis + summary"},
+    {"id": 9, "name": "Error Recovery", "description": "Force error, system recovers"},
+    {"id": 10, "name": "Full Pipeline", "description": "All tests + GitHub backup"}
+  ],
+  "data_flow_steps": [
+    "1. HARNESS receives and validates the user request",
+    "2. HARNESS forwards to ORCHESTRATOR",
+    "3. ORCHESTRATOR decomposes task into N subtasks",
+    "4. For each subtask: create isolation bubble, agent runs DETERMINE -> EXECUTE -> OUTPUT",
+    "5. ORCHESTRATOR runs adversarial verification (round-robin: verifier_j = (i+1) % N)",
+    "6. Passed results copied to work/results/agent-N/; failed outputs trigger retry",
+    "7. All accepted results collected by Orchestrator",
+    "8. Results backed up to GitHub (if configured); final report generated"
+  ],
+  "fast_mode": {
+    "target_latency": "20ms",
+    "measured_performance": "~6ms for 10 agents (in-memory, no disk I/O, no GPU)",
+    "trigger": "-Fast flag on harness.ps1 or --fast on orchestrator.py",
+    "use_case": "Quick sanity checks and health checks before deep dives"
+  },
+  "github_backup_flow": {
+    "trigger": "Automatic after test_runner.py --all, or manual via github_backup.ps1",
+    "process": [
+      "Results committed to harness-results/ directory",
+      "Each run creates a timestamped backup",
+      "Git tag created for the run",
+      "Pushed to origin via gh CLI"
+    ],
+    "auth_required": "gh auth login",
+    "default_repo": "Parafounder01/Ai-intergration"
+  },
+  "directory_structure": {
+    "root": "harness-orchestrator/",
+    "key_dirs": [
+      "work/inputs/agent-N/ — Per-agent input manifests",
+      "work/outputs/agent-N/ — Per-agent working directories",
+      "work/results/agent-N/ — Accepted results after verification",
+      "work/logs/ — Orchestrator logs",
+      "tests/ — 10 test case folders (test_01 through test_10)",
+      ".github/workflows/ — GitHub Actions CI"
+    ]
+  },
+  "summary_text": "The Pavithra Harness Orchestrator is a multi-agent fan-out architecture that decomposes a single user request into N isolated subagent tasks, runs them through adversarial verification, and backs up accepted results to GitHub. The system enforces three ironclad rules: DETERMINE (each agent scopes its task before executing), CONTENT ISOLATION (agents run in sandboxed directories with zero cross-talk), and ADVERSARIAL VERIFICATION (every output is cross-checked by another agent in round-robin fashion, with retry on failure). The 9-component stack includes a Harness CLI (PowerShell/Bash), Python-based Orchestrator, Agent Template, Adversary engine, Isolation Manager, Test Runner (10 progressive test cases from single-agent to full pipeline), GitHub Backup script, and CI pipeline. A Fast Mode targets 20ms latency by running entirely in-memory without disk I/O, achieving ~6ms for 10 agents. Results flow through a deterministic 8-step pipeline: Harness -> Orchestrator -> Fan-Out (N agents) -> Adversarial Verification -> Collection -> GitHub Backup, with per-agent directories under work/{inputs,outputs,results}/agent-N/ ensuring complete isolation. The default GitHub backup target is Parafounder01/Ai-intergration, using timestamped commits and tags pushed via gh CLI.",
+  "system_dependencies": [
+    {"component": "Orchestrator", "depends_on": ["Isolation Manager", "Agent Template", "Adversary"]},
+    {"component": "Test Runner", "depends_on": ["Orchestrator", "GitHub Backup"]},
+    {"component": "GitHub Backup", "depends_on": ["gh CLI", "git"]},
+    {"component": "Harness CLI", "depends_on": ["Python 3.12+", "PowerShell 5.1+ / Bash 4.0+"]}
+  ],
+  "completed_at": "2026-06-17T00:00:00Z",
+  "agent_signature": "pavithragent-3"
+}

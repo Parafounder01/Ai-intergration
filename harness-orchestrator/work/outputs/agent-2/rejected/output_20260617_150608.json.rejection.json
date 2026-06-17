@@ -1,0 +1,6 @@
+{
+  "agent_id": 2,
+  "filename": "output_20260617_150608.json",
+  "reason": "Verification FAILED: 3/5 checks passed (score: 0.50) | Failing checks: schema_check, completeness_check",
+  "rejected_at": "2026-06-17T15:06:09.653022"
+}

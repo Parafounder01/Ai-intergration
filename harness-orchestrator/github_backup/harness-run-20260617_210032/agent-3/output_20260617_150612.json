@@ -1,0 +1,584 @@
+{
+  "task_type": "search",
+  "keyword": "harness",
+  "target": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator",
+  "matches_found": 115,
+  "matches": [
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\adversary.py",
+      "line": 4,
+      "context": "Implements Rule 3 of the Pavithra Harness Orchestrator:"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\architecture.md",
+      "line": 1,
+      "context": "# ?? Pavithra Harness ? Orchestrator ? Fan-Out Architecture"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\architecture.md",
+      "line": 10,
+      "context": "?  HARNESS (Entry Point / CLI / Trigger)       ?"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\architecture.md",
+      "line": 74,
+      "context": "1. HARNESS receives request"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\architecture.md",
+      "line": 76,
+      "context": "2. HARNESS validates and forwards to ORCHESTRATOR"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\architecture.md",
+      "line": 103,
+      "context": "| Harness | `harness.ps1` | PowerShell | Windows entry point |"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\architecture.md",
+      "line": 104,
+      "context": "| Harness | `harness.sh` | Bash | Linux entry point |"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\architecture.md",
+      "line": 111,
+      "context": "| CI Pipeline | `.github/workflows/harness-ci.yml` | YAML | GitHub Actions |"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\github_backup.ps1",
+      "line": 3,
+      "context": "GitHub Backup Script for Pavithra Harness Orchestrator"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\github_backup.ps1",
+      "line": 16,
+      "context": "Path to the local repository or the harness-orchestrator project root"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\github_backup.ps1",
+      "line": 28,
+      "context": ".\\github_backup.ps1 -RepoPath \"C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\""
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\github_backup.ps1",
+      "line": 53,
+      "context": "$RunLabel = \"harness-run-$Timestamp\""
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\github_backup.ps1",
+      "line": 67,
+      "context": "Write-Host \"?  GITHUB BACKUP ? Pavithra Harness Orchestrator           ?\" -ForegroundColor Cyan"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\github_backup.ps1",
+      "line": 220,
+      "context": "$RepoBackupDir = Join-Path $GitCloneDir \"harness-orchestrator-backups\""
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\github_backup.ps1",
+      "line": 226,
+      "context": "# Also copy the full harness-orchestrator project"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\github_backup.ps1",
+      "line": 227,
+      "context": "$HarnessTarget = Join-Path $GitCloneDir \"harness-orchestrator\""
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\github_backup.ps1",
+      "line": 228,
+      "context": "if (-not (Test-Path $HarnessTarget)) {"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\github_backup.ps1",
+      "line": 231,
+      "context": "Copy-Item -Path \"$ProjectRoot\\*.py\" -Destination $HarnessTarget -Force"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\github_backup.ps1",
+      "line": 232,
+      "context": "Copy-Item -Path \"$ProjectRoot\\*.ps1\" -Destination $HarnessTarget -Force"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\github_backup.ps1",
+      "line": 233,
+      "context": "Copy-Item -Path \"$ProjectRoot\\*.sh\" -Destination $HarnessTarget -Force"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\harness.ps1",
+      "line": 3,
+      "context": "Pavithra Harness Orchestrator ? Windows PowerShell Entry Point"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\harness.sh",
+      "line": 3,
+      "context": "# Pavithra Harness Orchestrator ? Linux Bash Entry Point"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\orchestrator.py",
+      "line": 2,
+      "context": "orchestrator.py ? Master Controller for Pavithra Harness Orchestrator"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\README.md",
+      "line": 1,
+      "context": "# Pavithra Harness Orchestrator"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\requirements.txt",
+      "line": 1,
+      "context": "# Pavithra Harness Orchestrator ? Dependencies"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\test_runner.py",
+      "line": 2,
+      "context": "test_runner.py ? 10-Test-Case Executor for Pavithra Harness Orchestrator"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\.github\\workflows\\harness-ci.yml",
+      "line": 2,
+      "context": "# Pavithra Harness Orchestrator ? GitHub Actions CI Pipeline"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\tests\\test_01_single_agent\\README.md",
+      "line": 4,
+      "context": "Tests the basic Harness ? Orchestrator ? Fan-Out pipeline with a single subagent performing a deep-read task on the project root."
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\tests\\test_02_dual_agent\\README.md",
+      "line": 18,
+      "context": ".\\harness.ps1 -Task \"deep-read\" -AgentCount 2"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\tests\\test_07_large_fanout\\README.md",
+      "line": 4,
+      "context": "Tests the Harness Orchestrator's scalability by fanning out to 5 subagents in parallel. Each agent performs a deep-read task on its own isolated input directory."
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\tests\\test_10_full_pipeline\\README.md",
+      "line": 4,
+      "context": "The complete end-to-end test of the Pavithra Harness Orchestrator. Runs 3 agents with different tasks, runs adversarial verification, collects accepted results, and prepares the GitHub backup."
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\test_agent\\outputs\\agent-1\\output_20260617_150436.json",
+      "line": 31,
+      "context": "\"name\": \"harness.ps1\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\test_agent\\outputs\\agent-1\\OUTPUT_REPORT.md",
+      "line": 32,
+      "context": "- **name**: harness.ps1"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\inputs\\agent-1\\manifest.json",
+      "line": 7,
+      "context": "\"path\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\""
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\inputs\\agent-2\\manifest.json",
+      "line": 7,
+      "context": "\"path\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\""
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\inputs\\agent-3\\manifest.json",
+      "line": 7,
+      "context": "\"keyword\": \"harness\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\inputs\\agent-4\\manifest.json",
+      "line": 11,
+      "context": "\"isolation_boundary\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\\\\work\\\\inputs\\\\agent-4\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\inputs\\agent-5\\manifest.json",
+      "line": 7,
+      "context": "\"path\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\\\\work\\\\inputs\\\\agent-5\""
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\logs\\orchestrator.log",
+      "line": 5,
+      "context": "2026-06-17 20:34:44,025 [INFO] isolation-manager: IsolationManager initialized at C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\logs\\pipeline_36db3c91c4e5.json",
+      "line": 15,
+      "context": "\"path\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\\\\work\\\\results\\\\agent-1\\\\output_20260617_150515.json\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\logs\\pipeline_4eab982a56da.json",
+      "line": 15,
+      "context": "\"path\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\\\\work\\\\results\\\\agent-1\\\\output_20260617_150515.json\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\logs\\pipeline_7b9c1cd1b4aa.json",
+      "line": 15,
+      "context": "\"path\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\\\\work\\\\results\\\\agent-1\\\\output_20260617_150515.json\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\logs\\pipeline_aa62d63e541e.json",
+      "line": 15,
+      "context": "\"path\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\\\\work\\\\results\\\\agent-1\\\\output_20260617_150515.json\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\logs\\pipeline_afd840b99b97.json",
+      "line": 15,
+      "context": "\"path\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\\\\work\\\\results\\\\agent-1\\\\output_20260617_150515.json\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\logs\\pipeline_b73408b278ab.json",
+      "line": 15,
+      "context": "\"path\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\\\\work\\\\results\\\\agent-1\\\\output_20260617_150515.json\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\logs\\pipeline_d0a91eef4cb3.json",
+      "line": 15,
+      "context": "\"path\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\\\\work\\\\results\\\\agent-1\\\\output_20260617_150515.json\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\logs\\pipeline_ff7afce7aa47.json",
+      "line": 15,
+      "context": "\"path\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\\\\work\\\\results\\\\agent-1\\\\output_20260617_150515.json\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-1\\determination.json",
+      "line": 7,
+      "context": "\"path\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\\\\work\\\\inputs\""
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-1\\DETERMINATION.md",
+      "line": 8,
+      "context": "Deep-read files at C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\inputs"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-1\\output_20260617_150444.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-1\\output_20260617_150515.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-1\\output_20260617_150523.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-1\\output_20260617_150524.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\\\\work\\\\inputs\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-1\\output_20260617_150525.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\\\\work\\\\inputs\\\\agent-1\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-1\\output_20260617_150552.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-1\\output_20260617_150605.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\\\\work\\\\inputs\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-1\\output_20260617_150607.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\\\\work\\\\inputs\\\\agent-1\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-1\\output_20260617_150608.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-1\\output_20260617_150609.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\\\\work\\\\inputs\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-1\\OUTPUT_REPORT.md",
+      "line": 9,
+      "context": "- **target**: C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-2\\determination.json",
+      "line": 7,
+      "context": "\"path\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\""
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-2\\DETERMINATION.md",
+      "line": 8,
+      "context": "Generate summary of C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-2\\output_20260617_150523.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-2\\output_20260617_150525.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\\\\work\\\\outputs\\\\agent-2\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-2\\output_20260617_150552.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-2\\output_20260617_150605.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-2\\output_20260617_150607.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\\\\work\\\\inputs\\\\agent-2\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-2\\output_20260617_150608.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-2\\output_20260617_150610.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-2\\OUTPUT_REPORT.md",
+      "line": 9,
+      "context": "- **target**: C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-3\\determination.json",
+      "line": 7,
+      "context": "\"target\": \"harness-orchestrator system\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-3\\DETERMINATION.md",
+      "line": 8,
+      "context": "Analyze harness-orchestrator system"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-3\\output_20260617_150525.json",
+      "line": 4,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-3\\output_20260617_150526.json",
+      "line": 4,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-3\\output_20260617_150527.json",
+      "line": 4,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-3\\output_20260617_150553.json",
+      "line": 4,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-3\\output_20260617_150607.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\\\\work\\\\inputs\\\\agent-3\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-3\\output_20260617_150610.json",
+      "line": 3,
+      "context": "\"target\": \"harness-orchestrator system\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-3\\OUTPUT_REPORT.md",
+      "line": 9,
+      "context": "- **target**: harness-orchestrator system"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-4\\determination.json",
+      "line": 7,
+      "context": "\"path\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\\\\work\\\\inputs\\\\agent-4\""
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-4\\DETERMINATION.md",
+      "line": 8,
+      "context": "Deep-read files at C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\inputs\\agent-4"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-4\\output_20260617_150607.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\\\\work\\\\inputs\\\\agent-4\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-4\\OUTPUT_REPORT.md",
+      "line": 9,
+      "context": "- **target**: C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\inputs\\agent-4"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-5\\determination.json",
+      "line": 7,
+      "context": "\"path\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\\\\work\\\\inputs\\\\agent-5\""
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-5\\DETERMINATION.md",
+      "line": 8,
+      "context": "Deep-read files at C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\inputs\\agent-5"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-5\\output_20260617_150607.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\\\\work\\\\inputs\\\\agent-5\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-5\\OUTPUT_REPORT.md",
+      "line": 9,
+      "context": "- **target**: C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\inputs\\agent-5"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150515.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150523.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\\\\work\\\\inputs\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150524.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\\\\work\\\\inputs\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150525.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\\\\work\\\\inputs\\\\agent-1\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150552.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150605.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\\\\work\\\\inputs\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150607.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\\\\work\\\\inputs\\\\agent-1\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150609.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\\\\work\\\\inputs\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150610.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\OUTPUT_REPORT.md",
+      "line": 9,
+      "context": "- **target**: C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\output_20260617_150523.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\output_20260617_150525.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\\\\work\\\\outputs\\\\agent-2\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\output_20260617_150552.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\output_20260617_150605.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\output_20260617_150607.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\\\\work\\\\inputs\\\\agent-2\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\output_20260617_150610.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\OUTPUT_REPORT.md",
+      "line": 9,
+      "context": "- **target**: C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-3\\output_20260617_150553.json",
+      "line": 4,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-3\\output_20260617_150607.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\\\\work\\\\inputs\\\\agent-3\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-3\\output_20260617_150610.json",
+      "line": 3,
+      "context": "\"target\": \"harness-orchestrator system\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-3\\OUTPUT_REPORT.md",
+      "line": 9,
+      "context": "- **target**: harness-orchestrator system"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-4\\output_20260617_150607.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\\\\work\\\\inputs\\\\agent-4\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-4\\OUTPUT_REPORT.md",
+      "line": 9,
+      "context": "- **target**: C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\inputs\\agent-4"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-5\\output_20260617_150607.json",
+      "line": 3,
+      "context": "\"target\": \"C:\\\\Users\\\\anant\\\\OneDrive\\\\Documents\\\\opencode\\\\harness-orchestrator\\\\work\\\\inputs\\\\agent-5\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-5\\OUTPUT_REPORT.md",
+      "line": 9,
+      "context": "- **target**: C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\inputs\\agent-5"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\__pycache__\\adversary.cpython-312.pyc",
+      "line": 17,
+      "context": "Implements Rule 3 of the Pavithra Harness Orchestrator:"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\__pycache__\\agent_template.cpython-312.pyc",
+      "line": 47,
+      "context": "\u0000\u0000\u0000r\u000b\u0000\u0000\u0000r\f\u0000\u0000\u0000s\u0006\u0000\u0000\u0000      QC:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\agent_template.py\b__init__z\u0019PavithraSubagent.__init__%\u0000\u0000\u0000s\u0000\u0000\u0000\u0000\u0018 \u0004"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\__pycache__\\isolation_manager.cpython-312.pyc",
+      "line": 38,
+      "context": "boundary_file\tmanifests\u0005mkdir\u0013_ensure_directories\u0006logger\u0004info)\u0003\u0004selfr\u0007\u0000\u0000\u0000r\b\u0000\u0000\u0000s\u0003\u0000\u0000\u0000   TC:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\isolation_manager.py\b__init__z\u0019IsolationManager._"
+    }
+  ],
+  "completed_at": "2026-06-17T15:06:12.678491"
+}

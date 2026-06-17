@@ -1,0 +1,225 @@
+{
+  "task_type": "search",
+  "agent_id": 4,
+  "keyword": "test,verify,adversary,isolation,PASS,FAIL,verdict,score",
+  "target": "harness-orchestrator/",
+  "files_scanned": {
+    "total": 356,
+    "by_extension": {
+      ".py": 5,
+      ".ps1": 2,
+      ".md": 67,
+      ".json": 282
+    }
+  },
+  "matches_found": 3317,
+  "matches_by_keyword": {
+    "test": {
+      "total_matches": 903,
+      "by_file_type": {
+        ".py": 127,
+        ".ps1": 10,
+        ".md": 41,
+        ".json": 725
+      },
+      "key_files": [
+        {
+          "file": "orchestrator.py",
+          "matches": 82,
+          "key_lines": [14, 15, 64, 315, 317, 319, 321, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 336, 337, 338, 341, 342, 344, 345, 348, 349, 350, 353, 354, 360, 363, 364, 366, 369, 373, 388, 404, 421, 427, 439, 468, 480, 494, 511, 531, 555, 556, 557, 575, 576, 590, 608, 691, 692, 724, 725, 726, 728, 735, 743],
+          "role": "Test case definitions and orchestrator"
+        },
+        {
+          "file": "test_runner.py",
+          "matches": 48,
+          "key_lines": [2, 4, 5, 11, 12, 13, 14, 36, 39, 44, 62, 68, 74, 75, 87, 88, 90, 101, 104, 105, 107, 112, 113, 116, 121, 134, 136, 149, 151, 152, 154, 164, 182, 203, 248, 254, 273],
+          "role": "10-test-case executor framework"
+        },
+        {
+          "file": "harness.ps1",
+          "matches": 6,
+          "key_lines": [24, 27, 68, 183, 186, 187],
+          "role": "PowerShell CLI entry point for tests"
+        }
+      ]
+    },
+    "verify": {
+      "total_matches": 35,
+      "by_file_type": {
+        ".py": 31,
+        ".ps1": 0,
+        ".md": 4,
+        ".json": 0
+      },
+      "key_files": [
+        {
+          "file": "orchestrator.py",
+          "matches": 13,
+          "key_lines": [99, 170, 184, 188, 197, 230, 263, 470, 481, 482, 629, 658, 659, 660],
+          "role": "Verification orchestration (verify_all, simple_verify)"
+        },
+        {
+          "file": "adversary.py",
+          "matches": 15,
+          "key_lines": [15, 16, 130, 145, 402, 433, 441, 445, 448, 449, 450, 452, 453, 454],
+          "role": "Verification engine (verify_output, quick_verify)"
+        },
+        {
+          "file": "isolation_manager.py",
+          "matches": 2,
+          "key_lines": [231, 304],
+          "role": "Isolation boundary verification"
+        }
+      ]
+    },
+    "adversary": {
+      "total_matches": 254,
+      "by_file_type": {
+        ".py": 23,
+        ".ps1": 0,
+        ".md": 12,
+        ".json": 219
+      },
+      "key_files": [
+        {
+          "file": "adversary.py",
+          "matches": 14,
+          "key_lines": [2, 5, 15, 24, 137, 420, 421],
+          "role": "Core adversarial verification engine"
+        },
+        {
+          "file": "orchestrator.py",
+          "matches": 12,
+          "key_lines": [180, 182, 184, 196, 264, 327, 328, 421, 439, 445, 629, 658, 659],
+          "role": "Dynamic adversary module loading & test cases 4/5"
+        },
+        {
+          "file": "agent_template.py",
+          "matches": 1,
+          "key_lines": [423],
+          "role": "Verification task execution template"
+        }
+      ]
+    },
+    "isolation": {
+      "total_matches": 1383,
+      "by_file_type": {
+        ".py": 56,
+        ".ps1": 1,
+        ".md": 25,
+        ".json": 1301
+      },
+      "key_files": [
+        {
+          "file": "isolation_manager.py",
+          "matches": 32,
+          "key_lines": [2, 6, 7, 20, 25, 41, 50, 56, 72, 153, 219, 231, 233, 234, 259, 275, 276, 287, 288, 296, 303, 304],
+          "role": "Content isolation engine with sandbox per agent"
+        },
+        {
+          "file": "orchestrator.py",
+          "matches": 18,
+          "key_lines": [7, 35, 62, 89, 90, 141, 142, 214, 216, 220, 248, 311, 329, 468, 469, 479, 480, 481, 482, 483, 486, 487, 489, 490],
+          "role": "Isolation environment creation and test_06"
+        },
+        {
+          "file": "adversary.py",
+          "matches": 4,
+          "key_lines": [33, 154, 240, 279],
+          "role": "Isolation check in verification rules"
+        }
+      ]
+    },
+    "PASS_FAIL_verdict_score": {
+      "total_matches": 742,
+      "by_file_type": {
+        ".py": 92,
+        ".ps1": 4,
+        ".md": 74,
+        ".json": 572
+      },
+      "key_files": [
+        {
+          "file": "orchestrator.py",
+          "matches": 40,
+          "key_lines": [111, 113, 114, 199, 201, 211, 212, 223, 237, 240, 243, 254, 256, 288, 291, 293, 304, 305, 343, 348, 350, 363, 364, 380, 397, 414, 429, 431, 453, 456, 483, 486, 504, 523, 547, 576, 589, 665, 739, 740, 741],
+          "role": "Verdict-driven flow control, test status tracking"
+        },
+        {
+          "file": "adversary.py",
+          "matches": 30,
+          "key_lines": [93, 98, 103, 106, 143, 159, 160, 165, 168, 170, 171, 186, 188, 193, 194, 202, 318, 322, 323, 324, 326, 356, 357, 404, 409, 411, 413, 414, 434, 442, 446, 450, 454, 457, 462],
+          "role": "Weighted scoring (threshold 0.7), verdict determination"
+        },
+        {
+          "file": "test_runner.py",
+          "matches": 10,
+          "key_lines": [115, 156, 184, 185, 192, 201, 268, 272],
+          "role": "PASS/FAIL summary and reporting"
+        },
+        {
+          "file": "github_backup.ps1",
+          "matches": 4,
+          "key_lines": [80, 89, 208, 211],
+          "role": "Git backup FAIL reporting"
+        }
+      ]
+    }
+  },
+  "verification_hotspots": [
+    "orchestrator.py (180+ matches across all keywords) — Primary orchestration hub defining 10 test cases, verification loop, verdict routing, and isolation management",
+    "adversary.py (80+ matches) — Core verification engine with weighted scoring (5 check types), verdict threshold at 0.7, self-test suite",
+    "isolation_manager.py (60+ matches) — Per-agent sandbox isolation with boundary enforcement, verify_isolation(), .isolation_marker system",
+    "test_runner.py (50+ matches) — Test execution framework wrapping orchestrator, generating SUMMARY.md and TEST_REPORT.md for each run",
+    "agent_template.py (25+ matches) — Agent execution template with verification task support and result schema definitions"
+  ],
+  "cross_reference_graph": {
+    "orchestrator.py": {
+      "imports": ["isolation_manager", "adversary (dynamic)"],
+      "calls": ["verify_output()", "quick_verify()", "verify_isolation()", "create_isolation_environment()"],
+      "drives": ["test_runner.py (10 test cases)"],
+      "feeds": ["pipeline JSON logs (verdicts/scores)", "test results to work/results/"]
+    },
+    "adversary.py": {
+      "exports": ["verify_output()", "quick_verify()", "_check_isolation()"],
+      "used_by": ["orchestrator.py", "agent_template.py"],
+      "validates": ["schema_check", "isolation_check", "consistency_check", "completeness_check", "security_check"]
+    },
+    "isolation_manager.py": {
+      "exports": ["create_isolation_environment()", "IsolationManager", "verify_isolation()"],
+      "used_by": ["orchestrator.py"],
+      "enforces": ["work/inputs/agent-N/ sandbox", ".isolation_marker boundary files"]
+    },
+    "test_runner.py": {
+      "imports": ["orchestrator.py"],
+      "outputs": ["tests/TEST_REPORT.md", "tests/TEST_REPORT.json", "tests/test_N/SUMMARY.md"],
+      "drives": ["10 test cases", "GitHub backup trigger"]
+    }
+  },
+  "test_summary": {
+    "total_tests_defined": 10,
+    "test_names": [
+      "01_single_agent",
+      "02_dual_agent",
+      "03_triple_agent",
+      "04_adversary_pass",
+      "05_adversary_reject",
+      "06_content_isolation",
+      "07_large_fanout",
+      "08_mixed_tasks",
+      "09_error_recovery",
+      "10_full_pipeline"
+    ],
+    "latest_results_location": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\tests\\TEST_REPORT.md",
+    "latest_results": "10 PASSED / 0 FAILED / 10 TOTAL",
+    "verification_checks": [
+      "schema_check (weight: 0.2)",
+      "isolation_check (weight: 0.2)",
+      "consistency_check (weight: 0.2)",
+      "completeness_check (weight: 0.2)",
+      "security_check (weight: 0.2)"
+    ],
+    "verdict_threshold": "PASS if score >= 0.7, else FAIL"
+  },
+  "completed_at": "2026-06-17T21:15:00.000Z"
+}

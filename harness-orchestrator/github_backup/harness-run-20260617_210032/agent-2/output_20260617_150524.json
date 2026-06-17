@@ -1,0 +1,21 @@
+{
+  "task_type": "verification",
+  "verdict": "PASS",
+  "checks_performed": [
+    {
+      "check": "content_exists",
+      "passed": true
+    },
+    {
+      "check": "field_task_type",
+      "passed": true
+    },
+    {
+      "check": "field_completed_at",
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "score": 1.0,
+  "completed_at": "2026-06-17T15:05:24.930113"
+}

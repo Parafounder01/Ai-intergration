@@ -1,0 +1,527 @@
+{
+  "pipeline_id": "391f37ed7903",
+  "run_id": "5709569e",
+  "agent_count": 5,
+  "tasks_submitted": 5,
+  "agents_completed": 5,
+  "agents_failed": 0,
+  "outputs_verified": 5,
+  "outputs_accepted": 5,
+  "outputs_rejected": 0,
+  "accepted_results": {
+    "1": [
+      {
+        "filename": "output_20260617_150515.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150515.json",
+        "size": 11198,
+        "modified": "2026-06-17T20:35:15.700582"
+      },
+      {
+        "filename": "output_20260617_150523.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150523.json",
+        "size": 1525,
+        "modified": "2026-06-17T20:35:23.151271"
+      },
+      {
+        "filename": "output_20260617_150524.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150524.json",
+        "size": 1767,
+        "modified": "2026-06-17T20:35:24.872277"
+      },
+      {
+        "filename": "output_20260617_150525.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150525.json",
+        "size": 796,
+        "modified": "2026-06-17T20:35:25.817449"
+      },
+      {
+        "filename": "output_20260617_150552.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150552.json",
+        "size": 19938,
+        "modified": "2026-06-17T20:35:52.634607"
+      },
+      {
+        "filename": "output_20260617_150605.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150605.json",
+        "size": 1767,
+        "modified": "2026-06-17T20:36:05.846533"
+      },
+      {
+        "filename": "output_20260617_150607.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150607.json",
+        "size": 796,
+        "modified": "2026-06-17T20:36:07.156046"
+      },
+      {
+        "filename": "output_20260617_150609.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150609.json",
+        "size": 2749,
+        "modified": "2026-06-17T20:36:09.588121"
+      },
+      {
+        "filename": "output_20260617_150610.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150610.json",
+        "size": 32532,
+        "modified": "2026-06-17T20:36:10.081168"
+      },
+      {
+        "filename": "output_20260617_150628.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150628.json",
+        "size": 36758,
+        "modified": "2026-06-17T20:36:28.629849"
+      },
+      {
+        "filename": "output_20260617_150703.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150703.json",
+        "size": 40122,
+        "modified": "2026-06-17T20:37:03.886930"
+      },
+      {
+        "filename": "output_20260617_150704.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150704.json",
+        "size": 2749,
+        "modified": "2026-06-17T20:37:04.932137"
+      },
+      {
+        "filename": "output_20260617_150705.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150705.json",
+        "size": 47999,
+        "modified": "2026-06-17T20:37:05.748534"
+      },
+      {
+        "filename": "output_20260617_150707.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150707.json",
+        "size": 51455,
+        "modified": "2026-06-17T20:37:07.544010"
+      },
+      {
+        "filename": "output_20260617_152839.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_152839.json",
+        "size": 193,
+        "modified": "2026-06-17T20:58:39.331712"
+      },
+      {
+        "filename": "OUTPUT_REPORT.md",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\OUTPUT_REPORT.md",
+        "size": 235,
+        "modified": "2026-06-17T20:58:39.338619"
+      }
+    ],
+    "2": [
+      {
+        "filename": "output_20260617_150523.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\output_20260617_150523.json",
+        "size": 1882,
+        "modified": "2026-06-17T20:35:23.166047"
+      },
+      {
+        "filename": "output_20260617_150524.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\output_20260617_150524.json",
+        "size": 394,
+        "modified": "2026-06-17T20:35:24.932124"
+      },
+      {
+        "filename": "output_20260617_150525.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\output_20260617_150525.json",
+        "size": 2156,
+        "modified": "2026-06-17T20:35:25.846044"
+      },
+      {
+        "filename": "output_20260617_150552.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\output_20260617_150552.json",
+        "size": 1882,
+        "modified": "2026-06-17T20:35:52.651068"
+      },
+      {
+        "filename": "output_20260617_150605.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\output_20260617_150605.json",
+        "size": 344,
+        "modified": "2026-06-17T20:36:05.857735"
+      },
+      {
+        "filename": "output_20260617_150607.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\output_20260617_150607.json",
+        "size": 796,
+        "modified": "2026-06-17T20:36:07.172706"
+      },
+      {
+        "filename": "output_20260617_150609.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\output_20260617_150609.json",
+        "size": 245,
+        "modified": "2026-06-17T20:36:09.661225"
+      },
+      {
+        "filename": "output_20260617_150610.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\output_20260617_150610.json",
+        "size": 1882,
+        "modified": "2026-06-17T20:36:10.112917"
+      },
+      {
+        "filename": "output_20260617_150703.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\output_20260617_150703.json",
+        "size": 1882,
+        "modified": "2026-06-17T20:37:03.901643"
+      },
+      {
+        "filename": "output_20260617_150704.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\output_20260617_150704.json",
+        "size": 394,
+        "modified": "2026-06-17T20:37:04.957258"
+      },
+      {
+        "filename": "output_20260617_150705.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\output_20260617_150705.json",
+        "size": 1882,
+        "modified": "2026-06-17T20:37:05.758171"
+      },
+      {
+        "filename": "output_20260617_150707.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\output_20260617_150707.json",
+        "size": 1882,
+        "modified": "2026-06-17T20:37:07.560941"
+      },
+      {
+        "filename": "output_20260617_152839.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\output_20260617_152839.json",
+        "size": 193,
+        "modified": "2026-06-17T20:58:39.348471"
+      },
+      {
+        "filename": "OUTPUT_REPORT.md",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\OUTPUT_REPORT.md",
+        "size": 235,
+        "modified": "2026-06-17T20:58:39.350471"
+      }
+    ],
+    "3": [
+      {
+        "filename": "output_20260617_150553.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-3\\output_20260617_150553.json",
+        "size": 8450,
+        "modified": "2026-06-17T20:35:53.716110"
+      },
+      {
+        "filename": "output_20260617_150607.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-3\\output_20260617_150607.json",
+        "size": 796,
+        "modified": "2026-06-17T20:36:07.187236"
+      },
+      {
+        "filename": "output_20260617_150610.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-3\\output_20260617_150610.json",
+        "size": 307,
+        "modified": "2026-06-17T20:36:10.132987"
+      },
+      {
+        "filename": "output_20260617_150612.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-3\\output_20260617_150612.json",
+        "size": 32625,
+        "modified": "2026-06-17T20:36:12.686528"
+      },
+      {
+        "filename": "output_20260617_150704.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-3\\output_20260617_150704.json",
+        "size": 10192,
+        "modified": "2026-06-17T20:37:04.774359"
+      },
+      {
+        "filename": "output_20260617_150705.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-3\\output_20260617_150705.json",
+        "size": 796,
+        "modified": "2026-06-17T20:37:05.434550"
+      },
+      {
+        "filename": "output_20260617_150706.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-3\\output_20260617_150706.json",
+        "size": 44354,
+        "modified": "2026-06-17T20:37:06.961288"
+      },
+      {
+        "filename": "output_20260617_150707.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-3\\output_20260617_150707.json",
+        "size": 307,
+        "modified": "2026-06-17T20:37:07.566959"
+      },
+      {
+        "filename": "output_20260617_152839.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-3\\output_20260617_152839.json",
+        "size": 193,
+        "modified": "2026-06-17T20:58:39.358648"
+      },
+      {
+        "filename": "OUTPUT_REPORT.md",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-3\\OUTPUT_REPORT.md",
+        "size": 235,
+        "modified": "2026-06-17T20:58:39.361699"
+      }
+    ],
+    "4": [
+      {
+        "filename": "output_20260617_150607.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-4\\output_20260617_150607.json",
+        "size": 796,
+        "modified": "2026-06-17T20:36:07.320834"
+      },
+      {
+        "filename": "output_20260617_150612.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-4\\output_20260617_150612.json",
+        "size": 299,
+        "modified": "2026-06-17T20:36:12.700656"
+      },
+      {
+        "filename": "output_20260617_150705.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-4\\output_20260617_150705.json",
+        "size": 796,
+        "modified": "2026-06-17T20:37:05.444582"
+      },
+      {
+        "filename": "output_20260617_150706.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-4\\output_20260617_150706.json",
+        "size": 299,
+        "modified": "2026-06-17T20:37:06.971303"
+      },
+      {
+        "filename": "output_20260617_152839.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-4\\output_20260617_152839.json",
+        "size": 193,
+        "modified": "2026-06-17T20:58:39.376925"
+      },
+      {
+        "filename": "OUTPUT_REPORT.md",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-4\\OUTPUT_REPORT.md",
+        "size": 235,
+        "modified": "2026-06-17T20:58:39.380038"
+      }
+    ],
+    "5": [
+      {
+        "filename": "output_20260617_150607.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-5\\output_20260617_150607.json",
+        "size": 796,
+        "modified": "2026-06-17T20:36:07.397281"
+      },
+      {
+        "filename": "output_20260617_150705.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-5\\output_20260617_150705.json",
+        "size": 796,
+        "modified": "2026-06-17T20:37:05.461655"
+      },
+      {
+        "filename": "output_20260617_152839.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-5\\output_20260617_152839.json",
+        "size": 193,
+        "modified": "2026-06-17T20:58:39.388624"
+      },
+      {
+        "filename": "OUTPUT_REPORT.md",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-5\\OUTPUT_REPORT.md",
+        "size": 235,
+        "modified": "2026-06-17T20:58:39.391839"
+      }
+    ]
+  },
+  "verification_details": [
+    {
+      "agent_id": 1,
+      "verifier_id": 2,
+      "verdict": "PASS",
+      "checks": [
+        {
+          "check": "schema_check",
+          "passed": true,
+          "details": "Schema valid",
+          "weight": 0.3
+        },
+        {
+          "check": "isolation_check",
+          "passed": true,
+          "details": "No isolation violations",
+          "weight": 0.2
+        },
+        {
+          "check": "consistency_check",
+          "passed": true,
+          "details": "Consistency checks passed",
+          "weight": 0.2
+        },
+        {
+          "check": "completeness_check",
+          "passed": true,
+          "details": "All fields present and non-null",
+          "weight": 0.2
+        },
+        {
+          "check": "security_check",
+          "passed": true,
+          "details": "Security scan clean",
+          "weight": 0.1
+        }
+      ],
+      "score": 1.0,
+      "summary": "Verification PASSED: 5/5 checks passed (score: 1.00)",
+      "retries": 0
+    },
+    {
+      "agent_id": 2,
+      "verifier_id": 3,
+      "verdict": "PASS",
+      "checks": [
+        {
+          "check": "schema_check",
+          "passed": true,
+          "details": "Schema valid",
+          "weight": 0.3
+        },
+        {
+          "check": "isolation_check",
+          "passed": true,
+          "details": "No isolation violations",
+          "weight": 0.2
+        },
+        {
+          "check": "consistency_check",
+          "passed": true,
+          "details": "Consistency checks passed",
+          "weight": 0.2
+        },
+        {
+          "check": "completeness_check",
+          "passed": true,
+          "details": "All fields present and non-null",
+          "weight": 0.2
+        },
+        {
+          "check": "security_check",
+          "passed": true,
+          "details": "Security scan clean",
+          "weight": 0.1
+        }
+      ],
+      "score": 1.0,
+      "summary": "Verification PASSED: 5/5 checks passed (score: 1.00)",
+      "retries": 0
+    },
+    {
+      "agent_id": 3,
+      "verifier_id": 4,
+      "verdict": "PASS",
+      "checks": [
+        {
+          "check": "schema_check",
+          "passed": true,
+          "details": "Schema valid",
+          "weight": 0.3
+        },
+        {
+          "check": "isolation_check",
+          "passed": true,
+          "details": "No isolation violations",
+          "weight": 0.2
+        },
+        {
+          "check": "consistency_check",
+          "passed": true,
+          "details": "Consistency checks passed",
+          "weight": 0.2
+        },
+        {
+          "check": "completeness_check",
+          "passed": true,
+          "details": "All fields present and non-null",
+          "weight": 0.2
+        },
+        {
+          "check": "security_check",
+          "passed": true,
+          "details": "Security scan clean",
+          "weight": 0.1
+        }
+      ],
+      "score": 1.0,
+      "summary": "Verification PASSED: 5/5 checks passed (score: 1.00)",
+      "retries": 0
+    },
+    {
+      "agent_id": 4,
+      "verifier_id": 5,
+      "verdict": "PASS",
+      "checks": [
+        {
+          "check": "schema_check",
+          "passed": true,
+          "details": "Schema valid",
+          "weight": 0.3
+        },
+        {
+          "check": "isolation_check",
+          "passed": true,
+          "details": "No isolation violations",
+          "weight": 0.2
+        },
+        {
+          "check": "consistency_check",
+          "passed": true,
+          "details": "Consistency checks passed",
+          "weight": 0.2
+        },
+        {
+          "check": "completeness_check",
+          "passed": true,
+          "details": "All fields present and non-null",
+          "weight": 0.2
+        },
+        {
+          "check": "security_check",
+          "passed": true,
+          "details": "Security scan clean",
+          "weight": 0.1
+        }
+      ],
+      "score": 1.0,
+      "summary": "Verification PASSED: 5/5 checks passed (score: 1.00)",
+      "retries": 0
+    },
+    {
+      "agent_id": 5,
+      "verifier_id": 1,
+      "verdict": "PASS",
+      "checks": [
+        {
+          "check": "schema_check",
+          "passed": true,
+          "details": "Schema valid",
+          "weight": 0.3
+        },
+        {
+          "check": "isolation_check",
+          "passed": true,
+          "details": "No isolation violations",
+          "weight": 0.2
+        },
+        {
+          "check": "consistency_check",
+          "passed": true,
+          "details": "Consistency checks passed",
+          "weight": 0.2
+        },
+        {
+          "check": "completeness_check",
+          "passed": true,
+          "details": "All fields present and non-null",
+          "weight": 0.2
+        },
+        {
+          "check": "security_check",
+          "passed": true,
+          "details": "Security scan clean",
+          "weight": 0.1
+        }
+      ],
+      "score": 1.0,
+      "summary": "Verification PASSED: 5/5 checks passed (score: 1.00)",
+      "retries": 0
+    }
+  ],
+  "elapsed_seconds": 0.3,
+  "completed_at": "2026-06-17T15:28:39.518094"
+}

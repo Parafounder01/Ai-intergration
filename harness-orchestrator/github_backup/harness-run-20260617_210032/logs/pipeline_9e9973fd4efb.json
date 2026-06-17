@@ -1,0 +1,347 @@
+{
+  "pipeline_id": "9e9973fd4efb",
+  "run_id": "b337ead8",
+  "agent_count": 4,
+  "tasks_submitted": 4,
+  "agents_completed": 4,
+  "agents_failed": 0,
+  "outputs_verified": 4,
+  "outputs_accepted": 4,
+  "outputs_rejected": 0,
+  "accepted_results": {
+    "1": [
+      {
+        "filename": "output_20260617_150515.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150515.json",
+        "size": 11198,
+        "modified": "2026-06-17T20:35:15.700582"
+      },
+      {
+        "filename": "output_20260617_150523.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150523.json",
+        "size": 1525,
+        "modified": "2026-06-17T20:35:23.151271"
+      },
+      {
+        "filename": "output_20260617_150524.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150524.json",
+        "size": 1767,
+        "modified": "2026-06-17T20:35:24.872277"
+      },
+      {
+        "filename": "output_20260617_150525.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150525.json",
+        "size": 796,
+        "modified": "2026-06-17T20:35:25.817449"
+      },
+      {
+        "filename": "output_20260617_150552.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150552.json",
+        "size": 19938,
+        "modified": "2026-06-17T20:35:52.634607"
+      },
+      {
+        "filename": "output_20260617_150605.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150605.json",
+        "size": 1767,
+        "modified": "2026-06-17T20:36:05.846533"
+      },
+      {
+        "filename": "output_20260617_150607.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150607.json",
+        "size": 796,
+        "modified": "2026-06-17T20:36:07.156046"
+      },
+      {
+        "filename": "output_20260617_150609.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150609.json",
+        "size": 2749,
+        "modified": "2026-06-17T20:36:09.588121"
+      },
+      {
+        "filename": "output_20260617_150610.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\output_20260617_150610.json",
+        "size": 32532,
+        "modified": "2026-06-17T20:36:10.081168"
+      },
+      {
+        "filename": "OUTPUT_REPORT.md",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-1\\OUTPUT_REPORT.md",
+        "size": 4165,
+        "modified": "2026-06-17T20:36:10.083179"
+      }
+    ],
+    "2": [
+      {
+        "filename": "output_20260617_150523.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\output_20260617_150523.json",
+        "size": 1882,
+        "modified": "2026-06-17T20:35:23.166047"
+      },
+      {
+        "filename": "output_20260617_150524.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\output_20260617_150524.json",
+        "size": 394,
+        "modified": "2026-06-17T20:35:24.932124"
+      },
+      {
+        "filename": "output_20260617_150525.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\output_20260617_150525.json",
+        "size": 2156,
+        "modified": "2026-06-17T20:35:25.846044"
+      },
+      {
+        "filename": "output_20260617_150552.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\output_20260617_150552.json",
+        "size": 1882,
+        "modified": "2026-06-17T20:35:52.651068"
+      },
+      {
+        "filename": "output_20260617_150605.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\output_20260617_150605.json",
+        "size": 344,
+        "modified": "2026-06-17T20:36:05.857735"
+      },
+      {
+        "filename": "output_20260617_150607.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\output_20260617_150607.json",
+        "size": 796,
+        "modified": "2026-06-17T20:36:07.172706"
+      },
+      {
+        "filename": "output_20260617_150609.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\output_20260617_150609.json",
+        "size": 245,
+        "modified": "2026-06-17T20:36:09.661225"
+      },
+      {
+        "filename": "output_20260617_150610.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\output_20260617_150610.json",
+        "size": 1882,
+        "modified": "2026-06-17T20:36:10.112917"
+      },
+      {
+        "filename": "OUTPUT_REPORT.md",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2\\OUTPUT_REPORT.md",
+        "size": 1477,
+        "modified": "2026-06-17T20:36:10.118985"
+      }
+    ],
+    "3": [
+      {
+        "filename": "output_20260617_150553.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-3\\output_20260617_150553.json",
+        "size": 8450,
+        "modified": "2026-06-17T20:35:53.716110"
+      },
+      {
+        "filename": "output_20260617_150607.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-3\\output_20260617_150607.json",
+        "size": 796,
+        "modified": "2026-06-17T20:36:07.187236"
+      },
+      {
+        "filename": "output_20260617_150610.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-3\\output_20260617_150610.json",
+        "size": 307,
+        "modified": "2026-06-17T20:36:10.132987"
+      },
+      {
+        "filename": "output_20260617_150612.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-3\\output_20260617_150612.json",
+        "size": 32625,
+        "modified": "2026-06-17T20:36:12.686528"
+      },
+      {
+        "filename": "OUTPUT_REPORT.md",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-3\\OUTPUT_REPORT.md",
+        "size": 4073,
+        "modified": "2026-06-17T20:36:12.690935"
+      }
+    ],
+    "4": [
+      {
+        "filename": "output_20260617_150607.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-4\\output_20260617_150607.json",
+        "size": 796,
+        "modified": "2026-06-17T20:36:07.320834"
+      },
+      {
+        "filename": "output_20260617_150612.json",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-4\\output_20260617_150612.json",
+        "size": 299,
+        "modified": "2026-06-17T20:36:12.700656"
+      },
+      {
+        "filename": "OUTPUT_REPORT.md",
+        "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-4\\OUTPUT_REPORT.md",
+        "size": 332,
+        "modified": "2026-06-17T20:36:12.702666"
+      }
+    ]
+  },
+  "verification_details": [
+    {
+      "agent_id": 1,
+      "verifier_id": 2,
+      "verdict": "PASS",
+      "checks": [
+        {
+          "check": "schema_check",
+          "passed": true,
+          "details": "Schema valid",
+          "weight": 0.3
+        },
+        {
+          "check": "isolation_check",
+          "passed": false,
+          "details": "Isolation issues: Contains reference to agent-2: 'agent-2'; Contains reference to agent-3: 'agent-3'; Contains reference to agent-4: 'agent-4'; Contains reference to agent-5: 'agent-5'",
+          "weight": 0.2
+        },
+        {
+          "check": "consistency_check",
+          "passed": true,
+          "details": "Consistency checks passed",
+          "weight": 0.2
+        },
+        {
+          "check": "completeness_check",
+          "passed": true,
+          "details": "All fields present and non-null",
+          "weight": 0.2
+        },
+        {
+          "check": "security_check",
+          "passed": true,
+          "details": "Security scan clean",
+          "weight": 0.1
+        }
+      ],
+      "score": 0.8,
+      "summary": "Verification PASSED: 4/5 checks passed (score: 0.80)",
+      "retries": 0
+    },
+    {
+      "agent_id": 2,
+      "verifier_id": 3,
+      "verdict": "PASS",
+      "checks": [
+        {
+          "check": "schema_check",
+          "passed": true,
+          "details": "Schema valid",
+          "weight": 0.3
+        },
+        {
+          "check": "isolation_check",
+          "passed": true,
+          "details": "No isolation violations",
+          "weight": 0.2
+        },
+        {
+          "check": "consistency_check",
+          "passed": true,
+          "details": "Consistency checks passed",
+          "weight": 0.2
+        },
+        {
+          "check": "completeness_check",
+          "passed": true,
+          "details": "All fields present and non-null",
+          "weight": 0.2
+        },
+        {
+          "check": "security_check",
+          "passed": true,
+          "details": "Security scan clean",
+          "weight": 0.1
+        }
+      ],
+      "score": 1.0,
+      "summary": "Verification PASSED: 5/5 checks passed (score: 1.00)",
+      "retries": 0
+    },
+    {
+      "agent_id": 3,
+      "verifier_id": 4,
+      "verdict": "PASS",
+      "checks": [
+        {
+          "check": "schema_check",
+          "passed": true,
+          "details": "Schema valid",
+          "weight": 0.3
+        },
+        {
+          "check": "isolation_check",
+          "passed": false,
+          "details": "Isolation issues: Contains reference to agent-1: 'agent-1'; Contains reference to agent-2: 'agent-2'; Contains reference to agent-4: 'agent-4'; Contains reference to agent-5: 'agent-5'",
+          "weight": 0.2
+        },
+        {
+          "check": "consistency_check",
+          "passed": true,
+          "details": "Consistency checks passed",
+          "weight": 0.2
+        },
+        {
+          "check": "completeness_check",
+          "passed": true,
+          "details": "All fields present and non-null",
+          "weight": 0.2
+        },
+        {
+          "check": "security_check",
+          "passed": true,
+          "details": "Security scan clean",
+          "weight": 0.1
+        }
+      ],
+      "score": 0.8,
+      "summary": "Verification PASSED: 4/5 checks passed (score: 0.80)",
+      "retries": 0
+    },
+    {
+      "agent_id": 4,
+      "verifier_id": 1,
+      "verdict": "PASS",
+      "checks": [
+        {
+          "check": "schema_check",
+          "passed": true,
+          "details": "Schema valid",
+          "weight": 0.3
+        },
+        {
+          "check": "isolation_check",
+          "passed": true,
+          "details": "No isolation violations",
+          "weight": 0.2
+        },
+        {
+          "check": "consistency_check",
+          "passed": true,
+          "details": "Consistency checks passed",
+          "weight": 0.2
+        },
+        {
+          "check": "completeness_check",
+          "passed": true,
+          "details": "All fields present and non-null",
+          "weight": 0.2
+        },
+        {
+          "check": "security_check",
+          "passed": true,
+          "details": "Security scan clean",
+          "weight": 0.1
+        }
+      ],
+      "score": 1.0,
+      "summary": "Verification PASSED: 5/5 checks passed (score: 1.00)",
+      "retries": 0
+    }
+  ],
+  "elapsed_seconds": 4.38,
+  "completed_at": "2026-06-17T15:06:12.959067"
+}

@@ -1,0 +1,54 @@
+{
+  "task_type": "deep-read",
+  "target": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-2",
+  "files_found": 7,
+  "file_details": [
+    {
+      "name": ".isolation_marker",
+      "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-2\\.isolation_marker",
+      "size": 38,
+      "modified": "2026-06-17T20:35:25.690110"
+    },
+    {
+      "name": "determination.json",
+      "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-2\\determination.json",
+      "size": 1127,
+      "modified": "2026-06-17T20:35:25.827804"
+    },
+    {
+      "name": "DETERMINATION.md",
+      "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-2\\DETERMINATION.md",
+      "size": 732,
+      "modified": "2026-06-17T20:35:25.823485"
+    },
+    {
+      "name": "output_20260617_150523.json",
+      "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-2\\output_20260617_150523.json",
+      "size": 1882,
+      "modified": "2026-06-17T20:35:23.828440"
+    },
+    {
+      "name": "output_20260617_150524.json",
+      "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-2\\output_20260617_150524.json",
+      "size": 394,
+      "modified": "2026-06-17T20:35:24.932124"
+    },
+    {
+      "name": "OUTPUT_REPORT.md",
+      "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-2\\OUTPUT_REPORT.md",
+      "size": 384,
+      "modified": "2026-06-17T20:35:24.942588"
+    },
+    {
+      "name": "output_20260617_150523.json.rejection.json",
+      "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-2\\rejected\\output_20260617_150523.json.rejection.json",
+      "size": 235,
+      "modified": "2026-06-17T20:35:24.927097"
+    }
+  ],
+  "analysis": {
+    "total_size": 4792,
+    "file_count": 7
+  },
+  "completed_at": "2026-06-17T15:05:25.842263"
+}

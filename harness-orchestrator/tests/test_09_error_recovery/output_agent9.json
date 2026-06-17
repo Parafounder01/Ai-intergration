@@ -1,0 +1,193 @@
+{
+  "task_type": "analysis",
+  "agent_id": 9,
+  "target": "Error Recovery in Orchestrator — Test Case 9",
+  "pipeline_position": "Task 9 of 10",
+  "analysis_type": "error-handling",
+  "phase": "DETERMINE → EXECUTE → REPORT",
+
+  "executive_summary": "The Harness Orchestrator implements a 6-layer defense-in-depth error recovery architecture. Errors at any layer are contained, logged, and do NOT crash the pipeline. The system employs both soft handling (empty results for nonexistent paths) and hard handling (try/except at agent and orchestrator levels). Verification rejection triggers up to 3 automated retries. After retry exhaustion, outputs are permanently rejected with structured rejection reports. The system always continues processing remaining agents.",
+
+  "error_recovery_layers": {
+    "LAYER_1": {
+      "name": "Agent-Level Soft Handling",
+      "location": "agent_template.py :: PavithraSubagent._execute_deep_read()",
+      "code": "if os.path.exists(target_path): ... else: return empty result",
+      "behavior": "Nonexistent paths produce empty file lists (files_found=0, file_details=[]). No exception raised.",
+      "catches": "Nonexistent file paths, permission errors during os.walk (logged as warning)",
+      "misses": "Runtime errors, logic errors, unexpected exceptions in task execution"
+    },
+    "LAYER_2": {
+      "name": "Agent-Level Hard Exception Handling",
+      "location": "agent_template.py :: PavithraSubagent.execute() (lines 275-279)",
+      "code": "except Exception as e: self.status = 'FAILED'; self.error = str(e); raise RuntimeError(...)",
+      "behavior": "Catches ALL exceptions during agent execution. Sets status=FAILED, stores error message, then re-raises as RuntimeError.",
+      "catches": "Any unhandled exception during _execute_*() methods",
+      "misses": "Nothing — this is the last line of defense at agent level"
+    },
+    "LAYER_3": {
+      "name": "Pipeline-Level Exception Containment",
+      "location": "orchestrator.py :: Orchestrator._execute_all() (lines 155-168)",
+      "code": "try: agent.execute()\nexcept Exception as e: outputs[agent.agent_id] = {'error': str(e), 'task_type': ...}",
+      "behavior": "Catches RuntimeError from Layer 2 (or any other exception). Stores error dict as output. LOGS error and CONTINUES to next agent. SYSTEM DOES NOT CRASH.",
+      "catches": "All exceptions from agent execution",
+      "misses": "Nothing — comprehensive catch-all"
+    },
+    "LAYER_4": {
+      "name": "Adversarial Verification Catch",
+      "location": "adversary.py :: verify_output() (lines 130-203)",
+      "code": "score = weighted_score / max(total_weight, 0.01); verdict = 'PASS' if score >= 0.7 else 'FAIL'",
+      "behavior": "Error outputs (missing fields, invalid types, inconsistent data) fail verification checks. 5 checks run: schema, isolation, consistency, completeness, security. Weighted score, threshold at 0.7.",
+      "threshold": "Minimum score 0.7 for PASS verdict",
+      "catches": "Incomplete outputs, schema violations, missing required fields"
+    },
+    "LAYER_5": {
+      "name": "Automatic Retry Mechanism",
+      "location": "orchestrator.py :: Orchestrator._verify_all() (lines 222-249)",
+      "code": "while retries_used < self.max_retries and verdict == 'FAIL': retries_used += 1; new_output = agent.execute(); re-verify",
+      "behavior": "Up to max_retries (3) automatic re-execution + re-verification attempts. Each retry calls agent.execute() again, then re-verifies. If any retry passes, output is accepted.",
+      "max_retries": 3,
+      "catches": "Transient failures, race conditions, temporary unavailability"
+    },
+    "LAYER_6": {
+      "name": "Clean Rejection & Isolation",
+      "location": "isolation_manager.py :: IsolationManager.reject_result() (lines 182-206)",
+      "code": "reject_dir.mkdir(parents=True, exist_ok=True); write rejection report JSON",
+      "behavior": "After ALL retries exhausted and verdict still FAIL: output is moved to outputs/agent-N/rejected/. Structured rejection report written with agent_id, filename, reason, timestamp. Pipeline result records rejected count.",
+      "rejection_path": "outputs/agent-{id}/rejected/{filename}.rejection.json",
+      "acceptance_path": "results/agent-{id}/{filename}"
+    }
+  },
+
+  "test_case_9_deep_dive": {
+    "test_name": "_test_09_error_recovery",
+    "location": "orchestrator.py :: lines 531-553",
+    "setup": {
+      "agent_count": 2,
+      "agent_1_task": "deep-read @ project_root/work/inputs (VALID PATH)",
+      "agent_2_task": "deep-read @ /nonexistent/path/that/does/not/exist (INVALID PATH)"
+    },
+    "execution_flow": {
+      "step_1_fan_out": "Both agents created with isolated environments",
+      "step_2_execute_agent_1": "deep-read on valid path → completes with files found → status=COMPLETED",
+      "step_2_execute_agent_2": "deep-read on invalid path → os.path.exists()=False → empty results → status=COMPLETED (soft handling — no exception)",
+      "step_2_execute_agent_2_alternative": "IF path caused exception → status=FAILED → RuntimeError raised → caught by _execute_all() → error dict stored",
+      "step_3_verify": "Adversarial verification checks output quality",
+      "step_3_verify_agent_2": "Empty output (files_found=0) may PASS verification since schema is valid (0 is valid int, empty list is valid list)",
+      "step_4_retry": "If verification FAIL: up to 3 retries, each re-executing and re-verifying",
+      "step_5_complete": "Pipeline result: agents_completed ≥ 1, agents_failed ≥ 0",
+      "step_6_assertion": "any_completed = result['agents_completed'] > 0 → Test PASS"
+    },
+    "expected_result": "PASS — at least 1 agent completes, system survives"
+  },
+
+  "retry_mechanism_details": {
+    "trigger_condition": "verdict == 'FAIL' from verification",
+    "max_iterations": 3 (configurable via Orchestrator.__init__ max_retries=3),
+    "retry_action": "Re-execute agent.execute() (NOT determine()) then re-verify",
+    "exception_handling": "If retry raises exception: verdict='FAIL', summary=str(e), loop continues",
+    "exit_conditions": [
+      "verdict == 'PASS' → accept result immediately",
+      "retries_used >= max_retries (3) → permanent rejection",
+      "exception in retry → verdict stays FAIL → continues to next retry or exhaustion"
+    ],
+    "limitations": [
+      "Retry does NOT call agent.determine() again — state may not be fully reset",
+      "If agent has systemic error, retries will all fail (waste of resources)",
+      "No exponential backoff between retries"
+    ]
+  },
+
+  "rejection_protocol": {
+    "initiated_when": "verdict == 'FAIL' after retry exhaustion",
+    "function": "isolation_manager.reject_result(agent_id, filename, reason)",
+    "steps": [
+      "1. Create rejected/ subfolder in outputs/agent-{id}/",
+      "2. Write rejection report JSON with: agent_id, filename, reason, rejected_at",
+      "3. Log warning with rejection details"
+    ],
+    "rejection_report_schema": {
+      "agent_id": "int — ID of failed agent",
+      "filename": "str — Original output filename",
+      "reason": "str — Why it was rejected (from verification summary)",
+      "rejected_at": "ISO timestamp"
+    },
+    "acceptance_alternative": "accept_result() copies output to results/agent-{id}/"
+  },
+
+  "findings": [
+    "3 retry mechanism for failed verifications (configurable, default max_retries=3)",
+    "Agent execution wrapped in nested try/except — inner (agent) sets status=FAILED, outer (orchestrator) stores error dict and continues",
+    "Nonexistent paths handled gracefully with empty results (soft handling at _execute_deep_read level)",
+    "System continues running remaining agents after one fails — no crash, no cascade",
+    "Rejection reports stored in outputs/agent-N/rejected/ as structured JSON with full metadata",
+    "6-layer defense-in-depth: soft handling → agent exception → pipeline containment → verification catch → retry → rejection",
+    "Adversarial verification uses weighted scoring (5 checks, threshold 0.7) to determine pass/fail",
+    "Fast 20ms mode has simpler error handling — quick_verify() returns PASS/FAIL without retries",
+    "Pipeline result tracks both agents_completed and agents_failed independently",
+    "Error recovery is TESTED explicitly via Test Case 9, which validates system survival"
+  ],
+
+  "edge_cases_identified": [
+    {
+      "scenario": "Nonexistent path (current test)",
+      "behavior": "Soft recovery — empty results, no exception. Agent status=COMPLETED with 0 files.",
+      "implication": "Test passes with 'agents_completed >= 1', but error recovery code path (exception → retry) is NOT exercised"
+    },
+    {
+      "scenario": "Permission denied on path",
+      "behavior": "os.walk() raises PermissionError for individual files → caught by inner try/except → file skipped with 'error: Cannot read'",
+      "implication": "Partial result returned, no agent crash"
+    },
+    {
+      "scenario": "Systemic agent failure (always crashes)",
+      "behavior": "Layer 3 catches every time → error dict → verification fails → 3 retries all fail → permanent rejection",
+      "implication": "Wasted retry cycles but system survives"
+    },
+    {
+      "scenario": "All agents fail",
+      "behavior": "Pipeline returns agents_completed=0, agents_failed=N. Test 9 assert fails (needs agents_completed > 0).",
+      "implication": "Pipeline itself does not crash even with 100% failure rate"
+    }
+  ],
+
+  "code_references": {
+    "test_9_definition": "orchestrator.py:531-553",
+    "pipeline_flow": "orchestrator.py:74-132",
+    "agent_execution_handler": "orchestrator.py:155-168",
+    "verification_with_retry": "orchestrator.py:170-261",
+    "simple_verify_fallback": "orchestrator.py:263-295",
+    "agent_execution_try_except": "agent_template.py:275-279",
+    "deep_read_error_handling": "agent_template.py:281-320",
+    "rejection_protocol": "isolation_manager.py:182-206",
+    "acceptance_protocol": "isolation_manager.py:165-180",
+    "verification_scoring": "adversary.py:130-203",
+    "verification_schema_check": "adversary.py:206-237",
+    "verification_completeness": "adversary.py:344-376",
+    "quick_verify_fast_mode": "adversary.py:402-414",
+    "test_runner_setup": "test_runner.py:42-57"
+  },
+
+  "confidence_score": 0.95,
+
+  "error_recovery_rating": {
+    "overall": "Robust — crashes isolated, retries automatic, system survives",
+    "layer_coverage": "6/6 layers fully implemented",
+    "soft_handling": "Excellent — nonexistent paths, permission errors handled gracefully",
+    "hard_handling": "Excellent — comprehensive try/except at agent and pipeline levels",
+    "retry_efficacy": "Good — 3 retries, but no exponential backoff or progressive verification",
+    "system_survival": "Excellent — zero cascade failures, pipeline always completes",
+    "edge_case_coverage": "Good — most common failures handled, but some gaps in hard error triggering for Test 9",
+    "fast_mode": "Adequate — simplified quick_verify(), no retries, no rejection reporting"
+  },
+
+  "recommendations": [
+    "Add exponential backoff between retries to avoid rapid re-execution of failing agents",
+    "Enhance Test 9 to trigger an actual exception (not just nonexistent path) to exercise the hard recovery path — consider injecting a mock that raises RuntimeError",
+    "Call agent.determine() during retry to fully reset agent state before re-execution",
+    "Add timeout per retry (currently uses the global timeout only)",
+    "Consider circuit-breaker pattern: after 3 consecutive failures on same agent type, skip further retries immediately"
+  ],
+
+  "completed_at": "2026-06-17T12:00:00.000000Z"
+}

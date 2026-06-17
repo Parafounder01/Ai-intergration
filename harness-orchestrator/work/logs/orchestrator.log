@@ -1,0 +1,1429 @@
+2026-06-17 20:34:43,960 [INFO] orchestrator: Orchestrator initialized | agents=3 | run_id=084561be
+2026-06-17 20:34:43,963 [INFO] orchestrator: Running test case #1
+2026-06-17 20:34:43,963 [INFO] orchestrator: Test 1: Single Agent - one subagent performing deep-read
+2026-06-17 20:34:43,963 [INFO] orchestrator: Pipeline f7d76c1ad8b2 started with 1 tasks
+2026-06-17 20:34:44,025 [INFO] isolation-manager: IsolationManager initialized at C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work
+2026-06-17 20:34:44,046 [INFO] isolation-manager: Input manifest created for agent-1: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-1\manifest.json
+2026-06-17 20:34:44,056 [INFO] pavithra-subagent: Subagent-1 initialized with task: deep-read
+2026-06-17 20:34:44,058 [INFO] orchestrator: Fanned out agent-1: deep-read
+2026-06-17 20:34:44,058 [INFO] orchestrator: Executing agent-1...
+2026-06-17 20:34:44,058 [INFO] pavithra-subagent: [Agent-1] determine: Starting determination phase
+2026-06-17 20:34:44,080 [INFO] pavithra-subagent: [Agent-1] determine: Determination complete. Hash: b2382e0070ab006a...
+2026-06-17 20:34:44,082 [INFO] pavithra-subagent: [Agent-1] execute: Starting execution phase
+2026-06-17 20:34:44,143 [INFO] pavithra-subagent: [Agent-1] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-1\output_20260617_150444.json
+2026-06-17 20:34:44,143 [INFO] orchestrator: agent-1 completed with status: COMPLETED
+2026-06-17 20:34:44,145 [INFO] orchestrator: Verifying agent-1 output using agent-1 (adversary)
+2026-06-17 20:34:44,171 [INFO] adversary: Adversary-1 verifying output from agent-1
+2026-06-17 20:34:44,173 [INFO] adversary: Adversary-1 verdict for agent-1: PASS (score=0.80)
+2026-06-17 20:34:44,173 [INFO] orchestrator: agent-1 verification: PASS
+2026-06-17 20:34:44,175 [ERROR] isolation-manager: Cannot accept: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-1\output_1.json does not exist
+2026-06-17 20:34:44,185 [INFO] isolation-manager: Result ACCEPTED for agent-1: OUTPUT_REPORT.md
+2026-06-17 20:34:44,185 [ERROR] orchestrator: Test #1 FAILED: cannot access local variable 'retries' where it is not associated with a value
+2026-06-17 20:35:15,522 [INFO] orchestrator: Orchestrator initialized | agents=3 | run_id=786a85ae
+2026-06-17 20:35:15,524 [INFO] orchestrator: Running test case #1
+2026-06-17 20:35:15,524 [INFO] orchestrator: Test 1: Single Agent - one subagent performing deep-read
+2026-06-17 20:35:15,524 [INFO] orchestrator: Pipeline afd840b99b97 started with 1 tasks
+2026-06-17 20:35:15,586 [INFO] isolation-manager: IsolationManager initialized at C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work
+2026-06-17 20:35:15,590 [INFO] isolation-manager: Input manifest created for agent-1: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-1\manifest.json
+2026-06-17 20:35:15,601 [INFO] pavithra-subagent: Subagent-1 initialized with task: deep-read
+2026-06-17 20:35:15,601 [INFO] orchestrator: Fanned out agent-1: deep-read
+2026-06-17 20:35:15,601 [INFO] orchestrator: Executing agent-1...
+2026-06-17 20:35:15,601 [INFO] pavithra-subagent: [Agent-1] determine: Starting determination phase
+2026-06-17 20:35:15,619 [INFO] pavithra-subagent: [Agent-1] determine: Determination complete. Hash: 363a343b1aea5d26...
+2026-06-17 20:35:15,619 [INFO] pavithra-subagent: [Agent-1] execute: Starting execution phase
+2026-06-17 20:35:15,704 [INFO] pavithra-subagent: [Agent-1] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-1\output_20260617_150515.json
+2026-06-17 20:35:15,704 [INFO] orchestrator: agent-1 completed with status: COMPLETED
+2026-06-17 20:35:15,706 [INFO] orchestrator: Verifying agent-1 output using agent-1 (adversary)
+2026-06-17 20:35:15,713 [INFO] adversary: Adversary-1 verifying output from agent-1
+2026-06-17 20:35:15,714 [INFO] adversary: Adversary-1 verdict for agent-1: PASS (score=0.80)
+2026-06-17 20:35:15,716 [INFO] orchestrator: agent-1 verification: PASS
+2026-06-17 20:35:15,726 [INFO] isolation-manager: Result ACCEPTED for agent-1: output_20260617_150515.json
+2026-06-17 20:35:15,733 [INFO] isolation-manager: Result ACCEPTED for agent-1: OUTPUT_REPORT.md
+2026-06-17 20:35:15,744 [INFO] orchestrator: Pipeline afd840b99b97 complete: 1 accepted / 0 rejected in 0.21s
+2026-06-17 20:35:15,749 [INFO] orchestrator: Test #1: PASS
+2026-06-17 20:35:23,064 [INFO] orchestrator: Orchestrator initialized | agents=3 | run_id=a64d9358
+2026-06-17 20:35:23,065 [INFO] orchestrator: Running test case #2
+2026-06-17 20:35:23,065 [INFO] orchestrator: Test 2: Dual Agent - two subagents with independent files
+2026-06-17 20:35:23,065 [INFO] orchestrator: Pipeline 7b9c1cd1b4aa started with 2 tasks
+2026-06-17 20:35:23,106 [INFO] isolation-manager: IsolationManager initialized at C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work
+2026-06-17 20:35:23,118 [INFO] isolation-manager: Input manifest created for agent-1: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-1\manifest.json
+2026-06-17 20:35:23,126 [INFO] pavithra-subagent: Subagent-1 initialized with task: deep-read
+2026-06-17 20:35:23,126 [INFO] orchestrator: Fanned out agent-1: deep-read
+2026-06-17 20:35:23,132 [INFO] isolation-manager: Input manifest created for agent-2: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-2\manifest.json
+2026-06-17 20:35:23,136 [INFO] pavithra-subagent: Subagent-2 initialized with task: summary
+2026-06-17 20:35:23,136 [INFO] orchestrator: Fanned out agent-2: summary
+2026-06-17 20:35:23,136 [INFO] orchestrator: Executing agent-1...
+2026-06-17 20:35:23,136 [INFO] pavithra-subagent: [Agent-1] determine: Starting determination phase
+2026-06-17 20:35:23,142 [INFO] pavithra-subagent: [Agent-1] determine: Determination complete. Hash: 5b8c93ffb8804f99...
+2026-06-17 20:35:23,143 [INFO] pavithra-subagent: [Agent-1] execute: Starting execution phase
+2026-06-17 20:35:23,153 [INFO] pavithra-subagent: [Agent-1] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-1\output_20260617_150523.json
+2026-06-17 20:35:23,153 [INFO] orchestrator: agent-1 completed with status: COMPLETED
+2026-06-17 20:35:23,153 [INFO] orchestrator: Executing agent-2...
+2026-06-17 20:35:23,153 [INFO] pavithra-subagent: [Agent-2] determine: Starting determination phase
+2026-06-17 20:35:23,162 [INFO] pavithra-subagent: [Agent-2] determine: Determination complete. Hash: 46179b66ff04e386...
+2026-06-17 20:35:23,162 [INFO] pavithra-subagent: [Agent-2] execute: Starting execution phase
+2026-06-17 20:35:23,169 [INFO] pavithra-subagent: [Agent-2] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-2\output_20260617_150523.json
+2026-06-17 20:35:23,169 [INFO] orchestrator: agent-2 completed with status: COMPLETED
+2026-06-17 20:35:23,169 [INFO] orchestrator: Verifying agent-1 output using agent-2 (adversary)
+2026-06-17 20:35:23,171 [INFO] adversary: Adversary-2 verifying output from agent-1
+2026-06-17 20:35:23,173 [INFO] adversary: Adversary-2 verdict for agent-1: PASS (score=0.80)
+2026-06-17 20:35:23,173 [INFO] orchestrator: agent-1 verification: PASS
+2026-06-17 20:35:23,182 [INFO] isolation-manager: Result ACCEPTED for agent-1: output_20260617_150523.json
+2026-06-17 20:35:23,188 [INFO] isolation-manager: Result ACCEPTED for agent-1: OUTPUT_REPORT.md
+2026-06-17 20:35:23,188 [INFO] orchestrator: Verifying agent-2 output using agent-1 (adversary)
+2026-06-17 20:35:23,188 [INFO] adversary: Adversary-1 verifying output from agent-2
+2026-06-17 20:35:23,188 [INFO] adversary: Adversary-1 verdict for agent-2: PASS (score=1.00)
+2026-06-17 20:35:23,190 [INFO] orchestrator: agent-2 verification: PASS
+2026-06-17 20:35:23,270 [INFO] isolation-manager: Result ACCEPTED for agent-2: output_20260617_150523.json
+2026-06-17 20:35:23,276 [INFO] isolation-manager: Result ACCEPTED for agent-2: OUTPUT_REPORT.md
+2026-06-17 20:35:23,284 [INFO] orchestrator: Pipeline 7b9c1cd1b4aa complete: 2 accepted / 0 rejected in 0.22s
+2026-06-17 20:35:23,286 [INFO] orchestrator: Test #2: PASS
+2026-06-17 20:35:23,614 [INFO] orchestrator: Orchestrator initialized | agents=3 | run_id=150dc264
+2026-06-17 20:35:23,616 [INFO] orchestrator: Running test case #3
+2026-06-17 20:35:23,616 [INFO] orchestrator: Test 3: Triple Agent - three subagents with different task types
+2026-06-17 20:35:23,616 [INFO] orchestrator: Pipeline ff7afce7aa47 started with 3 tasks
+2026-06-17 20:35:23,680 [INFO] isolation-manager: IsolationManager initialized at C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work
+2026-06-17 20:35:23,686 [INFO] isolation-manager: Input manifest created for agent-1: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-1\manifest.json
+2026-06-17 20:35:23,691 [INFO] pavithra-subagent: Subagent-1 initialized with task: deep-read
+2026-06-17 20:35:23,693 [INFO] orchestrator: Fanned out agent-1: deep-read
+2026-06-17 20:35:23,697 [INFO] isolation-manager: Input manifest created for agent-2: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-2\manifest.json
+2026-06-17 20:35:23,713 [INFO] pavithra-subagent: Subagent-2 initialized with task: summary
+2026-06-17 20:35:23,713 [INFO] orchestrator: Fanned out agent-2: summary
+2026-06-17 20:35:23,717 [INFO] isolation-manager: Input manifest created for agent-3: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-3\manifest.json
+2026-06-17 20:35:23,721 [INFO] pavithra-subagent: Subagent-3 initialized with task: search
+2026-06-17 20:35:23,723 [INFO] orchestrator: Fanned out agent-3: search
+2026-06-17 20:35:23,723 [INFO] orchestrator: Executing agent-1...
+2026-06-17 20:35:23,723 [INFO] pavithra-subagent: [Agent-1] determine: Starting determination phase
+2026-06-17 20:35:23,729 [INFO] pavithra-subagent: [Agent-1] determine: Determination complete. Hash: 0c720a5f0551529b...
+2026-06-17 20:35:23,729 [INFO] pavithra-subagent: [Agent-1] execute: Starting execution phase
+2026-06-17 20:35:23,814 [INFO] pavithra-subagent: [Agent-1] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-1\output_20260617_150523.json
+2026-06-17 20:35:23,814 [INFO] orchestrator: agent-1 completed with status: COMPLETED
+2026-06-17 20:35:23,814 [INFO] orchestrator: Executing agent-2...
+2026-06-17 20:35:23,814 [INFO] pavithra-subagent: [Agent-2] determine: Starting determination phase
+2026-06-17 20:35:23,820 [INFO] pavithra-subagent: [Agent-2] determine: Determination complete. Hash: f546ec3059bc59c8...
+2026-06-17 20:35:23,820 [INFO] pavithra-subagent: [Agent-2] execute: Starting execution phase
+2026-06-17 20:35:23,830 [INFO] pavithra-subagent: [Agent-2] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-2\output_20260617_150523.json
+2026-06-17 20:35:23,832 [INFO] orchestrator: agent-2 completed with status: COMPLETED
+2026-06-17 20:35:23,832 [INFO] orchestrator: Executing agent-3...
+2026-06-17 20:35:23,832 [INFO] pavithra-subagent: [Agent-3] determine: Starting determination phase
+2026-06-17 20:35:23,872 [INFO] pavithra-subagent: [Agent-3] determine: Determination complete. Hash: 66409e11ade8d621...
+2026-06-17 20:35:23,873 [INFO] pavithra-subagent: [Agent-3] execute: Starting execution phase
+2026-06-17 20:35:24,798 [INFO] orchestrator: Orchestrator initialized | agents=3 | run_id=a711d22b
+2026-06-17 20:35:24,798 [INFO] orchestrator: Running test case #4
+2026-06-17 20:35:24,798 [INFO] orchestrator: Test 4: Adversary Pass - output passes verification first try
+2026-06-17 20:35:24,800 [INFO] orchestrator: Pipeline 4eab982a56da started with 2 tasks
+2026-06-17 20:35:24,836 [INFO] isolation-manager: IsolationManager initialized at C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work
+2026-06-17 20:35:24,841 [INFO] isolation-manager: Input manifest created for agent-1: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-1\manifest.json
+2026-06-17 20:35:24,847 [INFO] pavithra-subagent: Subagent-1 initialized with task: deep-read
+2026-06-17 20:35:24,847 [INFO] orchestrator: Fanned out agent-1: deep-read
+2026-06-17 20:35:24,851 [INFO] isolation-manager: Input manifest created for agent-2: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-2\manifest.json
+2026-06-17 20:35:24,855 [INFO] pavithra-subagent: Subagent-2 initialized with task: verification
+2026-06-17 20:35:24,855 [INFO] orchestrator: Fanned out agent-2: verification
+2026-06-17 20:35:24,855 [INFO] orchestrator: Executing agent-1...
+2026-06-17 20:35:24,855 [INFO] pavithra-subagent: [Agent-1] determine: Starting determination phase
+2026-06-17 20:35:24,865 [INFO] pavithra-subagent: [Agent-1] determine: Determination complete. Hash: d290d21c52b6d67b...
+2026-06-17 20:35:24,865 [INFO] pavithra-subagent: [Agent-1] execute: Starting execution phase
+2026-06-17 20:35:24,896 [INFO] pavithra-subagent: [Agent-1] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-1\output_20260617_150524.json
+2026-06-17 20:35:24,897 [INFO] orchestrator: agent-1 completed with status: COMPLETED
+2026-06-17 20:35:24,897 [INFO] orchestrator: Executing agent-2...
+2026-06-17 20:35:24,897 [INFO] pavithra-subagent: [Agent-2] determine: Starting determination phase
+2026-06-17 20:35:24,897 [ERROR] orchestrator: agent-2 failed: slice(None, 100, None)
+2026-06-17 20:35:24,897 [INFO] orchestrator: Verifying agent-1 output using agent-2 (adversary)
+2026-06-17 20:35:24,901 [INFO] adversary: Adversary-2 verifying output from agent-1
+2026-06-17 20:35:24,901 [INFO] adversary: Adversary-2 verdict for agent-1: PASS (score=0.80)
+2026-06-17 20:35:24,903 [INFO] orchestrator: agent-1 verification: PASS
+2026-06-17 20:35:24,915 [INFO] isolation-manager: Result ACCEPTED for agent-1: output_20260617_150524.json
+2026-06-17 20:35:24,919 [INFO] isolation-manager: Result ACCEPTED for agent-1: OUTPUT_REPORT.md
+2026-06-17 20:35:24,919 [INFO] orchestrator: Verifying agent-2 output using agent-1 (adversary)
+2026-06-17 20:35:24,921 [INFO] adversary: Adversary-1 verifying output from agent-2
+2026-06-17 20:35:24,921 [INFO] adversary: Adversary-1 verdict for agent-2: FAIL (score=0.50)
+2026-06-17 20:35:24,921 [INFO] orchestrator: agent-2 verification: FAIL
+2026-06-17 20:35:24,929 [WARNING] isolation-manager: Result REJECTED for agent-2: output_20260617_150523.json - Verification FAILED: 3/5 checks passed (score: 0.50) | Failing checks: schema_check, completeness_check
+2026-06-17 20:35:24,929 [INFO] orchestrator: Retry 1/3 for agent-2
+2026-06-17 20:35:24,929 [INFO] pavithra-subagent: [Agent-2] execute: Starting execution phase
+2026-06-17 20:35:24,942 [INFO] pavithra-subagent: [Agent-2] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-2\output_20260617_150524.json
+2026-06-17 20:35:24,944 [INFO] adversary: Adversary-1 verifying output from agent-2
+2026-06-17 20:35:24,946 [INFO] adversary: Adversary-1 verdict for agent-2: PASS (score=1.00)
+2026-06-17 20:35:24,952 [INFO] isolation-manager: Result ACCEPTED for agent-2: output_20260617_150524.json
+2026-06-17 20:35:24,952 [INFO] orchestrator: agent-2 passed after 1 retries
+2026-06-17 20:35:24,962 [INFO] orchestrator: Pipeline 4eab982a56da complete: 2 accepted / 0 rejected in 0.16s
+2026-06-17 20:35:24,966 [INFO] orchestrator: Test #4: PASS
+2026-06-17 20:35:25,182 [ERROR] pavithra-subagent: [Agent-3] execute: Execution FAILED: 'charmap' codec can't encode characters in position 2112-2113: character maps to <undefined>
+2026-06-17 20:35:25,182 [ERROR] orchestrator: agent-3 failed: Agent-3 execution failed: 'charmap' codec can't encode characters in position 2112-2113: character maps to <undefined>
+2026-06-17 20:35:25,182 [INFO] orchestrator: Verifying agent-1 output using agent-2 (adversary)
+2026-06-17 20:35:25,186 [INFO] adversary: Adversary-2 verifying output from agent-1
+2026-06-17 20:35:25,188 [INFO] adversary: Adversary-2 verdict for agent-1: PASS (score=0.80)
+2026-06-17 20:35:25,188 [INFO] orchestrator: agent-1 verification: PASS
+2026-06-17 20:35:25,199 [INFO] isolation-manager: Result ACCEPTED for agent-1: output_20260617_150524.json
+2026-06-17 20:35:25,211 [INFO] isolation-manager: Result ACCEPTED for agent-1: OUTPUT_REPORT.md
+2026-06-17 20:35:25,213 [INFO] orchestrator: Verifying agent-2 output using agent-3 (adversary)
+2026-06-17 20:35:25,213 [INFO] adversary: Adversary-3 verifying output from agent-2
+2026-06-17 20:35:25,213 [INFO] adversary: Adversary-3 verdict for agent-2: PASS (score=1.00)
+2026-06-17 20:35:25,213 [INFO] orchestrator: agent-2 verification: PASS
+2026-06-17 20:35:25,219 [INFO] isolation-manager: Result ACCEPTED for agent-2: output_20260617_150524.json
+2026-06-17 20:35:25,225 [INFO] isolation-manager: Result ACCEPTED for agent-2: OUTPUT_REPORT.md
+2026-06-17 20:35:25,225 [INFO] orchestrator: Verifying agent-3 output using agent-1 (adversary)
+2026-06-17 20:35:25,226 [INFO] adversary: Adversary-1 verifying output from agent-3
+2026-06-17 20:35:25,226 [INFO] adversary: Adversary-1 verdict for agent-3: FAIL (score=0.50)
+2026-06-17 20:35:25,226 [INFO] orchestrator: agent-3 verification: FAIL
+2026-06-17 20:35:25,231 [WARNING] isolation-manager: Result REJECTED for agent-3: output_20260617_150525.json - Verification FAILED: 3/5 checks passed (score: 0.50) | Failing checks: schema_check, completeness_check
+2026-06-17 20:35:25,231 [INFO] orchestrator: Retry 1/3 for agent-3
+2026-06-17 20:35:25,231 [INFO] pavithra-subagent: [Agent-3] execute: Starting execution phase
+2026-06-17 20:35:25,666 [INFO] orchestrator: Orchestrator initialized | agents=3 | run_id=b5789418
+2026-06-17 20:35:25,668 [INFO] orchestrator: Running test case #6
+2026-06-17 20:35:25,668 [INFO] orchestrator: Test 6: Content Isolation - verify Agent1 cannot access Agent2's data
+2026-06-17 20:35:25,668 [INFO] orchestrator: Pipeline b73408b278ab started with 2 tasks
+2026-06-17 20:35:25,712 [INFO] isolation-manager: IsolationManager initialized at C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work
+2026-06-17 20:35:25,719 [INFO] isolation-manager: Input manifest created for agent-1: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-1\manifest.json
+2026-06-17 20:35:25,765 [INFO] pavithra-subagent: Subagent-1 initialized with task: deep-read
+2026-06-17 20:35:25,765 [INFO] orchestrator: Fanned out agent-1: deep-read
+2026-06-17 20:35:25,770 [INFO] isolation-manager: Input manifest created for agent-2: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-2\manifest.json
+2026-06-17 20:35:25,780 [INFO] pavithra-subagent: Subagent-2 initialized with task: deep-read
+2026-06-17 20:35:25,780 [INFO] orchestrator: Fanned out agent-2: deep-read
+2026-06-17 20:35:25,780 [INFO] orchestrator: Executing agent-1...
+2026-06-17 20:35:25,780 [INFO] pavithra-subagent: [Agent-1] determine: Starting determination phase
+2026-06-17 20:35:25,786 [INFO] pavithra-subagent: [Agent-1] determine: Determination complete. Hash: 60ef99efd74f8585...
+2026-06-17 20:35:25,786 [INFO] pavithra-subagent: [Agent-1] execute: Starting execution phase
+2026-06-17 20:35:25,819 [INFO] pavithra-subagent: [Agent-1] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-1\output_20260617_150525.json
+2026-06-17 20:35:25,821 [INFO] orchestrator: agent-1 completed with status: COMPLETED
+2026-06-17 20:35:25,821 [INFO] orchestrator: Executing agent-2...
+2026-06-17 20:35:25,821 [INFO] pavithra-subagent: [Agent-2] determine: Starting determination phase
+2026-06-17 20:35:25,827 [INFO] pavithra-subagent: [Agent-2] determine: Determination complete. Hash: 13308575bf954528...
+2026-06-17 20:35:25,829 [INFO] pavithra-subagent: [Agent-2] execute: Starting execution phase
+2026-06-17 20:35:25,848 [INFO] pavithra-subagent: [Agent-2] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-2\output_20260617_150525.json
+2026-06-17 20:35:25,848 [INFO] orchestrator: agent-2 completed with status: COMPLETED
+2026-06-17 20:35:25,848 [INFO] orchestrator: Verifying agent-1 output using agent-2 (adversary)
+2026-06-17 20:35:25,850 [INFO] adversary: Adversary-2 verifying output from agent-1
+2026-06-17 20:35:25,852 [INFO] adversary: Adversary-2 verdict for agent-1: PASS (score=1.00)
+2026-06-17 20:35:25,852 [INFO] orchestrator: agent-1 verification: PASS
+2026-06-17 20:35:25,871 [INFO] isolation-manager: Result ACCEPTED for agent-1: output_20260617_150525.json
+2026-06-17 20:35:25,875 [INFO] isolation-manager: Result ACCEPTED for agent-1: OUTPUT_REPORT.md
+2026-06-17 20:35:25,876 [INFO] orchestrator: Verifying agent-2 output using agent-1 (adversary)
+2026-06-17 20:35:25,876 [INFO] adversary: Adversary-1 verifying output from agent-2
+2026-06-17 20:35:25,876 [INFO] adversary: Adversary-1 verdict for agent-2: PASS (score=1.00)
+2026-06-17 20:35:25,876 [INFO] orchestrator: agent-2 verification: PASS
+2026-06-17 20:35:25,882 [INFO] isolation-manager: Result ACCEPTED for agent-2: output_20260617_150525.json
+2026-06-17 20:35:25,888 [INFO] isolation-manager: Result ACCEPTED for agent-2: OUTPUT_REPORT.md
+2026-06-17 20:35:25,896 [INFO] orchestrator: Pipeline b73408b278ab complete: 2 accepted / 0 rejected in 0.23s
+2026-06-17 20:35:25,937 [INFO] orchestrator: Test #6: PASS
+2026-06-17 20:35:26,385 [ERROR] pavithra-subagent: [Agent-3] execute: Execution FAILED: 'charmap' codec can't encode characters in position 2112-2113: character maps to <undefined>
+2026-06-17 20:35:26,385 [ERROR] orchestrator: Retry 1 failed for agent-3: Agent-3 execution failed: 'charmap' codec can't encode characters in position 2112-2113: character maps to <undefined>
+2026-06-17 20:35:26,385 [INFO] orchestrator: Retry 2/3 for agent-3
+2026-06-17 20:35:26,385 [INFO] pavithra-subagent: [Agent-3] execute: Starting execution phase
+2026-06-17 20:35:26,819 [ERROR] pavithra-subagent: [Agent-3] execute: Execution FAILED: 'charmap' codec can't encode characters in position 2112-2113: character maps to <undefined>
+2026-06-17 20:35:26,819 [ERROR] orchestrator: Retry 2 failed for agent-3: Agent-3 execution failed: 'charmap' codec can't encode characters in position 2112-2113: character maps to <undefined>
+2026-06-17 20:35:26,819 [INFO] orchestrator: Retry 3/3 for agent-3
+2026-06-17 20:35:26,819 [INFO] pavithra-subagent: [Agent-3] execute: Starting execution phase
+2026-06-17 20:35:27,051 [ERROR] pavithra-subagent: [Agent-3] execute: Execution FAILED: 'charmap' codec can't encode characters in position 2112-2113: character maps to <undefined>
+2026-06-17 20:35:27,051 [ERROR] orchestrator: Retry 3 failed for agent-3: Agent-3 execution failed: 'charmap' codec can't encode characters in position 2112-2113: character maps to <undefined>
+2026-06-17 20:35:27,064 [INFO] orchestrator: Pipeline ff7afce7aa47 complete: 2 accepted / 1 rejected in 3.45s
+2026-06-17 20:35:27,079 [INFO] orchestrator: Test #3: FAIL
+2026-06-17 20:35:52,426 [INFO] orchestrator: Orchestrator initialized | agents=3 | run_id=99e23bd2
+2026-06-17 20:35:52,436 [INFO] orchestrator: Running test case #3
+2026-06-17 20:35:52,436 [INFO] orchestrator: Test 3: Triple Agent - three subagents with different task types
+2026-06-17 20:35:52,438 [INFO] orchestrator: Pipeline aa62d63e541e started with 3 tasks
+2026-06-17 20:35:52,492 [INFO] isolation-manager: IsolationManager initialized at C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work
+2026-06-17 20:35:52,499 [INFO] isolation-manager: Input manifest created for agent-1: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-1\manifest.json
+2026-06-17 20:35:52,506 [INFO] pavithra-subagent: Subagent-1 initialized with task: deep-read
+2026-06-17 20:35:52,508 [INFO] orchestrator: Fanned out agent-1: deep-read
+2026-06-17 20:35:52,516 [INFO] isolation-manager: Input manifest created for agent-2: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-2\manifest.json
+2026-06-17 20:35:52,520 [INFO] pavithra-subagent: Subagent-2 initialized with task: summary
+2026-06-17 20:35:52,520 [INFO] orchestrator: Fanned out agent-2: summary
+2026-06-17 20:35:52,526 [INFO] isolation-manager: Input manifest created for agent-3: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-3\manifest.json
+2026-06-17 20:35:52,533 [INFO] pavithra-subagent: Subagent-3 initialized with task: search
+2026-06-17 20:35:52,533 [INFO] orchestrator: Fanned out agent-3: search
+2026-06-17 20:35:52,533 [INFO] orchestrator: Executing agent-1...
+2026-06-17 20:35:52,535 [INFO] pavithra-subagent: [Agent-1] determine: Starting determination phase
+2026-06-17 20:35:52,541 [INFO] pavithra-subagent: [Agent-1] determine: Determination complete. Hash: 9136c637b1b305f6...
+2026-06-17 20:35:52,541 [INFO] pavithra-subagent: [Agent-1] execute: Starting execution phase
+2026-06-17 20:35:52,637 [INFO] pavithra-subagent: [Agent-1] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-1\output_20260617_150552.json
+2026-06-17 20:35:52,637 [INFO] orchestrator: agent-1 completed with status: COMPLETED
+2026-06-17 20:35:52,637 [INFO] orchestrator: Executing agent-2...
+2026-06-17 20:35:52,637 [INFO] pavithra-subagent: [Agent-2] determine: Starting determination phase
+2026-06-17 20:35:52,643 [INFO] pavithra-subagent: [Agent-2] determine: Determination complete. Hash: 7edb4d013999eec2...
+2026-06-17 20:35:52,643 [INFO] pavithra-subagent: [Agent-2] execute: Starting execution phase
+2026-06-17 20:35:52,654 [INFO] pavithra-subagent: [Agent-2] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-2\output_20260617_150552.json
+2026-06-17 20:35:52,654 [INFO] orchestrator: agent-2 completed with status: COMPLETED
+2026-06-17 20:35:52,654 [INFO] orchestrator: Executing agent-3...
+2026-06-17 20:35:52,667 [INFO] pavithra-subagent: [Agent-3] determine: Starting determination phase
+2026-06-17 20:35:52,672 [INFO] pavithra-subagent: [Agent-3] determine: Determination complete. Hash: 826f3aebfe036105...
+2026-06-17 20:35:52,674 [INFO] pavithra-subagent: [Agent-3] execute: Starting execution phase
+2026-06-17 20:35:53,720 [INFO] pavithra-subagent: [Agent-3] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-3\output_20260617_150553.json
+2026-06-17 20:35:53,720 [INFO] orchestrator: agent-3 completed with status: COMPLETED
+2026-06-17 20:35:53,720 [INFO] orchestrator: Verifying agent-1 output using agent-2 (adversary)
+2026-06-17 20:35:53,724 [INFO] adversary: Adversary-2 verifying output from agent-1
+2026-06-17 20:35:53,738 [INFO] adversary: Adversary-2 verdict for agent-1: PASS (score=0.80)
+2026-06-17 20:35:53,738 [INFO] orchestrator: agent-1 verification: PASS
+2026-06-17 20:35:53,750 [INFO] isolation-manager: Result ACCEPTED for agent-1: output_20260617_150552.json
+2026-06-17 20:35:53,756 [INFO] isolation-manager: Result ACCEPTED for agent-1: OUTPUT_REPORT.md
+2026-06-17 20:35:53,756 [INFO] orchestrator: Verifying agent-2 output using agent-3 (adversary)
+2026-06-17 20:35:53,758 [INFO] adversary: Adversary-3 verifying output from agent-2
+2026-06-17 20:35:53,758 [INFO] adversary: Adversary-3 verdict for agent-2: PASS (score=1.00)
+2026-06-17 20:35:53,758 [INFO] orchestrator: agent-2 verification: PASS
+2026-06-17 20:35:53,768 [INFO] isolation-manager: Result ACCEPTED for agent-2: output_20260617_150552.json
+2026-06-17 20:35:53,800 [INFO] isolation-manager: Result ACCEPTED for agent-2: OUTPUT_REPORT.md
+2026-06-17 20:35:53,800 [INFO] orchestrator: Verifying agent-3 output using agent-1 (adversary)
+2026-06-17 20:35:53,800 [INFO] adversary: Adversary-1 verifying output from agent-3
+2026-06-17 20:35:53,802 [INFO] adversary: Adversary-1 verdict for agent-3: PASS (score=0.80)
+2026-06-17 20:35:53,804 [INFO] orchestrator: agent-3 verification: PASS
+2026-06-17 20:35:53,857 [INFO] isolation-manager: Result ACCEPTED for agent-3: output_20260617_150553.json
+2026-06-17 20:35:53,861 [INFO] isolation-manager: Result ACCEPTED for agent-3: OUTPUT_REPORT.md
+2026-06-17 20:35:53,885 [INFO] orchestrator: Pipeline aa62d63e541e complete: 3 accepted / 0 rejected in 1.45s
+2026-06-17 20:35:53,891 [INFO] orchestrator: Test #3: PASS
+2026-06-17 20:36:05,655 [INFO] orchestrator: Orchestrator initialized | agents=3 | run_id=3d371d24
+2026-06-17 20:36:05,666 [INFO] orchestrator: Running test case #5
+2026-06-17 20:36:05,666 [INFO] orchestrator: Test 5: Adversary Reject - output fails then passes after retry
+2026-06-17 20:36:05,668 [INFO] orchestrator: Pipeline d0a91eef4cb3 started with 2 tasks
+2026-06-17 20:36:05,739 [INFO] isolation-manager: IsolationManager initialized at C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work
+2026-06-17 20:36:05,785 [INFO] isolation-manager: Input manifest created for agent-1: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-1\manifest.json
+2026-06-17 20:36:05,791 [INFO] pavithra-subagent: Subagent-1 initialized with task: deep-read
+2026-06-17 20:36:05,791 [INFO] orchestrator: Fanned out agent-1: deep-read
+2026-06-17 20:36:05,799 [INFO] isolation-manager: Input manifest created for agent-2: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-2\manifest.json
+2026-06-17 20:36:05,805 [INFO] pavithra-subagent: Subagent-2 initialized with task: analysis
+2026-06-17 20:36:05,807 [INFO] orchestrator: Fanned out agent-2: analysis
+2026-06-17 20:36:05,807 [INFO] orchestrator: Executing agent-1...
+2026-06-17 20:36:05,807 [INFO] pavithra-subagent: [Agent-1] determine: Starting determination phase
+2026-06-17 20:36:05,816 [INFO] pavithra-subagent: [Agent-1] determine: Determination complete. Hash: a4deac8a9de5fba2...
+2026-06-17 20:36:05,816 [INFO] pavithra-subagent: [Agent-1] execute: Starting execution phase
+2026-06-17 20:36:05,848 [INFO] pavithra-subagent: [Agent-1] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-1\output_20260617_150605.json
+2026-06-17 20:36:05,848 [INFO] orchestrator: agent-1 completed with status: COMPLETED
+2026-06-17 20:36:05,848 [INFO] orchestrator: Executing agent-2...
+2026-06-17 20:36:05,848 [INFO] pavithra-subagent: [Agent-2] determine: Starting determination phase
+2026-06-17 20:36:05,854 [INFO] pavithra-subagent: [Agent-2] determine: Determination complete. Hash: 881d494cf32052cf...
+2026-06-17 20:36:05,854 [INFO] pavithra-subagent: [Agent-2] execute: Starting execution phase
+2026-06-17 20:36:05,862 [INFO] pavithra-subagent: [Agent-2] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-2\output_20260617_150605.json
+2026-06-17 20:36:05,864 [INFO] orchestrator: agent-2 completed with status: COMPLETED
+2026-06-17 20:36:05,864 [INFO] orchestrator: Verifying agent-1 output using agent-2 (adversary)
+2026-06-17 20:36:05,866 [INFO] adversary: Adversary-2 verifying output from agent-1
+2026-06-17 20:36:05,868 [INFO] adversary: Adversary-2 verdict for agent-1: PASS (score=0.80)
+2026-06-17 20:36:05,868 [INFO] orchestrator: agent-1 verification: PASS
+2026-06-17 20:36:05,916 [INFO] isolation-manager: Result ACCEPTED for agent-1: output_20260617_150605.json
+2026-06-17 20:36:05,920 [INFO] isolation-manager: Result ACCEPTED for agent-1: OUTPUT_REPORT.md
+2026-06-17 20:36:05,920 [INFO] orchestrator: Verifying agent-2 output using agent-1 (adversary)
+2026-06-17 20:36:05,922 [INFO] adversary: Adversary-1 verifying output from agent-2
+2026-06-17 20:36:05,922 [INFO] adversary: Adversary-1 verdict for agent-2: PASS (score=1.00)
+2026-06-17 20:36:05,922 [INFO] orchestrator: agent-2 verification: PASS
+2026-06-17 20:36:05,931 [INFO] isolation-manager: Result ACCEPTED for agent-2: output_20260617_150605.json
+2026-06-17 20:36:05,937 [INFO] isolation-manager: Result ACCEPTED for agent-2: OUTPUT_REPORT.md
+2026-06-17 20:36:05,965 [INFO] orchestrator: Pipeline d0a91eef4cb3 complete: 2 accepted / 0 rejected in 0.30s
+2026-06-17 20:36:05,969 [INFO] orchestrator: Test #5: PASS
+2026-06-17 20:36:06,932 [INFO] orchestrator: Orchestrator initialized | agents=3 | run_id=25a5d3ef
+2026-06-17 20:36:06,935 [INFO] orchestrator: Running test case #7
+2026-06-17 20:36:06,935 [INFO] orchestrator: Test 7: Large Fan-Out - 5 subagents in parallel
+2026-06-17 20:36:06,936 [INFO] orchestrator: Pipeline 36db3c91c4e5 started with 5 tasks
+2026-06-17 20:36:07,052 [INFO] isolation-manager: IsolationManager initialized at C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work
+2026-06-17 20:36:07,056 [INFO] isolation-manager: Input manifest created for agent-1: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-1\manifest.json
+2026-06-17 20:36:07,061 [INFO] pavithra-subagent: Subagent-1 initialized with task: deep-read
+2026-06-17 20:36:07,064 [INFO] orchestrator: Fanned out agent-1: deep-read
+2026-06-17 20:36:07,068 [INFO] isolation-manager: Input manifest created for agent-2: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-2\manifest.json
+2026-06-17 20:36:07,072 [INFO] pavithra-subagent: Subagent-2 initialized with task: deep-read
+2026-06-17 20:36:07,074 [INFO] orchestrator: Fanned out agent-2: deep-read
+2026-06-17 20:36:07,079 [INFO] isolation-manager: Input manifest created for agent-3: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-3\manifest.json
+2026-06-17 20:36:07,098 [INFO] pavithra-subagent: Subagent-3 initialized with task: deep-read
+2026-06-17 20:36:07,102 [INFO] orchestrator: Fanned out agent-3: deep-read
+2026-06-17 20:36:07,113 [INFO] isolation-manager: Input manifest created for agent-4: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-4\manifest.json
+2026-06-17 20:36:07,117 [INFO] pavithra-subagent: Subagent-4 initialized with task: deep-read
+2026-06-17 20:36:07,117 [INFO] orchestrator: Fanned out agent-4: deep-read
+2026-06-17 20:36:07,125 [INFO] isolation-manager: Input manifest created for agent-5: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-5\manifest.json
+2026-06-17 20:36:07,133 [INFO] pavithra-subagent: Subagent-5 initialized with task: deep-read
+2026-06-17 20:36:07,133 [INFO] orchestrator: Fanned out agent-5: deep-read
+2026-06-17 20:36:07,133 [INFO] orchestrator: Executing agent-1...
+2026-06-17 20:36:07,133 [INFO] pavithra-subagent: [Agent-1] determine: Starting determination phase
+2026-06-17 20:36:07,138 [INFO] pavithra-subagent: [Agent-1] determine: Determination complete. Hash: 46a6f91c23a481c7...
+2026-06-17 20:36:07,140 [INFO] pavithra-subagent: [Agent-1] execute: Starting execution phase
+2026-06-17 20:36:07,160 [INFO] pavithra-subagent: [Agent-1] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-1\output_20260617_150607.json
+2026-06-17 20:36:07,161 [INFO] orchestrator: agent-1 completed with status: COMPLETED
+2026-06-17 20:36:07,161 [INFO] orchestrator: Executing agent-2...
+2026-06-17 20:36:07,161 [INFO] pavithra-subagent: [Agent-2] determine: Starting determination phase
+2026-06-17 20:36:07,168 [INFO] pavithra-subagent: [Agent-2] determine: Determination complete. Hash: 2d31d3efde3e9101...
+2026-06-17 20:36:07,168 [INFO] pavithra-subagent: [Agent-2] execute: Starting execution phase
+2026-06-17 20:36:07,175 [INFO] pavithra-subagent: [Agent-2] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-2\output_20260617_150607.json
+2026-06-17 20:36:07,175 [INFO] orchestrator: agent-2 completed with status: COMPLETED
+2026-06-17 20:36:07,175 [INFO] orchestrator: Executing agent-3...
+2026-06-17 20:36:07,177 [INFO] pavithra-subagent: [Agent-3] determine: Starting determination phase
+2026-06-17 20:36:07,183 [INFO] pavithra-subagent: [Agent-3] determine: Determination complete. Hash: a366e666034ef58d...
+2026-06-17 20:36:07,183 [INFO] pavithra-subagent: [Agent-3] execute: Starting execution phase
+2026-06-17 20:36:07,219 [INFO] pavithra-subagent: [Agent-3] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-3\output_20260617_150607.json
+2026-06-17 20:36:07,221 [INFO] orchestrator: agent-3 completed with status: COMPLETED
+2026-06-17 20:36:07,221 [INFO] orchestrator: Executing agent-4...
+2026-06-17 20:36:07,221 [INFO] pavithra-subagent: [Agent-4] determine: Starting determination phase
+2026-06-17 20:36:07,316 [INFO] pavithra-subagent: [Agent-4] determine: Determination complete. Hash: 7354167e870e9f1e...
+2026-06-17 20:36:07,316 [INFO] pavithra-subagent: [Agent-4] execute: Starting execution phase
+2026-06-17 20:36:07,322 [INFO] pavithra-subagent: [Agent-4] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-4\output_20260617_150607.json
+2026-06-17 20:36:07,324 [INFO] orchestrator: agent-4 completed with status: COMPLETED
+2026-06-17 20:36:07,324 [INFO] orchestrator: Executing agent-5...
+2026-06-17 20:36:07,324 [INFO] pavithra-subagent: [Agent-5] determine: Starting determination phase
+2026-06-17 20:36:07,392 [INFO] pavithra-subagent: [Agent-5] determine: Determination complete. Hash: a5614da568bb7e30...
+2026-06-17 20:36:07,392 [INFO] pavithra-subagent: [Agent-5] execute: Starting execution phase
+2026-06-17 20:36:07,402 [INFO] pavithra-subagent: [Agent-5] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-5\output_20260617_150607.json
+2026-06-17 20:36:07,402 [INFO] orchestrator: agent-5 completed with status: COMPLETED
+2026-06-17 20:36:07,402 [INFO] orchestrator: Verifying agent-1 output using agent-2 (adversary)
+2026-06-17 20:36:07,405 [INFO] adversary: Adversary-2 verifying output from agent-1
+2026-06-17 20:36:07,405 [INFO] adversary: Adversary-2 verdict for agent-1: PASS (score=1.00)
+2026-06-17 20:36:07,405 [INFO] orchestrator: agent-1 verification: PASS
+2026-06-17 20:36:07,417 [INFO] isolation-manager: Result ACCEPTED for agent-1: output_20260617_150607.json
+2026-06-17 20:36:07,423 [INFO] isolation-manager: Result ACCEPTED for agent-1: OUTPUT_REPORT.md
+2026-06-17 20:36:07,423 [INFO] orchestrator: Verifying agent-2 output using agent-3 (adversary)
+2026-06-17 20:36:07,423 [INFO] adversary: Adversary-3 verifying output from agent-2
+2026-06-17 20:36:07,439 [INFO] adversary: Adversary-3 verdict for agent-2: PASS (score=1.00)
+2026-06-17 20:36:07,439 [INFO] orchestrator: agent-2 verification: PASS
+2026-06-17 20:36:07,452 [INFO] isolation-manager: Result ACCEPTED for agent-2: output_20260617_150607.json
+2026-06-17 20:36:07,458 [INFO] isolation-manager: Result ACCEPTED for agent-2: OUTPUT_REPORT.md
+2026-06-17 20:36:07,458 [INFO] orchestrator: Verifying agent-3 output using agent-4 (adversary)
+2026-06-17 20:36:07,458 [INFO] adversary: Adversary-4 verifying output from agent-3
+2026-06-17 20:36:07,460 [INFO] adversary: Adversary-4 verdict for agent-3: PASS (score=1.00)
+2026-06-17 20:36:07,460 [INFO] orchestrator: agent-3 verification: PASS
+2026-06-17 20:36:07,478 [INFO] isolation-manager: Result ACCEPTED for agent-3: output_20260617_150607.json
+2026-06-17 20:36:07,483 [INFO] isolation-manager: Result ACCEPTED for agent-3: OUTPUT_REPORT.md
+2026-06-17 20:36:07,485 [INFO] orchestrator: Verifying agent-4 output using agent-5 (adversary)
+2026-06-17 20:36:07,485 [INFO] adversary: Adversary-5 verifying output from agent-4
+2026-06-17 20:36:07,485 [INFO] adversary: Adversary-5 verdict for agent-4: PASS (score=1.00)
+2026-06-17 20:36:07,485 [INFO] orchestrator: agent-4 verification: PASS
+2026-06-17 20:36:07,571 [INFO] isolation-manager: Result ACCEPTED for agent-4: output_20260617_150607.json
+2026-06-17 20:36:07,576 [INFO] isolation-manager: Result ACCEPTED for agent-4: OUTPUT_REPORT.md
+2026-06-17 20:36:07,576 [INFO] orchestrator: Verifying agent-5 output using agent-1 (adversary)
+2026-06-17 20:36:07,578 [INFO] adversary: Adversary-1 verifying output from agent-5
+2026-06-17 20:36:07,578 [INFO] adversary: Adversary-1 verdict for agent-5: PASS (score=1.00)
+2026-06-17 20:36:07,578 [INFO] orchestrator: agent-5 verification: PASS
+2026-06-17 20:36:07,586 [INFO] isolation-manager: Result ACCEPTED for agent-5: output_20260617_150607.json
+2026-06-17 20:36:07,592 [INFO] isolation-manager: Result ACCEPTED for agent-5: OUTPUT_REPORT.md
+2026-06-17 20:36:07,646 [INFO] orchestrator: Pipeline 36db3c91c4e5 complete: 5 accepted / 0 rejected in 0.71s
+2026-06-17 20:36:07,651 [INFO] orchestrator: Test #7: PASS
+2026-06-17 20:36:08,567 [INFO] orchestrator: Orchestrator initialized | agents=3 | run_id=b337ead8
+2026-06-17 20:36:08,569 [INFO] orchestrator: Running test case #8
+2026-06-17 20:36:08,569 [INFO] orchestrator: Test 8: Mixed Tasks - different task types combined
+2026-06-17 20:36:08,569 [INFO] orchestrator: Pipeline 9e9973fd4efb started with 4 tasks
+2026-06-17 20:36:08,635 [INFO] isolation-manager: IsolationManager initialized at C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work
+2026-06-17 20:36:08,639 [INFO] isolation-manager: Input manifest created for agent-1: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-1\manifest.json
+2026-06-17 20:36:08,653 [INFO] pavithra-subagent: Subagent-1 initialized with task: deep-read
+2026-06-17 20:36:08,653 [INFO] orchestrator: Fanned out agent-1: deep-read
+2026-06-17 20:36:08,658 [INFO] isolation-manager: Input manifest created for agent-2: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-2\manifest.json
+2026-06-17 20:36:08,665 [INFO] pavithra-subagent: Subagent-2 initialized with task: summary
+2026-06-17 20:36:08,665 [INFO] orchestrator: Fanned out agent-2: summary
+2026-06-17 20:36:08,670 [INFO] isolation-manager: Input manifest created for agent-3: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-3\manifest.json
+2026-06-17 20:36:08,675 [INFO] pavithra-subagent: Subagent-3 initialized with task: search
+2026-06-17 20:36:08,675 [INFO] orchestrator: Fanned out agent-3: search
+2026-06-17 20:36:08,680 [INFO] isolation-manager: Input manifest created for agent-4: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-4\manifest.json
+2026-06-17 20:36:08,686 [INFO] pavithra-subagent: Subagent-4 initialized with task: analysis
+2026-06-17 20:36:08,686 [INFO] orchestrator: Fanned out agent-4: analysis
+2026-06-17 20:36:08,686 [INFO] orchestrator: Executing agent-1...
+2026-06-17 20:36:08,686 [INFO] pavithra-subagent: [Agent-1] determine: Starting determination phase
+2026-06-17 20:36:08,718 [INFO] pavithra-subagent: [Agent-1] determine: Determination complete. Hash: 71ae7c86dafaf592...
+2026-06-17 20:36:08,718 [INFO] pavithra-subagent: [Agent-1] execute: Starting execution phase
+2026-06-17 20:36:08,861 [INFO] pavithra-subagent: [Agent-1] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-1\output_20260617_150608.json
+2026-06-17 20:36:08,863 [INFO] orchestrator: agent-1 completed with status: COMPLETED
+2026-06-17 20:36:08,863 [INFO] orchestrator: Executing agent-2...
+2026-06-17 20:36:08,863 [INFO] pavithra-subagent: [Agent-2] determine: Starting determination phase
+2026-06-17 20:36:08,867 [INFO] pavithra-subagent: [Agent-2] determine: Determination complete. Hash: 80f2acffaa1eb51b...
+2026-06-17 20:36:08,869 [INFO] pavithra-subagent: [Agent-2] execute: Starting execution phase
+2026-06-17 20:36:08,910 [INFO] pavithra-subagent: [Agent-2] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-2\output_20260617_150608.json
+2026-06-17 20:36:08,910 [INFO] orchestrator: agent-2 completed with status: COMPLETED
+2026-06-17 20:36:08,910 [INFO] orchestrator: Executing agent-3...
+2026-06-17 20:36:08,910 [INFO] pavithra-subagent: [Agent-3] determine: Starting determination phase
+2026-06-17 20:36:08,916 [INFO] pavithra-subagent: [Agent-3] determine: Determination complete. Hash: 95f0cccf30e5db02...
+2026-06-17 20:36:08,916 [INFO] pavithra-subagent: [Agent-3] execute: Starting execution phase
+2026-06-17 20:36:09,451 [INFO] orchestrator: Orchestrator initialized | agents=3 | run_id=0a0b4741
+2026-06-17 20:36:09,453 [INFO] orchestrator: Running test case #9
+2026-06-17 20:36:09,453 [INFO] orchestrator: Test 9: Error Recovery - force error in one agent, system recovers
+2026-06-17 20:36:09,453 [INFO] orchestrator: Pipeline 618015155975 started with 2 tasks
+2026-06-17 20:36:09,529 [INFO] isolation-manager: IsolationManager initialized at C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work
+2026-06-17 20:36:09,534 [INFO] isolation-manager: Input manifest created for agent-1: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-1\manifest.json
+2026-06-17 20:36:09,538 [INFO] pavithra-subagent: Subagent-1 initialized with task: deep-read
+2026-06-17 20:36:09,538 [INFO] orchestrator: Fanned out agent-1: deep-read
+2026-06-17 20:36:09,546 [INFO] isolation-manager: Input manifest created for agent-2: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-2\manifest.json
+2026-06-17 20:36:09,549 [INFO] pavithra-subagent: Subagent-2 initialized with task: deep-read
+2026-06-17 20:36:09,551 [INFO] orchestrator: Fanned out agent-2: deep-read
+2026-06-17 20:36:09,551 [INFO] orchestrator: Executing agent-1...
+2026-06-17 20:36:09,552 [INFO] pavithra-subagent: [Agent-1] determine: Starting determination phase
+2026-06-17 20:36:09,558 [INFO] pavithra-subagent: [Agent-1] determine: Determination complete. Hash: 04eb6c56eb509f4d...
+2026-06-17 20:36:09,559 [INFO] pavithra-subagent: [Agent-1] execute: Starting execution phase
+2026-06-17 20:36:09,597 [INFO] pavithra-subagent: [Agent-1] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-1\output_20260617_150609.json
+2026-06-17 20:36:09,599 [INFO] orchestrator: agent-1 completed with status: COMPLETED
+2026-06-17 20:36:09,599 [INFO] orchestrator: Executing agent-2...
+2026-06-17 20:36:09,599 [INFO] pavithra-subagent: [Agent-2] determine: Starting determination phase
+2026-06-17 20:36:09,601 [ERROR] orchestrator: agent-2 failed: 'charmap' codec can't encode characters in position 536-537: character maps to <undefined>
+2026-06-17 20:36:09,601 [INFO] orchestrator: Verifying agent-1 output using agent-2 (adversary)
+2026-06-17 20:36:09,605 [INFO] adversary: Adversary-2 verifying output from agent-1
+2026-06-17 20:36:09,607 [INFO] adversary: Adversary-2 verdict for agent-1: PASS (score=0.80)
+2026-06-17 20:36:09,608 [INFO] orchestrator: agent-1 verification: PASS
+2026-06-17 20:36:09,619 [INFO] isolation-manager: Result ACCEPTED for agent-1: output_20260617_150609.json
+2026-06-17 20:36:09,648 [INFO] isolation-manager: Result ACCEPTED for agent-1: OUTPUT_REPORT.md
+2026-06-17 20:36:09,648 [INFO] orchestrator: Verifying agent-2 output using agent-1 (adversary)
+2026-06-17 20:36:09,648 [INFO] adversary: Adversary-1 verifying output from agent-2
+2026-06-17 20:36:09,648 [INFO] adversary: Adversary-1 verdict for agent-2: FAIL (score=0.50)
+2026-06-17 20:36:09,650 [INFO] orchestrator: agent-2 verification: FAIL
+2026-06-17 20:36:09,657 [WARNING] isolation-manager: Result REJECTED for agent-2: output_20260617_150608.json - Verification FAILED: 3/5 checks passed (score: 0.50) | Failing checks: schema_check, completeness_check
+2026-06-17 20:36:09,657 [INFO] orchestrator: Retry 1/3 for agent-2
+2026-06-17 20:36:09,657 [INFO] pavithra-subagent: [Agent-2] execute: Starting execution phase
+2026-06-17 20:36:09,663 [INFO] pavithra-subagent: [Agent-2] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-2\output_20260617_150609.json
+2026-06-17 20:36:09,665 [INFO] adversary: Adversary-1 verifying output from agent-2
+2026-06-17 20:36:09,665 [INFO] adversary: Adversary-1 verdict for agent-2: PASS (score=1.00)
+2026-06-17 20:36:09,671 [INFO] isolation-manager: Result ACCEPTED for agent-2: output_20260617_150609.json
+2026-06-17 20:36:09,671 [INFO] orchestrator: agent-2 passed after 1 retries
+2026-06-17 20:36:09,749 [INFO] orchestrator: Pipeline 618015155975 complete: 2 accepted / 0 rejected in 0.29s
+2026-06-17 20:36:09,753 [INFO] orchestrator: Test #9: PASS
+2026-06-17 20:36:09,819 [INFO] orchestrator: Orchestrator initialized | agents=3 | run_id=a8d43674
+2026-06-17 20:36:09,819 [INFO] orchestrator: Running test case #10
+2026-06-17 20:36:09,821 [INFO] orchestrator: Test 10: Full Pipeline - complete system test
+2026-06-17 20:36:09,821 [INFO] orchestrator: Pipeline e1439a4456bf started with 3 tasks
+2026-06-17 20:36:09,887 [INFO] isolation-manager: IsolationManager initialized at C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work
+2026-06-17 20:36:09,895 [INFO] isolation-manager: Input manifest created for agent-1: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-1\manifest.json
+2026-06-17 20:36:09,901 [INFO] pavithra-subagent: Subagent-1 initialized with task: deep-read
+2026-06-17 20:36:09,903 [INFO] orchestrator: Fanned out agent-1: deep-read
+2026-06-17 20:36:09,921 [INFO] isolation-manager: Input manifest created for agent-2: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-2\manifest.json
+2026-06-17 20:36:09,931 [INFO] pavithra-subagent: Subagent-2 initialized with task: summary
+2026-06-17 20:36:09,931 [INFO] orchestrator: Fanned out agent-2: summary
+2026-06-17 20:36:09,935 [INFO] isolation-manager: Input manifest created for agent-3: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-3\manifest.json
+2026-06-17 20:36:09,938 [INFO] pavithra-subagent: Subagent-3 initialized with task: analysis
+2026-06-17 20:36:09,938 [INFO] orchestrator: Fanned out agent-3: analysis
+2026-06-17 20:36:09,938 [INFO] orchestrator: Executing agent-1...
+2026-06-17 20:36:09,938 [INFO] pavithra-subagent: [Agent-1] determine: Starting determination phase
+2026-06-17 20:36:09,949 [INFO] pavithra-subagent: [Agent-1] determine: Determination complete. Hash: b8f9f0d046cd6d6a...
+2026-06-17 20:36:09,949 [INFO] pavithra-subagent: [Agent-1] execute: Starting execution phase
+2026-06-17 20:36:10,083 [INFO] pavithra-subagent: [Agent-1] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-1\output_20260617_150610.json
+2026-06-17 20:36:10,085 [INFO] orchestrator: agent-1 completed with status: COMPLETED
+2026-06-17 20:36:10,085 [INFO] orchestrator: Executing agent-2...
+2026-06-17 20:36:10,085 [INFO] pavithra-subagent: [Agent-2] determine: Starting determination phase
+2026-06-17 20:36:10,097 [INFO] pavithra-subagent: [Agent-2] determine: Determination complete. Hash: 1be74af27e943b6d...
+2026-06-17 20:36:10,099 [INFO] pavithra-subagent: [Agent-2] execute: Starting execution phase
+2026-06-17 20:36:10,118 [INFO] pavithra-subagent: [Agent-2] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-2\output_20260617_150610.json
+2026-06-17 20:36:10,120 [INFO] orchestrator: agent-2 completed with status: COMPLETED
+2026-06-17 20:36:10,120 [INFO] orchestrator: Executing agent-3...
+2026-06-17 20:36:10,120 [INFO] pavithra-subagent: [Agent-3] determine: Starting determination phase
+2026-06-17 20:36:10,128 [INFO] pavithra-subagent: [Agent-3] determine: Determination complete. Hash: e35f2ec9173dd2e1...
+2026-06-17 20:36:10,128 [INFO] pavithra-subagent: [Agent-3] execute: Starting execution phase
+2026-06-17 20:36:10,134 [INFO] pavithra-subagent: [Agent-3] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-3\output_20260617_150610.json
+2026-06-17 20:36:10,145 [INFO] orchestrator: agent-3 completed with status: COMPLETED
+2026-06-17 20:36:10,147 [INFO] orchestrator: Verifying agent-1 output using agent-2 (adversary)
+2026-06-17 20:36:10,149 [INFO] adversary: Adversary-2 verifying output from agent-1
+2026-06-17 20:36:10,154 [INFO] adversary: Adversary-2 verdict for agent-1: PASS (score=0.80)
+2026-06-17 20:36:10,155 [INFO] orchestrator: agent-1 verification: PASS
+2026-06-17 20:36:10,168 [INFO] isolation-manager: Result ACCEPTED for agent-1: output_20260617_150610.json
+2026-06-17 20:36:10,180 [INFO] isolation-manager: Result ACCEPTED for agent-1: OUTPUT_REPORT.md
+2026-06-17 20:36:10,182 [INFO] orchestrator: Verifying agent-2 output using agent-3 (adversary)
+2026-06-17 20:36:10,182 [INFO] adversary: Adversary-3 verifying output from agent-2
+2026-06-17 20:36:10,182 [INFO] adversary: Adversary-3 verdict for agent-2: PASS (score=1.00)
+2026-06-17 20:36:10,182 [INFO] orchestrator: agent-2 verification: PASS
+2026-06-17 20:36:10,190 [INFO] isolation-manager: Result ACCEPTED for agent-2: output_20260617_150610.json
+2026-06-17 20:36:10,207 [INFO] isolation-manager: Result ACCEPTED for agent-2: OUTPUT_REPORT.md
+2026-06-17 20:36:10,214 [INFO] orchestrator: Verifying agent-3 output using agent-1 (adversary)
+2026-06-17 20:36:10,214 [INFO] adversary: Adversary-1 verifying output from agent-3
+2026-06-17 20:36:10,214 [INFO] adversary: Adversary-1 verdict for agent-3: PASS (score=1.00)
+2026-06-17 20:36:10,214 [INFO] orchestrator: agent-3 verification: PASS
+2026-06-17 20:36:10,220 [INFO] isolation-manager: Result ACCEPTED for agent-3: output_20260617_150610.json
+2026-06-17 20:36:10,228 [INFO] isolation-manager: Result ACCEPTED for agent-3: OUTPUT_REPORT.md
+2026-06-17 20:36:10,266 [INFO] orchestrator: Pipeline e1439a4456bf complete: 3 accepted / 0 rejected in 0.44s
+2026-06-17 20:36:10,274 [INFO] orchestrator: Final summary saved to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\logs\final_summary.json
+2026-06-17 20:36:10,282 [INFO] orchestrator: GitHub backup data prepared at C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\github_backup_ready\backup_a8d43674.json
+2026-06-17 20:36:10,284 [INFO] orchestrator: Test #10: PASS
+2026-06-17 20:36:12,691 [INFO] pavithra-subagent: [Agent-3] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-3\output_20260617_150612.json
+2026-06-17 20:36:12,691 [INFO] orchestrator: agent-3 completed with status: COMPLETED
+2026-06-17 20:36:12,691 [INFO] orchestrator: Executing agent-4...
+2026-06-17 20:36:12,691 [INFO] pavithra-subagent: [Agent-4] determine: Starting determination phase
+2026-06-17 20:36:12,696 [INFO] pavithra-subagent: [Agent-4] determine: Determination complete. Hash: f11c4479220b8b83...
+2026-06-17 20:36:12,698 [INFO] pavithra-subagent: [Agent-4] execute: Starting execution phase
+2026-06-17 20:36:12,702 [INFO] pavithra-subagent: [Agent-4] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-4\output_20260617_150612.json
+2026-06-17 20:36:12,704 [INFO] orchestrator: agent-4 completed with status: COMPLETED
+2026-06-17 20:36:12,704 [INFO] orchestrator: Verifying agent-1 output using agent-2 (adversary)
+2026-06-17 20:36:12,730 [INFO] adversary: Adversary-2 verifying output from agent-1
+2026-06-17 20:36:12,736 [INFO] adversary: Adversary-2 verdict for agent-1: PASS (score=0.80)
+2026-06-17 20:36:12,736 [INFO] orchestrator: agent-1 verification: PASS
+2026-06-17 20:36:12,749 [INFO] isolation-manager: Result ACCEPTED for agent-1: output_20260617_150610.json
+2026-06-17 20:36:12,755 [INFO] isolation-manager: Result ACCEPTED for agent-1: OUTPUT_REPORT.md
+2026-06-17 20:36:12,755 [INFO] orchestrator: Verifying agent-2 output using agent-3 (adversary)
+2026-06-17 20:36:12,755 [INFO] adversary: Adversary-3 verifying output from agent-2
+2026-06-17 20:36:12,759 [INFO] adversary: Adversary-3 verdict for agent-2: PASS (score=1.00)
+2026-06-17 20:36:12,761 [INFO] orchestrator: agent-2 verification: PASS
+2026-06-17 20:36:12,767 [INFO] isolation-manager: Result ACCEPTED for agent-2: output_20260617_150610.json
+2026-06-17 20:36:12,862 [INFO] isolation-manager: Result ACCEPTED for agent-2: OUTPUT_REPORT.md
+2026-06-17 20:36:12,862 [INFO] orchestrator: Verifying agent-3 output using agent-4 (adversary)
+2026-06-17 20:36:12,864 [INFO] adversary: Adversary-4 verifying output from agent-3
+2026-06-17 20:36:12,866 [INFO] adversary: Adversary-4 verdict for agent-3: PASS (score=0.80)
+2026-06-17 20:36:12,866 [INFO] orchestrator: agent-3 verification: PASS
+2026-06-17 20:36:12,872 [INFO] isolation-manager: Result ACCEPTED for agent-3: output_20260617_150612.json
+2026-06-17 20:36:12,880 [INFO] isolation-manager: Result ACCEPTED for agent-3: OUTPUT_REPORT.md
+2026-06-17 20:36:12,882 [INFO] orchestrator: Verifying agent-4 output using agent-1 (adversary)
+2026-06-17 20:36:12,882 [INFO] adversary: Adversary-1 verifying output from agent-4
+2026-06-17 20:36:12,882 [INFO] adversary: Adversary-1 verdict for agent-4: PASS (score=1.00)
+2026-06-17 20:36:12,882 [INFO] orchestrator: agent-4 verification: PASS
+2026-06-17 20:36:12,898 [INFO] isolation-manager: Result ACCEPTED for agent-4: output_20260617_150612.json
+2026-06-17 20:36:12,902 [INFO] isolation-manager: Result ACCEPTED for agent-4: OUTPUT_REPORT.md
+2026-06-17 20:36:12,959 [INFO] orchestrator: Pipeline 9e9973fd4efb complete: 4 accepted / 0 rejected in 4.38s
+2026-06-17 20:36:12,967 [INFO] orchestrator: Test #8: PASS
+2026-06-17 20:36:28,292 [INFO] test-runner: ======================================================================
+2026-06-17 20:36:28,292 [INFO] test-runner:   TEST RUNNER: EXECUTING ALL 10 TEST CASES
+2026-06-17 20:36:28,292 [INFO] test-runner: ======================================================================
+2026-06-17 20:36:28,457 [INFO] test-runner:   TEST #1: Single Agent
+2026-06-17 20:36:28,461 [INFO] orchestrator: Orchestrator initialized | agents=3 | run_id=8555bf53
+2026-06-17 20:36:28,461 [INFO] orchestrator: Running test case #1
+2026-06-17 20:36:28,461 [INFO] orchestrator: Test 1: Single Agent - one subagent performing deep-read
+2026-06-17 20:36:28,463 [INFO] orchestrator: Pipeline 0abad346d624 started with 1 tasks
+2026-06-17 20:36:28,498 [INFO] isolation-manager: IsolationManager initialized at C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work
+2026-06-17 20:36:28,511 [INFO] isolation-manager: Input manifest created for agent-1: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-1\manifest.json
+2026-06-17 20:36:28,513 [INFO] pavithra-subagent: Subagent-1 initialized with task: deep-read
+2026-06-17 20:36:28,515 [INFO] orchestrator: Fanned out agent-1: deep-read
+2026-06-17 20:36:28,515 [INFO] orchestrator: Executing agent-1...
+2026-06-17 20:36:28,515 [INFO] pavithra-subagent: [Agent-1] determine: Starting determination phase
+2026-06-17 20:36:28,522 [INFO] pavithra-subagent: [Agent-1] determine: Determination complete. Hash: 737f9ff0fd036a30...
+2026-06-17 20:36:28,524 [INFO] pavithra-subagent: [Agent-1] execute: Starting execution phase
+2026-06-17 20:36:28,631 [INFO] pavithra-subagent: [Agent-1] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-1\output_20260617_150628.json
+2026-06-17 20:36:28,631 [INFO] orchestrator: agent-1 completed with status: COMPLETED
+2026-06-17 20:36:28,631 [INFO] orchestrator: Verifying agent-1 output using agent-1 (adversary)
+2026-06-17 20:36:28,638 [INFO] adversary: Adversary-1 verifying output from agent-1
+2026-06-17 20:36:28,642 [INFO] adversary: Adversary-1 verdict for agent-1: PASS (score=0.80)
+2026-06-17 20:36:28,642 [INFO] orchestrator: agent-1 verification: PASS
+2026-06-17 20:36:28,648 [INFO] isolation-manager: Result ACCEPTED for agent-1: output_20260617_150628.json
+2026-06-17 20:36:28,651 [INFO] isolation-manager: Result ACCEPTED for agent-1: OUTPUT_REPORT.md
+2026-06-17 20:36:28,678 [INFO] orchestrator: Pipeline 0abad346d624 complete: 1 accepted / 0 rejected in 0.21s
+2026-06-17 20:36:28,682 [INFO] orchestrator: Test #1: PASS
+2026-06-17 20:37:03,371 [INFO] test-runner: ======================================================================
+2026-06-17 20:37:03,375 [INFO] test-runner:   TEST RUNNER: EXECUTING ALL 10 TEST CASES
+2026-06-17 20:37:03,375 [INFO] test-runner: ======================================================================
+2026-06-17 20:37:03,375 [INFO] test-runner: 
+======================================================================
+2026-06-17 20:37:03,375 [INFO] test-runner:   TEST #1: Single Agent
+2026-06-17 20:37:03,375 [INFO] test-runner: ======================================================================
+2026-06-17 20:37:03,381 [INFO] orchestrator: Orchestrator initialized | agents=3 | run_id=5b871457
+2026-06-17 20:37:03,381 [INFO] orchestrator: Running test case #1
+2026-06-17 20:37:03,381 [INFO] orchestrator: Test 1: Single Agent - one subagent performing deep-read
+2026-06-17 20:37:03,381 [INFO] orchestrator: Pipeline cacb1a84959c started with 1 tasks
+2026-06-17 20:37:03,415 [INFO] isolation-manager: IsolationManager initialized at C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work
+2026-06-17 20:37:03,417 [INFO] isolation-manager: Input manifest created for agent-1: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-1\manifest.json
+2026-06-17 20:37:03,420 [INFO] pavithra-subagent: Subagent-1 initialized with task: deep-read
+2026-06-17 20:37:03,422 [INFO] orchestrator: Fanned out agent-1: deep-read
+2026-06-17 20:37:03,424 [INFO] orchestrator: Executing agent-1...
+2026-06-17 20:37:03,424 [INFO] pavithra-subagent: [Agent-1] determine: Starting determination phase
+2026-06-17 20:37:03,429 [INFO] pavithra-subagent: [Agent-1] determine: Determination complete. Hash: 2ccb3b2d3a168195...
+2026-06-17 20:37:03,429 [INFO] pavithra-subagent: [Agent-1] execute: Starting execution phase
+2026-06-17 20:37:03,513 [INFO] pavithra-subagent: [Agent-1] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-1\output_20260617_150703.json
+2026-06-17 20:37:03,515 [INFO] orchestrator: agent-1 completed with status: COMPLETED
+2026-06-17 20:37:03,515 [INFO] orchestrator: Verifying agent-1 output using agent-1 (adversary)
+2026-06-17 20:37:03,517 [INFO] adversary: Adversary-1 verifying output from agent-1
+2026-06-17 20:37:03,519 [INFO] adversary: Adversary-1 verdict for agent-1: PASS (score=0.80)
+2026-06-17 20:37:03,521 [INFO] orchestrator: agent-1 verification: PASS
+2026-06-17 20:37:03,529 [INFO] isolation-manager: Result ACCEPTED for agent-1: output_20260617_150703.json
+2026-06-17 20:37:03,533 [INFO] isolation-manager: Result ACCEPTED for agent-1: OUTPUT_REPORT.md
+2026-06-17 20:37:03,555 [INFO] orchestrator: Pipeline cacb1a84959c complete: 1 accepted / 0 rejected in 0.17s
+2026-06-17 20:37:03,561 [INFO] orchestrator: Test #1: PASS
+2026-06-17 20:37:03,563 [INFO] test-runner:   Test #1: [PASS] PASS (0.17s)
+2026-06-17 20:37:03,563 [INFO] test-runner: 
+======================================================================
+2026-06-17 20:37:03,563 [INFO] test-runner:   TEST #2: Dual Agent
+2026-06-17 20:37:03,563 [INFO] test-runner: ======================================================================
+2026-06-17 20:37:03,563 [INFO] orchestrator: Orchestrator initialized | agents=3 | run_id=29f567bc
+2026-06-17 20:37:03,563 [INFO] orchestrator: Running test case #2
+2026-06-17 20:37:03,573 [INFO] orchestrator: Test 2: Dual Agent - two subagents with independent files
+2026-06-17 20:37:03,574 [INFO] orchestrator: Pipeline afa86bc4e2aa started with 2 tasks
+2026-06-17 20:37:03,592 [INFO] isolation-manager: IsolationManager initialized at C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work
+2026-06-17 20:37:03,596 [INFO] isolation-manager: Input manifest created for agent-1: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-1\manifest.json
+2026-06-17 20:37:03,599 [INFO] pavithra-subagent: Subagent-1 initialized with task: deep-read
+2026-06-17 20:37:03,599 [INFO] orchestrator: Fanned out agent-1: deep-read
+2026-06-17 20:37:03,603 [INFO] isolation-manager: Input manifest created for agent-2: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-2\manifest.json
+2026-06-17 20:37:03,610 [INFO] pavithra-subagent: Subagent-2 initialized with task: summary
+2026-06-17 20:37:03,610 [INFO] orchestrator: Fanned out agent-2: summary
+2026-06-17 20:37:03,612 [INFO] orchestrator: Executing agent-1...
+2026-06-17 20:37:03,612 [INFO] pavithra-subagent: [Agent-1] determine: Starting determination phase
+2026-06-17 20:37:03,620 [INFO] pavithra-subagent: [Agent-1] determine: Determination complete. Hash: 6a5cb7c739559ce4...
+2026-06-17 20:37:03,620 [INFO] pavithra-subagent: [Agent-1] execute: Starting execution phase
+2026-06-17 20:37:03,632 [INFO] pavithra-subagent: [Agent-1] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-1\output_20260617_150703.json
+2026-06-17 20:37:03,632 [INFO] orchestrator: agent-1 completed with status: COMPLETED
+2026-06-17 20:37:03,632 [INFO] orchestrator: Executing agent-2...
+2026-06-17 20:37:03,632 [INFO] pavithra-subagent: [Agent-2] determine: Starting determination phase
+2026-06-17 20:37:03,637 [INFO] pavithra-subagent: [Agent-2] determine: Determination complete. Hash: aca6a37a914c43ed...
+2026-06-17 20:37:03,637 [INFO] pavithra-subagent: [Agent-2] execute: Starting execution phase
+2026-06-17 20:37:03,647 [INFO] pavithra-subagent: [Agent-2] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-2\output_20260617_150703.json
+2026-06-17 20:37:03,647 [INFO] orchestrator: agent-2 completed with status: COMPLETED
+2026-06-17 20:37:03,647 [INFO] orchestrator: Verifying agent-1 output using agent-2 (adversary)
+2026-06-17 20:37:03,647 [INFO] adversary: Adversary-2 verifying output from agent-1
+2026-06-17 20:37:03,647 [INFO] adversary: Adversary-2 verdict for agent-1: PASS (score=0.80)
+2026-06-17 20:37:03,647 [INFO] orchestrator: agent-1 verification: PASS
+2026-06-17 20:37:03,659 [INFO] isolation-manager: Result ACCEPTED for agent-1: output_20260617_150703.json
+2026-06-17 20:37:03,665 [INFO] isolation-manager: Result ACCEPTED for agent-1: OUTPUT_REPORT.md
+2026-06-17 20:37:03,667 [INFO] orchestrator: Verifying agent-2 output using agent-1 (adversary)
+2026-06-17 20:37:03,667 [INFO] adversary: Adversary-1 verifying output from agent-2
+2026-06-17 20:37:03,667 [INFO] adversary: Adversary-1 verdict for agent-2: PASS (score=1.00)
+2026-06-17 20:37:03,667 [INFO] orchestrator: agent-2 verification: PASS
+2026-06-17 20:37:03,678 [INFO] isolation-manager: Result ACCEPTED for agent-2: output_20260617_150703.json
+2026-06-17 20:37:03,680 [INFO] isolation-manager: Result ACCEPTED for agent-2: OUTPUT_REPORT.md
+2026-06-17 20:37:03,705 [INFO] orchestrator: Pipeline afa86bc4e2aa complete: 2 accepted / 0 rejected in 0.13s
+2026-06-17 20:37:03,709 [INFO] orchestrator: Test #2: PASS
+2026-06-17 20:37:03,714 [INFO] test-runner:   Test #2: [PASS] PASS (0.13s)
+2026-06-17 20:37:03,714 [INFO] test-runner: 
+======================================================================
+2026-06-17 20:37:03,714 [INFO] test-runner:   TEST #3: Triple Agent
+2026-06-17 20:37:03,714 [INFO] test-runner: ======================================================================
+2026-06-17 20:37:03,717 [INFO] orchestrator: Orchestrator initialized | agents=3 | run_id=23131c29
+2026-06-17 20:37:03,718 [INFO] orchestrator: Running test case #3
+2026-06-17 20:37:03,718 [INFO] orchestrator: Test 3: Triple Agent - three subagents with different task types
+2026-06-17 20:37:03,718 [INFO] orchestrator: Pipeline c2e97ec0dd69 started with 3 tasks
+2026-06-17 20:37:03,737 [INFO] isolation-manager: IsolationManager initialized at C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work
+2026-06-17 20:37:03,747 [INFO] isolation-manager: Input manifest created for agent-1: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-1\manifest.json
+2026-06-17 20:37:03,749 [INFO] pavithra-subagent: Subagent-1 initialized with task: deep-read
+2026-06-17 20:37:03,751 [INFO] orchestrator: Fanned out agent-1: deep-read
+2026-06-17 20:37:03,757 [INFO] isolation-manager: Input manifest created for agent-2: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-2\manifest.json
+2026-06-17 20:37:03,761 [INFO] pavithra-subagent: Subagent-2 initialized with task: summary
+2026-06-17 20:37:03,761 [INFO] orchestrator: Fanned out agent-2: summary
+2026-06-17 20:37:03,767 [INFO] isolation-manager: Input manifest created for agent-3: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-3\manifest.json
+2026-06-17 20:37:03,771 [INFO] pavithra-subagent: Subagent-3 initialized with task: search
+2026-06-17 20:37:03,771 [INFO] orchestrator: Fanned out agent-3: search
+2026-06-17 20:37:03,771 [INFO] orchestrator: Executing agent-1...
+2026-06-17 20:37:03,771 [INFO] pavithra-subagent: [Agent-1] determine: Starting determination phase
+2026-06-17 20:37:03,783 [INFO] pavithra-subagent: [Agent-1] determine: Determination complete. Hash: 285601982d7527e4...
+2026-06-17 20:37:03,785 [INFO] pavithra-subagent: [Agent-1] execute: Starting execution phase
+2026-06-17 20:37:03,895 [INFO] pavithra-subagent: [Agent-1] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-1\output_20260617_150703.json
+2026-06-17 20:37:03,895 [INFO] orchestrator: agent-1 completed with status: COMPLETED
+2026-06-17 20:37:03,895 [INFO] orchestrator: Executing agent-2...
+2026-06-17 20:37:03,897 [INFO] pavithra-subagent: [Agent-2] determine: Starting determination phase
+2026-06-17 20:37:03,899 [INFO] pavithra-subagent: [Agent-2] determine: Determination complete. Hash: 8be6291346c2c635...
+2026-06-17 20:37:03,899 [INFO] pavithra-subagent: [Agent-2] execute: Starting execution phase
+2026-06-17 20:37:03,903 [INFO] pavithra-subagent: [Agent-2] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-2\output_20260617_150703.json
+2026-06-17 20:37:03,903 [INFO] orchestrator: agent-2 completed with status: COMPLETED
+2026-06-17 20:37:03,903 [INFO] orchestrator: Executing agent-3...
+2026-06-17 20:37:03,903 [INFO] pavithra-subagent: [Agent-3] determine: Starting determination phase
+2026-06-17 20:37:03,910 [INFO] pavithra-subagent: [Agent-3] determine: Determination complete. Hash: 42a931f1ea67bf90...
+2026-06-17 20:37:03,910 [INFO] pavithra-subagent: [Agent-3] execute: Starting execution phase
+2026-06-17 20:37:04,776 [INFO] pavithra-subagent: [Agent-3] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-3\output_20260617_150704.json
+2026-06-17 20:37:04,778 [INFO] orchestrator: agent-3 completed with status: COMPLETED
+2026-06-17 20:37:04,778 [INFO] orchestrator: Verifying agent-1 output using agent-2 (adversary)
+2026-06-17 20:37:04,778 [INFO] adversary: Adversary-2 verifying output from agent-1
+2026-06-17 20:37:04,780 [INFO] adversary: Adversary-2 verdict for agent-1: PASS (score=0.80)
+2026-06-17 20:37:04,780 [INFO] orchestrator: agent-1 verification: PASS
+2026-06-17 20:37:04,782 [INFO] isolation-manager: Result ACCEPTED for agent-1: output_20260617_150703.json
+2026-06-17 20:37:04,792 [INFO] isolation-manager: Result ACCEPTED for agent-1: OUTPUT_REPORT.md
+2026-06-17 20:37:04,792 [INFO] orchestrator: Verifying agent-2 output using agent-3 (adversary)
+2026-06-17 20:37:04,792 [INFO] adversary: Adversary-3 verifying output from agent-2
+2026-06-17 20:37:04,792 [INFO] adversary: Adversary-3 verdict for agent-2: PASS (score=1.00)
+2026-06-17 20:37:04,792 [INFO] orchestrator: agent-2 verification: PASS
+2026-06-17 20:37:04,800 [INFO] isolation-manager: Result ACCEPTED for agent-2: output_20260617_150703.json
+2026-06-17 20:37:04,805 [INFO] isolation-manager: Result ACCEPTED for agent-2: OUTPUT_REPORT.md
+2026-06-17 20:37:04,805 [INFO] orchestrator: Verifying agent-3 output using agent-1 (adversary)
+2026-06-17 20:37:04,805 [INFO] adversary: Adversary-1 verifying output from agent-3
+2026-06-17 20:37:04,806 [INFO] adversary: Adversary-1 verdict for agent-3: PASS (score=0.80)
+2026-06-17 20:37:04,807 [INFO] orchestrator: agent-3 verification: PASS
+2026-06-17 20:37:04,813 [INFO] isolation-manager: Result ACCEPTED for agent-3: output_20260617_150704.json
+2026-06-17 20:37:04,817 [INFO] isolation-manager: Result ACCEPTED for agent-3: OUTPUT_REPORT.md
+2026-06-17 20:37:04,845 [INFO] orchestrator: Pipeline c2e97ec0dd69 complete: 3 accepted / 0 rejected in 1.13s
+2026-06-17 20:37:04,851 [INFO] orchestrator: Test #3: PASS
+2026-06-17 20:37:04,857 [INFO] test-runner:   Test #3: [PASS] PASS (1.13s)
+2026-06-17 20:37:04,859 [INFO] test-runner: 
+======================================================================
+2026-06-17 20:37:04,859 [INFO] test-runner:   TEST #4: Adversary Pass
+2026-06-17 20:37:04,859 [INFO] test-runner: ======================================================================
+2026-06-17 20:37:04,861 [INFO] orchestrator: Orchestrator initialized | agents=3 | run_id=fe20ecc7
+2026-06-17 20:37:04,863 [INFO] orchestrator: Running test case #4
+2026-06-17 20:37:04,863 [INFO] orchestrator: Test 4: Adversary Pass - output passes verification first try
+2026-06-17 20:37:04,863 [INFO] orchestrator: Pipeline c1f0da2e77ce started with 2 tasks
+2026-06-17 20:37:04,886 [INFO] isolation-manager: IsolationManager initialized at C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work
+2026-06-17 20:37:04,893 [INFO] isolation-manager: Input manifest created for agent-1: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-1\manifest.json
+2026-06-17 20:37:04,895 [INFO] pavithra-subagent: Subagent-1 initialized with task: deep-read
+2026-06-17 20:37:04,897 [INFO] orchestrator: Fanned out agent-1: deep-read
+2026-06-17 20:37:04,900 [INFO] isolation-manager: Input manifest created for agent-2: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-2\manifest.json
+2026-06-17 20:37:04,906 [INFO] pavithra-subagent: Subagent-2 initialized with task: verification
+2026-06-17 20:37:04,909 [INFO] orchestrator: Fanned out agent-2: verification
+2026-06-17 20:37:04,909 [INFO] orchestrator: Executing agent-1...
+2026-06-17 20:37:04,909 [INFO] pavithra-subagent: [Agent-1] determine: Starting determination phase
+2026-06-17 20:37:04,915 [INFO] pavithra-subagent: [Agent-1] determine: Determination complete. Hash: ac467d39ee196150...
+2026-06-17 20:37:04,915 [INFO] pavithra-subagent: [Agent-1] execute: Starting execution phase
+2026-06-17 20:37:04,936 [INFO] pavithra-subagent: [Agent-1] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-1\output_20260617_150704.json
+2026-06-17 20:37:04,936 [INFO] orchestrator: agent-1 completed with status: COMPLETED
+2026-06-17 20:37:04,936 [INFO] orchestrator: Executing agent-2...
+2026-06-17 20:37:04,936 [INFO] pavithra-subagent: [Agent-2] determine: Starting determination phase
+2026-06-17 20:37:04,938 [ERROR] orchestrator: agent-2 failed: slice(None, 100, None)
+2026-06-17 20:37:04,938 [INFO] orchestrator: Verifying agent-1 output using agent-2 (adversary)
+2026-06-17 20:37:04,938 [INFO] adversary: Adversary-2 verifying output from agent-1
+2026-06-17 20:37:04,939 [INFO] adversary: Adversary-2 verdict for agent-1: PASS (score=0.80)
+2026-06-17 20:37:04,939 [INFO] orchestrator: agent-1 verification: PASS
+2026-06-17 20:37:04,945 [INFO] isolation-manager: Result ACCEPTED for agent-1: output_20260617_150704.json
+2026-06-17 20:37:04,949 [INFO] isolation-manager: Result ACCEPTED for agent-1: OUTPUT_REPORT.md
+2026-06-17 20:37:04,949 [INFO] orchestrator: Verifying agent-2 output using agent-1 (adversary)
+2026-06-17 20:37:04,949 [INFO] adversary: Adversary-1 verifying output from agent-2
+2026-06-17 20:37:04,949 [INFO] adversary: Adversary-1 verdict for agent-2: FAIL (score=0.50)
+2026-06-17 20:37:04,949 [INFO] orchestrator: agent-2 verification: FAIL
+2026-06-17 20:37:04,953 [WARNING] isolation-manager: Result REJECTED for agent-2: output_20260617_150703.json - Verification FAILED: 3/5 checks passed (score: 0.50) | Failing checks: schema_check, completeness_check
+2026-06-17 20:37:04,953 [INFO] orchestrator: Retry 1/3 for agent-2
+2026-06-17 20:37:04,955 [INFO] pavithra-subagent: [Agent-2] execute: Starting execution phase
+2026-06-17 20:37:04,959 [INFO] pavithra-subagent: [Agent-2] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-2\output_20260617_150704.json
+2026-06-17 20:37:04,960 [INFO] adversary: Adversary-1 verifying output from agent-2
+2026-06-17 20:37:04,960 [INFO] adversary: Adversary-1 verdict for agent-2: PASS (score=1.00)
+2026-06-17 20:37:04,966 [INFO] isolation-manager: Result ACCEPTED for agent-2: output_20260617_150704.json
+2026-06-17 20:37:04,966 [INFO] orchestrator: agent-2 passed after 1 retries
+2026-06-17 20:37:04,995 [INFO] orchestrator: Pipeline c1f0da2e77ce complete: 2 accepted / 0 rejected in 0.13s
+2026-06-17 20:37:04,997 [INFO] orchestrator: Test #4: PASS
+2026-06-17 20:37:05,002 [INFO] test-runner:   Test #4: [PASS] PASS (0.13s)
+2026-06-17 20:37:05,002 [INFO] test-runner: 
+======================================================================
+2026-06-17 20:37:05,004 [INFO] test-runner:   TEST #5: Adversary Reject
+2026-06-17 20:37:05,004 [INFO] test-runner: ======================================================================
+2026-06-17 20:37:05,007 [INFO] orchestrator: Orchestrator initialized | agents=3 | run_id=0354817b
+2026-06-17 20:37:05,007 [INFO] orchestrator: Running test case #5
+2026-06-17 20:37:05,007 [INFO] orchestrator: Test 5: Adversary Reject - output fails then passes after retry
+2026-06-17 20:37:05,007 [INFO] orchestrator: Pipeline c28dd55faf62 started with 2 tasks
+2026-06-17 20:37:05,039 [INFO] isolation-manager: IsolationManager initialized at C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work
+2026-06-17 20:37:05,047 [INFO] isolation-manager: Input manifest created for agent-1: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-1\manifest.json
+2026-06-17 20:37:05,049 [INFO] pavithra-subagent: Subagent-1 initialized with task: deep-read
+2026-06-17 20:37:05,049 [INFO] orchestrator: Fanned out agent-1: deep-read
+2026-06-17 20:37:05,053 [INFO] isolation-manager: Input manifest created for agent-2: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-2\manifest.json
+2026-06-17 20:37:05,056 [INFO] pavithra-subagent: Subagent-2 initialized with task: analysis
+2026-06-17 20:37:05,057 [INFO] orchestrator: Fanned out agent-2: analysis
+2026-06-17 20:37:05,057 [INFO] orchestrator: Executing agent-1...
+2026-06-17 20:37:05,057 [INFO] pavithra-subagent: [Agent-1] determine: Starting determination phase
+2026-06-17 20:37:05,061 [INFO] pavithra-subagent: [Agent-1] determine: Determination complete. Hash: a566684e6b6d1197...
+2026-06-17 20:37:05,063 [INFO] pavithra-subagent: [Agent-1] execute: Starting execution phase
+2026-06-17 20:37:05,080 [INFO] pavithra-subagent: [Agent-1] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-1\output_20260617_150705.json
+2026-06-17 20:37:05,080 [INFO] orchestrator: agent-1 completed with status: COMPLETED
+2026-06-17 20:37:05,082 [INFO] orchestrator: Executing agent-2...
+2026-06-17 20:37:05,082 [INFO] pavithra-subagent: [Agent-2] determine: Starting determination phase
+2026-06-17 20:37:05,084 [INFO] pavithra-subagent: [Agent-2] determine: Determination complete. Hash: 360c57ac826cd13f...
+2026-06-17 20:37:05,084 [INFO] pavithra-subagent: [Agent-2] execute: Starting execution phase
+2026-06-17 20:37:05,088 [INFO] pavithra-subagent: [Agent-2] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-2\output_20260617_150705.json
+2026-06-17 20:37:05,088 [INFO] orchestrator: agent-2 completed with status: COMPLETED
+2026-06-17 20:37:05,088 [INFO] orchestrator: Verifying agent-1 output using agent-2 (adversary)
+2026-06-17 20:37:05,088 [INFO] adversary: Adversary-2 verifying output from agent-1
+2026-06-17 20:37:05,088 [INFO] adversary: Adversary-2 verdict for agent-1: PASS (score=0.80)
+2026-06-17 20:37:05,088 [INFO] orchestrator: agent-1 verification: PASS
+2026-06-17 20:37:05,095 [INFO] isolation-manager: Result ACCEPTED for agent-1: output_20260617_150705.json
+2026-06-17 20:37:05,099 [INFO] isolation-manager: Result ACCEPTED for agent-1: OUTPUT_REPORT.md
+2026-06-17 20:37:05,099 [INFO] orchestrator: Verifying agent-2 output using agent-1 (adversary)
+2026-06-17 20:37:05,099 [INFO] adversary: Adversary-1 verifying output from agent-2
+2026-06-17 20:37:05,100 [INFO] adversary: Adversary-1 verdict for agent-2: PASS (score=1.00)
+2026-06-17 20:37:05,100 [INFO] orchestrator: agent-2 verification: PASS
+2026-06-17 20:37:05,104 [INFO] isolation-manager: Result ACCEPTED for agent-2: output_20260617_150705.json
+2026-06-17 20:37:05,109 [INFO] isolation-manager: Result ACCEPTED for agent-2: OUTPUT_REPORT.md
+2026-06-17 20:37:05,133 [INFO] orchestrator: Pipeline c28dd55faf62 complete: 2 accepted / 0 rejected in 0.13s
+2026-06-17 20:37:05,143 [INFO] orchestrator: Test #5: PASS
+2026-06-17 20:37:05,149 [INFO] test-runner:   Test #5: [PASS] PASS (0.13s)
+2026-06-17 20:37:05,149 [INFO] test-runner: 
+======================================================================
+2026-06-17 20:37:05,151 [INFO] test-runner:   TEST #6: Content Isolation
+2026-06-17 20:37:05,151 [INFO] test-runner: ======================================================================
+2026-06-17 20:37:05,153 [INFO] orchestrator: Orchestrator initialized | agents=3 | run_id=932d476f
+2026-06-17 20:37:05,153 [INFO] orchestrator: Running test case #6
+2026-06-17 20:37:05,153 [INFO] orchestrator: Test 6: Content Isolation - verify Agent1 cannot access Agent2's data
+2026-06-17 20:37:05,153 [INFO] orchestrator: Pipeline 362562ada50c started with 2 tasks
+2026-06-17 20:37:05,172 [INFO] isolation-manager: IsolationManager initialized at C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work
+2026-06-17 20:37:05,176 [INFO] isolation-manager: Input manifest created for agent-1: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-1\manifest.json
+2026-06-17 20:37:05,180 [INFO] pavithra-subagent: Subagent-1 initialized with task: deep-read
+2026-06-17 20:37:05,180 [INFO] orchestrator: Fanned out agent-1: deep-read
+2026-06-17 20:37:05,182 [INFO] isolation-manager: Input manifest created for agent-2: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-2\manifest.json
+2026-06-17 20:37:05,184 [INFO] pavithra-subagent: Subagent-2 initialized with task: deep-read
+2026-06-17 20:37:05,184 [INFO] orchestrator: Fanned out agent-2: deep-read
+2026-06-17 20:37:05,184 [INFO] orchestrator: Executing agent-1...
+2026-06-17 20:37:05,184 [INFO] pavithra-subagent: [Agent-1] determine: Starting determination phase
+2026-06-17 20:37:05,189 [INFO] pavithra-subagent: [Agent-1] determine: Determination complete. Hash: a79a0d55b521f532...
+2026-06-17 20:37:05,191 [INFO] pavithra-subagent: [Agent-1] execute: Starting execution phase
+2026-06-17 20:37:05,195 [INFO] pavithra-subagent: [Agent-1] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-1\output_20260617_150705.json
+2026-06-17 20:37:05,195 [INFO] orchestrator: agent-1 completed with status: COMPLETED
+2026-06-17 20:37:05,195 [INFO] orchestrator: Executing agent-2...
+2026-06-17 20:37:05,197 [INFO] pavithra-subagent: [Agent-2] determine: Starting determination phase
+2026-06-17 20:37:05,200 [INFO] pavithra-subagent: [Agent-2] determine: Determination complete. Hash: 28c96c40a623c783...
+2026-06-17 20:37:05,200 [INFO] pavithra-subagent: [Agent-2] execute: Starting execution phase
+2026-06-17 20:37:05,217 [INFO] pavithra-subagent: [Agent-2] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-2\output_20260617_150705.json
+2026-06-17 20:37:05,217 [INFO] orchestrator: agent-2 completed with status: COMPLETED
+2026-06-17 20:37:05,217 [INFO] orchestrator: Verifying agent-1 output using agent-2 (adversary)
+2026-06-17 20:37:05,217 [INFO] adversary: Adversary-2 verifying output from agent-1
+2026-06-17 20:37:05,217 [INFO] adversary: Adversary-2 verdict for agent-1: PASS (score=1.00)
+2026-06-17 20:37:05,217 [INFO] orchestrator: agent-1 verification: PASS
+2026-06-17 20:37:05,228 [INFO] isolation-manager: Result ACCEPTED for agent-1: output_20260617_150705.json
+2026-06-17 20:37:05,232 [INFO] isolation-manager: Result ACCEPTED for agent-1: OUTPUT_REPORT.md
+2026-06-17 20:37:05,232 [INFO] orchestrator: Verifying agent-2 output using agent-1 (adversary)
+2026-06-17 20:37:05,232 [INFO] adversary: Adversary-1 verifying output from agent-2
+2026-06-17 20:37:05,232 [INFO] adversary: Adversary-1 verdict for agent-2: PASS (score=1.00)
+2026-06-17 20:37:05,232 [INFO] orchestrator: agent-2 verification: PASS
+2026-06-17 20:37:05,236 [INFO] isolation-manager: Result ACCEPTED for agent-2: output_20260617_150705.json
+2026-06-17 20:37:05,243 [INFO] isolation-manager: Result ACCEPTED for agent-2: OUTPUT_REPORT.md
+2026-06-17 20:37:05,267 [INFO] orchestrator: Pipeline 362562ada50c complete: 2 accepted / 0 rejected in 0.11s
+2026-06-17 20:37:05,299 [INFO] orchestrator: Test #6: PASS
+2026-06-17 20:37:05,305 [INFO] test-runner:   Test #6: [PASS] PASS (0.11s)
+2026-06-17 20:37:05,306 [INFO] test-runner: 
+======================================================================
+2026-06-17 20:37:05,306 [INFO] test-runner:   TEST #7: Large Fan-Out
+2026-06-17 20:37:05,306 [INFO] test-runner: ======================================================================
+2026-06-17 20:37:05,310 [INFO] orchestrator: Orchestrator initialized | agents=3 | run_id=437e7fc9
+2026-06-17 20:37:05,310 [INFO] orchestrator: Running test case #7
+2026-06-17 20:37:05,311 [INFO] orchestrator: Test 7: Large Fan-Out - 5 subagents in parallel
+2026-06-17 20:37:05,311 [INFO] orchestrator: Pipeline a3d1fb8b69b4 started with 5 tasks
+2026-06-17 20:37:05,350 [INFO] isolation-manager: IsolationManager initialized at C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work
+2026-06-17 20:37:05,354 [INFO] isolation-manager: Input manifest created for agent-1: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-1\manifest.json
+2026-06-17 20:37:05,359 [INFO] pavithra-subagent: Subagent-1 initialized with task: deep-read
+2026-06-17 20:37:05,359 [INFO] orchestrator: Fanned out agent-1: deep-read
+2026-06-17 20:37:05,363 [INFO] isolation-manager: Input manifest created for agent-2: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-2\manifest.json
+2026-06-17 20:37:05,367 [INFO] pavithra-subagent: Subagent-2 initialized with task: deep-read
+2026-06-17 20:37:05,367 [INFO] orchestrator: Fanned out agent-2: deep-read
+2026-06-17 20:37:05,374 [INFO] isolation-manager: Input manifest created for agent-3: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-3\manifest.json
+2026-06-17 20:37:05,378 [INFO] pavithra-subagent: Subagent-3 initialized with task: deep-read
+2026-06-17 20:37:05,378 [INFO] orchestrator: Fanned out agent-3: deep-read
+2026-06-17 20:37:05,382 [INFO] isolation-manager: Input manifest created for agent-4: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-4\manifest.json
+2026-06-17 20:37:05,386 [INFO] pavithra-subagent: Subagent-4 initialized with task: deep-read
+2026-06-17 20:37:05,388 [INFO] orchestrator: Fanned out agent-4: deep-read
+2026-06-17 20:37:05,396 [INFO] isolation-manager: Input manifest created for agent-5: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-5\manifest.json
+2026-06-17 20:37:05,401 [INFO] pavithra-subagent: Subagent-5 initialized with task: deep-read
+2026-06-17 20:37:05,401 [INFO] orchestrator: Fanned out agent-5: deep-read
+2026-06-17 20:37:05,401 [INFO] orchestrator: Executing agent-1...
+2026-06-17 20:37:05,401 [INFO] pavithra-subagent: [Agent-1] determine: Starting determination phase
+2026-06-17 20:37:05,409 [INFO] pavithra-subagent: [Agent-1] determine: Determination complete. Hash: d7ea6b8ab108f489...
+2026-06-17 20:37:05,409 [INFO] pavithra-subagent: [Agent-1] execute: Starting execution phase
+2026-06-17 20:37:05,413 [INFO] pavithra-subagent: [Agent-1] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-1\output_20260617_150705.json
+2026-06-17 20:37:05,413 [INFO] orchestrator: agent-1 completed with status: COMPLETED
+2026-06-17 20:37:05,413 [INFO] orchestrator: Executing agent-2...
+2026-06-17 20:37:05,413 [INFO] pavithra-subagent: [Agent-2] determine: Starting determination phase
+2026-06-17 20:37:05,417 [INFO] pavithra-subagent: [Agent-2] determine: Determination complete. Hash: 82d4aa7bc6a1bb02...
+2026-06-17 20:37:05,417 [INFO] pavithra-subagent: [Agent-2] execute: Starting execution phase
+2026-06-17 20:37:05,424 [INFO] pavithra-subagent: [Agent-2] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-2\output_20260617_150705.json
+2026-06-17 20:37:05,424 [INFO] orchestrator: agent-2 completed with status: COMPLETED
+2026-06-17 20:37:05,424 [INFO] orchestrator: Executing agent-3...
+2026-06-17 20:37:05,424 [INFO] pavithra-subagent: [Agent-3] determine: Starting determination phase
+2026-06-17 20:37:05,430 [INFO] pavithra-subagent: [Agent-3] determine: Determination complete. Hash: 5f40818adbf04de6...
+2026-06-17 20:37:05,430 [INFO] pavithra-subagent: [Agent-3] execute: Starting execution phase
+2026-06-17 20:37:05,434 [INFO] pavithra-subagent: [Agent-3] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-3\output_20260617_150705.json
+2026-06-17 20:37:05,434 [INFO] orchestrator: agent-3 completed with status: COMPLETED
+2026-06-17 20:37:05,436 [INFO] orchestrator: Executing agent-4...
+2026-06-17 20:37:05,436 [INFO] pavithra-subagent: [Agent-4] determine: Starting determination phase
+2026-06-17 20:37:05,441 [INFO] pavithra-subagent: [Agent-4] determine: Determination complete. Hash: 35c0e1b312ef090b...
+2026-06-17 20:37:05,441 [INFO] pavithra-subagent: [Agent-4] execute: Starting execution phase
+2026-06-17 20:37:05,446 [INFO] pavithra-subagent: [Agent-4] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-4\output_20260617_150705.json
+2026-06-17 20:37:05,446 [INFO] orchestrator: agent-4 completed with status: COMPLETED
+2026-06-17 20:37:05,446 [INFO] orchestrator: Executing agent-5...
+2026-06-17 20:37:05,447 [INFO] pavithra-subagent: [Agent-5] determine: Starting determination phase
+2026-06-17 20:37:05,456 [INFO] pavithra-subagent: [Agent-5] determine: Determination complete. Hash: 13c9721c540dfa4d...
+2026-06-17 20:37:05,457 [INFO] pavithra-subagent: [Agent-5] execute: Starting execution phase
+2026-06-17 20:37:05,463 [INFO] pavithra-subagent: [Agent-5] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-5\output_20260617_150705.json
+2026-06-17 20:37:05,463 [INFO] orchestrator: agent-5 completed with status: COMPLETED
+2026-06-17 20:37:05,463 [INFO] orchestrator: Verifying agent-1 output using agent-2 (adversary)
+2026-06-17 20:37:05,463 [INFO] adversary: Adversary-2 verifying output from agent-1
+2026-06-17 20:37:05,465 [INFO] adversary: Adversary-2 verdict for agent-1: PASS (score=1.00)
+2026-06-17 20:37:05,465 [INFO] orchestrator: agent-1 verification: PASS
+2026-06-17 20:37:05,469 [INFO] isolation-manager: Result ACCEPTED for agent-1: output_20260617_150705.json
+2026-06-17 20:37:05,475 [INFO] isolation-manager: Result ACCEPTED for agent-1: OUTPUT_REPORT.md
+2026-06-17 20:37:05,475 [INFO] orchestrator: Verifying agent-2 output using agent-3 (adversary)
+2026-06-17 20:37:05,475 [INFO] adversary: Adversary-3 verifying output from agent-2
+2026-06-17 20:37:05,475 [INFO] adversary: Adversary-3 verdict for agent-2: PASS (score=1.00)
+2026-06-17 20:37:05,475 [INFO] orchestrator: agent-2 verification: PASS
+2026-06-17 20:37:05,479 [INFO] isolation-manager: Result ACCEPTED for agent-2: output_20260617_150705.json
+2026-06-17 20:37:05,483 [INFO] isolation-manager: Result ACCEPTED for agent-2: OUTPUT_REPORT.md
+2026-06-17 20:37:05,483 [INFO] orchestrator: Verifying agent-3 output using agent-4 (adversary)
+2026-06-17 20:37:05,483 [INFO] adversary: Adversary-4 verifying output from agent-3
+2026-06-17 20:37:05,483 [INFO] adversary: Adversary-4 verdict for agent-3: PASS (score=1.00)
+2026-06-17 20:37:05,483 [INFO] orchestrator: agent-3 verification: PASS
+2026-06-17 20:37:05,489 [INFO] isolation-manager: Result ACCEPTED for agent-3: output_20260617_150705.json
+2026-06-17 20:37:05,500 [INFO] isolation-manager: Result ACCEPTED for agent-3: OUTPUT_REPORT.md
+2026-06-17 20:37:05,500 [INFO] orchestrator: Verifying agent-4 output using agent-5 (adversary)
+2026-06-17 20:37:05,500 [INFO] adversary: Adversary-5 verifying output from agent-4
+2026-06-17 20:37:05,500 [INFO] adversary: Adversary-5 verdict for agent-4: PASS (score=1.00)
+2026-06-17 20:37:05,500 [INFO] orchestrator: agent-4 verification: PASS
+2026-06-17 20:37:05,506 [INFO] isolation-manager: Result ACCEPTED for agent-4: output_20260617_150705.json
+2026-06-17 20:37:05,509 [INFO] isolation-manager: Result ACCEPTED for agent-4: OUTPUT_REPORT.md
+2026-06-17 20:37:05,509 [INFO] orchestrator: Verifying agent-5 output using agent-1 (adversary)
+2026-06-17 20:37:05,509 [INFO] adversary: Adversary-1 verifying output from agent-5
+2026-06-17 20:37:05,511 [INFO] adversary: Adversary-1 verdict for agent-5: PASS (score=1.00)
+2026-06-17 20:37:05,511 [INFO] orchestrator: agent-5 verification: PASS
+2026-06-17 20:37:05,513 [INFO] isolation-manager: Result ACCEPTED for agent-5: output_20260617_150705.json
+2026-06-17 20:37:05,517 [INFO] isolation-manager: Result ACCEPTED for agent-5: OUTPUT_REPORT.md
+2026-06-17 20:37:05,555 [INFO] orchestrator: Pipeline a3d1fb8b69b4 complete: 5 accepted / 0 rejected in 0.24s
+2026-06-17 20:37:05,561 [INFO] orchestrator: Test #7: PASS
+2026-06-17 20:37:05,565 [INFO] test-runner:   Test #7: [PASS] PASS (0.24s)
+2026-06-17 20:37:05,565 [INFO] test-runner: 
+======================================================================
+2026-06-17 20:37:05,565 [INFO] test-runner:   TEST #8: Mixed Tasks
+2026-06-17 20:37:05,565 [INFO] test-runner: ======================================================================
+2026-06-17 20:37:05,567 [INFO] orchestrator: Orchestrator initialized | agents=3 | run_id=ec78b71e
+2026-06-17 20:37:05,569 [INFO] orchestrator: Running test case #8
+2026-06-17 20:37:05,569 [INFO] orchestrator: Test 8: Mixed Tasks - different task types combined
+2026-06-17 20:37:05,569 [INFO] orchestrator: Pipeline 5bedbf94e88a started with 4 tasks
+2026-06-17 20:37:05,612 [INFO] isolation-manager: IsolationManager initialized at C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work
+2026-06-17 20:37:05,614 [INFO] isolation-manager: Input manifest created for agent-1: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-1\manifest.json
+2026-06-17 20:37:05,618 [INFO] pavithra-subagent: Subagent-1 initialized with task: deep-read
+2026-06-17 20:37:05,618 [INFO] orchestrator: Fanned out agent-1: deep-read
+2026-06-17 20:37:05,620 [INFO] isolation-manager: Input manifest created for agent-2: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-2\manifest.json
+2026-06-17 20:37:05,626 [INFO] pavithra-subagent: Subagent-2 initialized with task: summary
+2026-06-17 20:37:05,627 [INFO] orchestrator: Fanned out agent-2: summary
+2026-06-17 20:37:05,632 [INFO] isolation-manager: Input manifest created for agent-3: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-3\manifest.json
+2026-06-17 20:37:05,634 [INFO] pavithra-subagent: Subagent-3 initialized with task: search
+2026-06-17 20:37:05,634 [INFO] orchestrator: Fanned out agent-3: search
+2026-06-17 20:37:05,643 [INFO] isolation-manager: Input manifest created for agent-4: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-4\manifest.json
+2026-06-17 20:37:05,645 [INFO] pavithra-subagent: Subagent-4 initialized with task: analysis
+2026-06-17 20:37:05,645 [INFO] orchestrator: Fanned out agent-4: analysis
+2026-06-17 20:37:05,645 [INFO] orchestrator: Executing agent-1...
+2026-06-17 20:37:05,645 [INFO] pavithra-subagent: [Agent-1] determine: Starting determination phase
+2026-06-17 20:37:05,649 [INFO] pavithra-subagent: [Agent-1] determine: Determination complete. Hash: 53639889927cb128...
+2026-06-17 20:37:05,649 [INFO] pavithra-subagent: [Agent-1] execute: Starting execution phase
+2026-06-17 20:37:05,750 [INFO] pavithra-subagent: [Agent-1] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-1\output_20260617_150705.json
+2026-06-17 20:37:05,750 [INFO] orchestrator: agent-1 completed with status: COMPLETED
+2026-06-17 20:37:05,750 [INFO] orchestrator: Executing agent-2...
+2026-06-17 20:37:05,750 [INFO] pavithra-subagent: [Agent-2] determine: Starting determination phase
+2026-06-17 20:37:05,754 [INFO] pavithra-subagent: [Agent-2] determine: Determination complete. Hash: b90a0b6ff704c5d3...
+2026-06-17 20:37:05,754 [INFO] pavithra-subagent: [Agent-2] execute: Starting execution phase
+2026-06-17 20:37:05,762 [INFO] pavithra-subagent: [Agent-2] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-2\output_20260617_150705.json
+2026-06-17 20:37:05,762 [INFO] orchestrator: agent-2 completed with status: COMPLETED
+2026-06-17 20:37:05,764 [INFO] orchestrator: Executing agent-3...
+2026-06-17 20:37:05,764 [INFO] pavithra-subagent: [Agent-3] determine: Starting determination phase
+2026-06-17 20:37:05,768 [INFO] pavithra-subagent: [Agent-3] determine: Determination complete. Hash: 235e6da326e10fcf...
+2026-06-17 20:37:05,768 [INFO] pavithra-subagent: [Agent-3] execute: Starting execution phase
+2026-06-17 20:37:06,965 [INFO] pavithra-subagent: [Agent-3] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-3\output_20260617_150706.json
+2026-06-17 20:37:06,965 [INFO] orchestrator: agent-3 completed with status: COMPLETED
+2026-06-17 20:37:06,965 [INFO] orchestrator: Executing agent-4...
+2026-06-17 20:37:06,965 [INFO] pavithra-subagent: [Agent-4] determine: Starting determination phase
+2026-06-17 20:37:06,969 [INFO] pavithra-subagent: [Agent-4] determine: Determination complete. Hash: 49f5ea2b1990dda5...
+2026-06-17 20:37:06,969 [INFO] pavithra-subagent: [Agent-4] execute: Starting execution phase
+2026-06-17 20:37:06,973 [INFO] pavithra-subagent: [Agent-4] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-4\output_20260617_150706.json
+2026-06-17 20:37:06,973 [INFO] orchestrator: agent-4 completed with status: COMPLETED
+2026-06-17 20:37:06,975 [INFO] orchestrator: Verifying agent-1 output using agent-2 (adversary)
+2026-06-17 20:37:06,975 [INFO] adversary: Adversary-2 verifying output from agent-1
+2026-06-17 20:37:06,979 [INFO] adversary: Adversary-2 verdict for agent-1: PASS (score=0.80)
+2026-06-17 20:37:06,979 [INFO] orchestrator: agent-1 verification: PASS
+2026-06-17 20:37:06,983 [INFO] isolation-manager: Result ACCEPTED for agent-1: output_20260617_150705.json
+2026-06-17 20:37:06,988 [INFO] isolation-manager: Result ACCEPTED for agent-1: OUTPUT_REPORT.md
+2026-06-17 20:37:06,992 [INFO] orchestrator: Verifying agent-2 output using agent-3 (adversary)
+2026-06-17 20:37:06,992 [INFO] adversary: Adversary-3 verifying output from agent-2
+2026-06-17 20:37:06,992 [INFO] adversary: Adversary-3 verdict for agent-2: PASS (score=1.00)
+2026-06-17 20:37:06,994 [INFO] orchestrator: agent-2 verification: PASS
+2026-06-17 20:37:06,996 [INFO] isolation-manager: Result ACCEPTED for agent-2: output_20260617_150705.json
+2026-06-17 20:37:07,001 [INFO] isolation-manager: Result ACCEPTED for agent-2: OUTPUT_REPORT.md
+2026-06-17 20:37:07,001 [INFO] orchestrator: Verifying agent-3 output using agent-4 (adversary)
+2026-06-17 20:37:07,001 [INFO] adversary: Adversary-4 verifying output from agent-3
+2026-06-17 20:37:07,011 [INFO] adversary: Adversary-4 verdict for agent-3: PASS (score=0.80)
+2026-06-17 20:37:07,017 [INFO] orchestrator: agent-3 verification: PASS
+2026-06-17 20:37:07,027 [INFO] isolation-manager: Result ACCEPTED for agent-3: output_20260617_150706.json
+2026-06-17 20:37:07,029 [INFO] isolation-manager: Result ACCEPTED for agent-3: OUTPUT_REPORT.md
+2026-06-17 20:37:07,029 [INFO] orchestrator: Verifying agent-4 output using agent-1 (adversary)
+2026-06-17 20:37:07,031 [INFO] adversary: Adversary-1 verifying output from agent-4
+2026-06-17 20:37:07,031 [INFO] adversary: Adversary-1 verdict for agent-4: PASS (score=1.00)
+2026-06-17 20:37:07,031 [INFO] orchestrator: agent-4 verification: PASS
+2026-06-17 20:37:07,035 [INFO] isolation-manager: Result ACCEPTED for agent-4: output_20260617_150706.json
+2026-06-17 20:37:07,041 [INFO] isolation-manager: Result ACCEPTED for agent-4: OUTPUT_REPORT.md
+2026-06-17 20:37:07,079 [INFO] orchestrator: Pipeline 5bedbf94e88a complete: 4 accepted / 0 rejected in 1.51s
+2026-06-17 20:37:07,085 [INFO] orchestrator: Test #8: PASS
+2026-06-17 20:37:07,094 [INFO] test-runner:   Test #8: [PASS] PASS (1.51s)
+2026-06-17 20:37:07,094 [INFO] test-runner: 
+======================================================================
+2026-06-17 20:37:07,094 [INFO] test-runner:   TEST #9: Error Recovery
+2026-06-17 20:37:07,094 [INFO] test-runner: ======================================================================
+2026-06-17 20:37:07,096 [INFO] orchestrator: Orchestrator initialized | agents=3 | run_id=3862f8bc
+2026-06-17 20:37:07,096 [INFO] orchestrator: Running test case #9
+2026-06-17 20:37:07,096 [INFO] orchestrator: Test 9: Error Recovery - force error in one agent, system recovers
+2026-06-17 20:37:07,098 [INFO] orchestrator: Pipeline 9e22f709e57b started with 2 tasks
+2026-06-17 20:37:07,129 [INFO] isolation-manager: IsolationManager initialized at C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work
+2026-06-17 20:37:07,133 [INFO] isolation-manager: Input manifest created for agent-1: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-1\manifest.json
+2026-06-17 20:37:07,135 [INFO] pavithra-subagent: Subagent-1 initialized with task: deep-read
+2026-06-17 20:37:07,135 [INFO] orchestrator: Fanned out agent-1: deep-read
+2026-06-17 20:37:07,138 [INFO] isolation-manager: Input manifest created for agent-2: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-2\manifest.json
+2026-06-17 20:37:07,144 [INFO] pavithra-subagent: Subagent-2 initialized with task: deep-read
+2026-06-17 20:37:07,144 [INFO] orchestrator: Fanned out agent-2: deep-read
+2026-06-17 20:37:07,145 [INFO] orchestrator: Executing agent-1...
+2026-06-17 20:37:07,145 [INFO] pavithra-subagent: [Agent-1] determine: Starting determination phase
+2026-06-17 20:37:07,149 [INFO] pavithra-subagent: [Agent-1] determine: Determination complete. Hash: ba0dde0e13370d67...
+2026-06-17 20:37:07,149 [INFO] pavithra-subagent: [Agent-1] execute: Starting execution phase
+2026-06-17 20:37:07,168 [INFO] pavithra-subagent: [Agent-1] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-1\output_20260617_150707.json
+2026-06-17 20:37:07,168 [INFO] orchestrator: agent-1 completed with status: COMPLETED
+2026-06-17 20:37:07,168 [INFO] orchestrator: Executing agent-2...
+2026-06-17 20:37:07,168 [INFO] pavithra-subagent: [Agent-2] determine: Starting determination phase
+2026-06-17 20:37:07,171 [ERROR] orchestrator: agent-2 failed: 'charmap' codec can't encode characters in position 536-537: character maps to <undefined>
+2026-06-17 20:37:07,171 [INFO] orchestrator: Verifying agent-1 output using agent-2 (adversary)
+2026-06-17 20:37:07,171 [INFO] adversary: Adversary-2 verifying output from agent-1
+2026-06-17 20:37:07,172 [INFO] adversary: Adversary-2 verdict for agent-1: PASS (score=0.80)
+2026-06-17 20:37:07,172 [INFO] orchestrator: agent-1 verification: PASS
+2026-06-17 20:37:07,176 [INFO] isolation-manager: Result ACCEPTED for agent-1: output_20260617_150707.json
+2026-06-17 20:37:07,180 [INFO] isolation-manager: Result ACCEPTED for agent-1: OUTPUT_REPORT.md
+2026-06-17 20:37:07,180 [INFO] orchestrator: Verifying agent-2 output using agent-1 (adversary)
+2026-06-17 20:37:07,180 [INFO] adversary: Adversary-1 verifying output from agent-2
+2026-06-17 20:37:07,180 [INFO] adversary: Adversary-1 verdict for agent-2: FAIL (score=0.50)
+2026-06-17 20:37:07,180 [INFO] orchestrator: agent-2 verification: FAIL
+2026-06-17 20:37:07,184 [WARNING] isolation-manager: Result REJECTED for agent-2: output_20260617_150705.json - Verification FAILED: 3/5 checks passed (score: 0.50) | Failing checks: schema_check, completeness_check
+2026-06-17 20:37:07,186 [INFO] orchestrator: Retry 1/3 for agent-2
+2026-06-17 20:37:07,186 [INFO] pavithra-subagent: [Agent-2] execute: Starting execution phase
+2026-06-17 20:37:07,191 [INFO] pavithra-subagent: [Agent-2] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-2\output_20260617_150707.json
+2026-06-17 20:37:07,191 [INFO] adversary: Adversary-1 verifying output from agent-2
+2026-06-17 20:37:07,192 [INFO] adversary: Adversary-1 verdict for agent-2: PASS (score=1.00)
+2026-06-17 20:37:07,204 [INFO] isolation-manager: Result ACCEPTED for agent-2: output_20260617_150707.json
+2026-06-17 20:37:07,204 [INFO] orchestrator: agent-2 passed after 1 retries
+2026-06-17 20:37:07,234 [INFO] orchestrator: Pipeline 9e22f709e57b complete: 2 accepted / 0 rejected in 0.14s
+2026-06-17 20:37:07,242 [INFO] orchestrator: Test #9: PASS
+2026-06-17 20:37:07,246 [INFO] test-runner:   Test #9: [PASS] PASS (0.14s)
+2026-06-17 20:37:07,246 [INFO] test-runner: 
+======================================================================
+2026-06-17 20:37:07,246 [INFO] test-runner:   TEST #10: Full Pipeline
+2026-06-17 20:37:07,246 [INFO] test-runner: ======================================================================
+2026-06-17 20:37:07,248 [INFO] orchestrator: Orchestrator initialized | agents=3 | run_id=6aa1221d
+2026-06-17 20:37:07,250 [INFO] orchestrator: Running test case #10
+2026-06-17 20:37:07,252 [INFO] orchestrator: Test 10: Full Pipeline - complete system test
+2026-06-17 20:37:07,252 [INFO] orchestrator: Pipeline 4dbf50e391e6 started with 3 tasks
+2026-06-17 20:37:07,282 [INFO] isolation-manager: IsolationManager initialized at C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work
+2026-06-17 20:37:07,285 [INFO] isolation-manager: Input manifest created for agent-1: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-1\manifest.json
+2026-06-17 20:37:07,292 [INFO] pavithra-subagent: Subagent-1 initialized with task: deep-read
+2026-06-17 20:37:07,292 [INFO] orchestrator: Fanned out agent-1: deep-read
+2026-06-17 20:37:07,298 [INFO] isolation-manager: Input manifest created for agent-2: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-2\manifest.json
+2026-06-17 20:37:07,301 [INFO] pavithra-subagent: Subagent-2 initialized with task: summary
+2026-06-17 20:37:07,301 [INFO] orchestrator: Fanned out agent-2: summary
+2026-06-17 20:37:07,305 [INFO] isolation-manager: Input manifest created for agent-3: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-3\manifest.json
+2026-06-17 20:37:07,310 [INFO] pavithra-subagent: Subagent-3 initialized with task: analysis
+2026-06-17 20:37:07,310 [INFO] orchestrator: Fanned out agent-3: analysis
+2026-06-17 20:37:07,310 [INFO] orchestrator: Executing agent-1...
+2026-06-17 20:37:07,311 [INFO] pavithra-subagent: [Agent-1] determine: Starting determination phase
+2026-06-17 20:37:07,325 [INFO] pavithra-subagent: [Agent-1] determine: Determination complete. Hash: c60e3c706ac35874...
+2026-06-17 20:37:07,325 [INFO] pavithra-subagent: [Agent-1] execute: Starting execution phase
+2026-06-17 20:37:07,548 [INFO] pavithra-subagent: [Agent-1] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-1\output_20260617_150707.json
+2026-06-17 20:37:07,548 [INFO] orchestrator: agent-1 completed with status: COMPLETED
+2026-06-17 20:37:07,548 [INFO] orchestrator: Executing agent-2...
+2026-06-17 20:37:07,548 [INFO] pavithra-subagent: [Agent-2] determine: Starting determination phase
+2026-06-17 20:37:07,555 [INFO] pavithra-subagent: [Agent-2] determine: Determination complete. Hash: 44002b7c245d71b5...
+2026-06-17 20:37:07,555 [INFO] pavithra-subagent: [Agent-2] execute: Starting execution phase
+2026-06-17 20:37:07,562 [INFO] pavithra-subagent: [Agent-2] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-2\output_20260617_150707.json
+2026-06-17 20:37:07,562 [INFO] orchestrator: agent-2 completed with status: COMPLETED
+2026-06-17 20:37:07,562 [INFO] orchestrator: Executing agent-3...
+2026-06-17 20:37:07,562 [INFO] pavithra-subagent: [Agent-3] determine: Starting determination phase
+2026-06-17 20:37:07,566 [INFO] pavithra-subagent: [Agent-3] determine: Determination complete. Hash: ee9ef2dc6827641d...
+2026-06-17 20:37:07,566 [INFO] pavithra-subagent: [Agent-3] execute: Starting execution phase
+2026-06-17 20:37:07,568 [INFO] pavithra-subagent: [Agent-3] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-3\output_20260617_150707.json
+2026-06-17 20:37:07,568 [INFO] orchestrator: agent-3 completed with status: COMPLETED
+2026-06-17 20:37:07,568 [INFO] orchestrator: Verifying agent-1 output using agent-2 (adversary)
+2026-06-17 20:37:07,568 [INFO] adversary: Adversary-2 verifying output from agent-1
+2026-06-17 20:37:07,576 [INFO] adversary: Adversary-2 verdict for agent-1: PASS (score=0.80)
+2026-06-17 20:37:07,576 [INFO] orchestrator: agent-1 verification: PASS
+2026-06-17 20:37:07,580 [INFO] isolation-manager: Result ACCEPTED for agent-1: output_20260617_150707.json
+2026-06-17 20:37:07,582 [INFO] isolation-manager: Result ACCEPTED for agent-1: OUTPUT_REPORT.md
+2026-06-17 20:37:07,582 [INFO] orchestrator: Verifying agent-2 output using agent-3 (adversary)
+2026-06-17 20:37:07,584 [INFO] adversary: Adversary-3 verifying output from agent-2
+2026-06-17 20:37:07,584 [INFO] adversary: Adversary-3 verdict for agent-2: PASS (score=1.00)
+2026-06-17 20:37:07,584 [INFO] orchestrator: agent-2 verification: PASS
+2026-06-17 20:37:07,590 [INFO] isolation-manager: Result ACCEPTED for agent-2: output_20260617_150707.json
+2026-06-17 20:37:07,600 [INFO] isolation-manager: Result ACCEPTED for agent-2: OUTPUT_REPORT.md
+2026-06-17 20:37:07,601 [INFO] orchestrator: Verifying agent-3 output using agent-1 (adversary)
+2026-06-17 20:37:07,601 [INFO] adversary: Adversary-1 verifying output from agent-3
+2026-06-17 20:37:07,601 [INFO] adversary: Adversary-1 verdict for agent-3: PASS (score=1.00)
+2026-06-17 20:37:07,601 [INFO] orchestrator: agent-3 verification: PASS
+2026-06-17 20:37:07,607 [INFO] isolation-manager: Result ACCEPTED for agent-3: output_20260617_150707.json
+2026-06-17 20:37:07,610 [INFO] isolation-manager: Result ACCEPTED for agent-3: OUTPUT_REPORT.md
+2026-06-17 20:37:07,644 [INFO] orchestrator: Pipeline 4dbf50e391e6 complete: 3 accepted / 0 rejected in 0.39s
+2026-06-17 20:37:07,650 [INFO] orchestrator: Final summary saved to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\logs\final_summary.json
+2026-06-17 20:37:07,659 [INFO] orchestrator: GitHub backup data prepared at C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\github_backup_ready\backup_6aa1221d.json
+2026-06-17 20:37:07,659 [INFO] orchestrator: Test #10: PASS
+2026-06-17 20:37:07,663 [INFO] test-runner:   Test #10: [PASS] PASS (0.39s)
+2026-06-17 20:37:07,665 [INFO] test-runner: Test report saved to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\tests\TEST_REPORT.md
+2026-06-17 20:41:45,646 [INFO] orchestrator: Orchestrator initialized | agents=3 | run_id=4b2da000
+2026-06-17 20:43:13,905 [INFO] orchestrator: Orchestrator initialized | agents=10 | run_id=7ea0f5dd
+2026-06-17 20:58:39,215 [INFO] orchestrator: Orchestrator initialized | agents=5 | run_id=5709569e
+2026-06-17 20:58:39,215 [INFO] orchestrator: Pipeline 391f37ed7903 started with 5 tasks
+2026-06-17 20:58:39,266 [INFO] isolation-manager: IsolationManager initialized at C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work
+2026-06-17 20:58:39,270 [INFO] isolation-manager: Input manifest created for agent-1: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-1\manifest.json
+2026-06-17 20:58:39,275 [INFO] pavithra-subagent: Subagent-1 initialized with task: security-audit
+2026-06-17 20:58:39,275 [INFO] orchestrator: Fanned out agent-1: security-audit
+2026-06-17 20:58:39,283 [INFO] isolation-manager: Input manifest created for agent-2: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-2\manifest.json
+2026-06-17 20:58:39,287 [INFO] pavithra-subagent: Subagent-2 initialized with task: security-audit
+2026-06-17 20:58:39,288 [INFO] orchestrator: Fanned out agent-2: security-audit
+2026-06-17 20:58:39,293 [INFO] isolation-manager: Input manifest created for agent-3: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-3\manifest.json
+2026-06-17 20:58:39,298 [INFO] pavithra-subagent: Subagent-3 initialized with task: security-audit
+2026-06-17 20:58:39,298 [INFO] orchestrator: Fanned out agent-3: security-audit
+2026-06-17 20:58:39,302 [INFO] isolation-manager: Input manifest created for agent-4: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-4\manifest.json
+2026-06-17 20:58:39,307 [INFO] pavithra-subagent: Subagent-4 initialized with task: security-audit
+2026-06-17 20:58:39,308 [INFO] orchestrator: Fanned out agent-4: security-audit
+2026-06-17 20:58:39,312 [INFO] isolation-manager: Input manifest created for agent-5: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-5\manifest.json
+2026-06-17 20:58:39,316 [INFO] pavithra-subagent: Subagent-5 initialized with task: security-audit
+2026-06-17 20:58:39,316 [INFO] orchestrator: Fanned out agent-5: security-audit
+2026-06-17 20:58:39,316 [INFO] orchestrator: Executing agent-1...
+2026-06-17 20:58:39,316 [INFO] pavithra-subagent: [Agent-1] determine: Starting determination phase
+2026-06-17 20:58:39,326 [INFO] pavithra-subagent: [Agent-1] determine: Determination complete. Hash: 69460af0189324bc...
+2026-06-17 20:58:39,327 [INFO] pavithra-subagent: [Agent-1] execute: Starting execution phase
+2026-06-17 20:58:39,339 [INFO] pavithra-subagent: [Agent-1] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-1\output_20260617_152839.json
+2026-06-17 20:58:39,340 [INFO] orchestrator: agent-1 completed with status: COMPLETED
+2026-06-17 20:58:39,341 [INFO] orchestrator: Executing agent-2...
+2026-06-17 20:58:39,342 [INFO] pavithra-subagent: [Agent-2] determine: Starting determination phase
+2026-06-17 20:58:39,347 [INFO] pavithra-subagent: [Agent-2] determine: Determination complete. Hash: bf0719dd93d601ac...
+2026-06-17 20:58:39,347 [INFO] pavithra-subagent: [Agent-2] execute: Starting execution phase
+2026-06-17 20:58:39,350 [INFO] pavithra-subagent: [Agent-2] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-2\output_20260617_152839.json
+2026-06-17 20:58:39,350 [INFO] orchestrator: agent-2 completed with status: COMPLETED
+2026-06-17 20:58:39,351 [INFO] orchestrator: Executing agent-3...
+2026-06-17 20:58:39,351 [INFO] pavithra-subagent: [Agent-3] determine: Starting determination phase
+2026-06-17 20:58:39,356 [INFO] pavithra-subagent: [Agent-3] determine: Determination complete. Hash: f0680b05eeed176d...
+2026-06-17 20:58:39,356 [INFO] pavithra-subagent: [Agent-3] execute: Starting execution phase
+2026-06-17 20:58:39,361 [INFO] pavithra-subagent: [Agent-3] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-3\output_20260617_152839.json
+2026-06-17 20:58:39,361 [INFO] orchestrator: agent-3 completed with status: COMPLETED
+2026-06-17 20:58:39,361 [INFO] orchestrator: Executing agent-4...
+2026-06-17 20:58:39,363 [INFO] pavithra-subagent: [Agent-4] determine: Starting determination phase
+2026-06-17 20:58:39,371 [INFO] pavithra-subagent: [Agent-4] determine: Determination complete. Hash: f54471a8691f852d...
+2026-06-17 20:58:39,371 [INFO] pavithra-subagent: [Agent-4] execute: Starting execution phase
+2026-06-17 20:58:39,380 [INFO] pavithra-subagent: [Agent-4] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-4\output_20260617_152839.json
+2026-06-17 20:58:39,380 [INFO] orchestrator: agent-4 completed with status: COMPLETED
+2026-06-17 20:58:39,380 [INFO] orchestrator: Executing agent-5...
+2026-06-17 20:58:39,380 [INFO] pavithra-subagent: [Agent-5] determine: Starting determination phase
+2026-06-17 20:58:39,384 [INFO] pavithra-subagent: [Agent-5] determine: Determination complete. Hash: beb713e7c5b1c04e...
+2026-06-17 20:58:39,384 [INFO] pavithra-subagent: [Agent-5] execute: Starting execution phase
+2026-06-17 20:58:39,391 [INFO] pavithra-subagent: [Agent-5] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-5\output_20260617_152839.json
+2026-06-17 20:58:39,391 [INFO] orchestrator: agent-5 completed with status: COMPLETED
+2026-06-17 20:58:39,391 [INFO] orchestrator: Verifying agent-1 output using agent-2 (adversary)
+2026-06-17 20:58:39,393 [INFO] adversary: Adversary-2 verifying output from agent-1
+2026-06-17 20:58:39,395 [INFO] adversary: Adversary-2 verdict for agent-1: PASS (score=1.00)
+2026-06-17 20:58:39,395 [INFO] orchestrator: agent-1 verification: PASS
+2026-06-17 20:58:39,406 [INFO] isolation-manager: Result ACCEPTED for agent-1: output_20260617_152839.json
+2026-06-17 20:58:39,410 [INFO] isolation-manager: Result ACCEPTED for agent-1: OUTPUT_REPORT.md
+2026-06-17 20:58:39,411 [INFO] orchestrator: Verifying agent-2 output using agent-3 (adversary)
+2026-06-17 20:58:39,411 [INFO] adversary: Adversary-3 verifying output from agent-2
+2026-06-17 20:58:39,411 [INFO] adversary: Adversary-3 verdict for agent-2: PASS (score=1.00)
+2026-06-17 20:58:39,411 [INFO] orchestrator: agent-2 verification: PASS
+2026-06-17 20:58:39,424 [INFO] isolation-manager: Result ACCEPTED for agent-2: output_20260617_152839.json
+2026-06-17 20:58:39,429 [INFO] isolation-manager: Result ACCEPTED for agent-2: OUTPUT_REPORT.md
+2026-06-17 20:58:39,429 [INFO] orchestrator: Verifying agent-3 output using agent-4 (adversary)
+2026-06-17 20:58:39,429 [INFO] adversary: Adversary-4 verifying output from agent-3
+2026-06-17 20:58:39,429 [INFO] adversary: Adversary-4 verdict for agent-3: PASS (score=1.00)
+2026-06-17 20:58:39,429 [INFO] orchestrator: agent-3 verification: PASS
+2026-06-17 20:58:39,435 [INFO] isolation-manager: Result ACCEPTED for agent-3: output_20260617_152839.json
+2026-06-17 20:58:39,440 [INFO] isolation-manager: Result ACCEPTED for agent-3: OUTPUT_REPORT.md
+2026-06-17 20:58:39,440 [INFO] orchestrator: Verifying agent-4 output using agent-5 (adversary)
+2026-06-17 20:58:39,440 [INFO] adversary: Adversary-5 verifying output from agent-4
+2026-06-17 20:58:39,440 [INFO] adversary: Adversary-5 verdict for agent-4: PASS (score=1.00)
+2026-06-17 20:58:39,440 [INFO] orchestrator: agent-4 verification: PASS
+2026-06-17 20:58:39,445 [INFO] isolation-manager: Result ACCEPTED for agent-4: output_20260617_152839.json
+2026-06-17 20:58:39,449 [INFO] isolation-manager: Result ACCEPTED for agent-4: OUTPUT_REPORT.md
+2026-06-17 20:58:39,449 [INFO] orchestrator: Verifying agent-5 output using agent-1 (adversary)
+2026-06-17 20:58:39,450 [INFO] adversary: Adversary-1 verifying output from agent-5
+2026-06-17 20:58:39,450 [INFO] adversary: Adversary-1 verdict for agent-5: PASS (score=1.00)
+2026-06-17 20:58:39,450 [INFO] orchestrator: agent-5 verification: PASS
+2026-06-17 20:58:39,456 [INFO] isolation-manager: Result ACCEPTED for agent-5: output_20260617_152839.json
+2026-06-17 20:58:39,462 [INFO] isolation-manager: Result ACCEPTED for agent-5: OUTPUT_REPORT.md
+2026-06-17 20:58:39,518 [INFO] orchestrator: Pipeline 391f37ed7903 complete: 5 accepted / 0 rejected in 0.30s
+2026-06-17 20:59:09,118 [INFO] orchestrator: Orchestrator initialized | agents=10 | run_id=e0e4107a
+2026-06-17 20:59:09,120 [INFO] orchestrator: Pipeline 81bfeae540ef started with 10 tasks
+2026-06-17 20:59:09,203 [INFO] isolation-manager: IsolationManager initialized at C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work
+2026-06-17 20:59:09,207 [INFO] isolation-manager: Input manifest created for agent-1: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-1\manifest.json
+2026-06-17 20:59:09,212 [INFO] pavithra-subagent: Subagent-1 initialized with task: Build a webapp
+2026-06-17 20:59:09,213 [INFO] orchestrator: Fanned out agent-1: Build a webapp
+2026-06-17 20:59:09,221 [INFO] isolation-manager: Input manifest created for agent-2: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-2\manifest.json
+2026-06-17 20:59:09,225 [INFO] pavithra-subagent: Subagent-2 initialized with task: Build a webapp
+2026-06-17 20:59:09,226 [INFO] orchestrator: Fanned out agent-2: Build a webapp
+2026-06-17 20:59:09,233 [INFO] isolation-manager: Input manifest created for agent-3: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-3\manifest.json
+2026-06-17 20:59:09,239 [INFO] pavithra-subagent: Subagent-3 initialized with task: Build a webapp
+2026-06-17 20:59:09,239 [INFO] orchestrator: Fanned out agent-3: Build a webapp
+2026-06-17 20:59:09,246 [INFO] isolation-manager: Input manifest created for agent-4: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-4\manifest.json
+2026-06-17 20:59:09,249 [INFO] pavithra-subagent: Subagent-4 initialized with task: Build a webapp
+2026-06-17 20:59:09,251 [INFO] orchestrator: Fanned out agent-4: Build a webapp
+2026-06-17 20:59:09,255 [INFO] isolation-manager: Input manifest created for agent-5: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-5\manifest.json
+2026-06-17 20:59:09,263 [INFO] pavithra-subagent: Subagent-5 initialized with task: Build a webapp
+2026-06-17 20:59:09,264 [INFO] orchestrator: Fanned out agent-5: Build a webapp
+2026-06-17 20:59:09,275 [INFO] isolation-manager: Input manifest created for agent-6: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-6\manifest.json
+2026-06-17 20:59:09,280 [INFO] pavithra-subagent: Subagent-6 initialized with task: Build a webapp
+2026-06-17 20:59:09,281 [INFO] orchestrator: Fanned out agent-6: Build a webapp
+2026-06-17 20:59:09,289 [INFO] isolation-manager: Input manifest created for agent-7: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-7\manifest.json
+2026-06-17 20:59:09,292 [INFO] pavithra-subagent: Subagent-7 initialized with task: Build a webapp
+2026-06-17 20:59:09,292 [INFO] orchestrator: Fanned out agent-7: Build a webapp
+2026-06-17 20:59:09,297 [INFO] isolation-manager: Input manifest created for agent-8: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-8\manifest.json
+2026-06-17 20:59:09,302 [INFO] pavithra-subagent: Subagent-8 initialized with task: Build a webapp
+2026-06-17 20:59:09,302 [INFO] orchestrator: Fanned out agent-8: Build a webapp
+2026-06-17 20:59:09,306 [INFO] isolation-manager: Input manifest created for agent-9: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-9\manifest.json
+2026-06-17 20:59:09,311 [INFO] pavithra-subagent: Subagent-9 initialized with task: Build a webapp
+2026-06-17 20:59:09,311 [INFO] orchestrator: Fanned out agent-9: Build a webapp
+2026-06-17 20:59:09,320 [INFO] isolation-manager: Input manifest created for agent-10: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-10\manifest.json
+2026-06-17 20:59:09,322 [INFO] pavithra-subagent: Subagent-10 initialized with task: Build a webapp
+2026-06-17 20:59:09,323 [INFO] orchestrator: Fanned out agent-10: Build a webapp
+2026-06-17 20:59:09,323 [INFO] orchestrator: Executing agent-1...
+2026-06-17 20:59:09,323 [INFO] pavithra-subagent: [Agent-1] determine: Starting determination phase
+2026-06-17 20:59:09,332 [INFO] pavithra-subagent: [Agent-1] determine: Determination complete. Hash: de4cf3429012a45a...
+2026-06-17 20:59:09,332 [INFO] pavithra-subagent: [Agent-1] execute: Starting execution phase
+2026-06-17 20:59:09,337 [INFO] pavithra-subagent: [Agent-1] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-1\output_20260617_152909.json
+2026-06-17 20:59:09,337 [INFO] orchestrator: agent-1 completed with status: COMPLETED
+2026-06-17 20:59:09,337 [INFO] orchestrator: Executing agent-2...
+2026-06-17 20:59:09,338 [INFO] pavithra-subagent: [Agent-2] determine: Starting determination phase
+2026-06-17 20:59:09,342 [INFO] pavithra-subagent: [Agent-2] determine: Determination complete. Hash: 8297bdd76b63d7e5...
+2026-06-17 20:59:09,343 [INFO] pavithra-subagent: [Agent-2] execute: Starting execution phase
+2026-06-17 20:59:09,349 [INFO] pavithra-subagent: [Agent-2] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-2\output_20260617_152909.json
+2026-06-17 20:59:09,349 [INFO] orchestrator: agent-2 completed with status: COMPLETED
+2026-06-17 20:59:09,349 [INFO] orchestrator: Executing agent-3...
+2026-06-17 20:59:09,352 [INFO] pavithra-subagent: [Agent-3] determine: Starting determination phase
+2026-06-17 20:59:09,356 [INFO] pavithra-subagent: [Agent-3] determine: Determination complete. Hash: c99442e4a591b9c1...
+2026-06-17 20:59:09,356 [INFO] pavithra-subagent: [Agent-3] execute: Starting execution phase
+2026-06-17 20:59:09,360 [INFO] pavithra-subagent: [Agent-3] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-3\output_20260617_152909.json
+2026-06-17 20:59:09,360 [INFO] orchestrator: agent-3 completed with status: COMPLETED
+2026-06-17 20:59:09,360 [INFO] orchestrator: Executing agent-4...
+2026-06-17 20:59:09,360 [INFO] pavithra-subagent: [Agent-4] determine: Starting determination phase
+2026-06-17 20:59:09,370 [INFO] pavithra-subagent: [Agent-4] determine: Determination complete. Hash: e679409558a5f6b1...
+2026-06-17 20:59:09,370 [INFO] pavithra-subagent: [Agent-4] execute: Starting execution phase
+2026-06-17 20:59:09,374 [INFO] pavithra-subagent: [Agent-4] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-4\output_20260617_152909.json
+2026-06-17 20:59:09,374 [INFO] orchestrator: agent-4 completed with status: COMPLETED
+2026-06-17 20:59:09,374 [INFO] orchestrator: Executing agent-5...
+2026-06-17 20:59:09,374 [INFO] pavithra-subagent: [Agent-5] determine: Starting determination phase
+2026-06-17 20:59:09,386 [INFO] pavithra-subagent: [Agent-5] determine: Determination complete. Hash: 4ac429a666fbcbcc...
+2026-06-17 20:59:09,386 [INFO] pavithra-subagent: [Agent-5] execute: Starting execution phase
+2026-06-17 20:59:09,391 [INFO] pavithra-subagent: [Agent-5] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-5\output_20260617_152909.json
+2026-06-17 20:59:09,391 [INFO] orchestrator: agent-5 completed with status: COMPLETED
+2026-06-17 20:59:09,393 [INFO] orchestrator: Executing agent-6...
+2026-06-17 20:59:09,393 [INFO] pavithra-subagent: [Agent-6] determine: Starting determination phase
+2026-06-17 20:59:09,401 [INFO] pavithra-subagent: [Agent-6] determine: Determination complete. Hash: 4702716818caa607...
+2026-06-17 20:59:09,402 [INFO] pavithra-subagent: [Agent-6] execute: Starting execution phase
+2026-06-17 20:59:09,408 [INFO] pavithra-subagent: [Agent-6] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-6\output_20260617_152909.json
+2026-06-17 20:59:09,408 [INFO] orchestrator: agent-6 completed with status: COMPLETED
+2026-06-17 20:59:09,408 [INFO] orchestrator: Executing agent-7...
+2026-06-17 20:59:09,408 [INFO] pavithra-subagent: [Agent-7] determine: Starting determination phase
+2026-06-17 20:59:09,417 [INFO] pavithra-subagent: [Agent-7] determine: Determination complete. Hash: ee52959e59d6de3f...
+2026-06-17 20:59:09,417 [INFO] pavithra-subagent: [Agent-7] execute: Starting execution phase
+2026-06-17 20:59:09,424 [INFO] pavithra-subagent: [Agent-7] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-7\output_20260617_152909.json
+2026-06-17 20:59:09,424 [INFO] orchestrator: agent-7 completed with status: COMPLETED
+2026-06-17 20:59:09,424 [INFO] orchestrator: Executing agent-8...
+2026-06-17 20:59:09,424 [INFO] pavithra-subagent: [Agent-8] determine: Starting determination phase
+2026-06-17 20:59:09,441 [INFO] pavithra-subagent: [Agent-8] determine: Determination complete. Hash: d9c1ae887583da8e...
+2026-06-17 20:59:09,443 [INFO] pavithra-subagent: [Agent-8] execute: Starting execution phase
+2026-06-17 20:59:09,449 [INFO] pavithra-subagent: [Agent-8] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-8\output_20260617_152909.json
+2026-06-17 20:59:09,449 [INFO] orchestrator: agent-8 completed with status: COMPLETED
+2026-06-17 20:59:09,449 [INFO] orchestrator: Executing agent-9...
+2026-06-17 20:59:09,450 [INFO] pavithra-subagent: [Agent-9] determine: Starting determination phase
+2026-06-17 20:59:09,454 [INFO] pavithra-subagent: [Agent-9] determine: Determination complete. Hash: fc22167348f90cd8...
+2026-06-17 20:59:09,456 [INFO] pavithra-subagent: [Agent-9] execute: Starting execution phase
+2026-06-17 20:59:09,461 [INFO] pavithra-subagent: [Agent-9] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-9\output_20260617_152909.json
+2026-06-17 20:59:09,462 [INFO] orchestrator: agent-9 completed with status: COMPLETED
+2026-06-17 20:59:09,463 [INFO] orchestrator: Executing agent-10...
+2026-06-17 20:59:09,464 [INFO] pavithra-subagent: [Agent-10] determine: Starting determination phase
+2026-06-17 20:59:09,471 [INFO] pavithra-subagent: [Agent-10] determine: Determination complete. Hash: 3af3568985f8947a...
+2026-06-17 20:59:09,471 [INFO] pavithra-subagent: [Agent-10] execute: Starting execution phase
+2026-06-17 20:59:09,475 [INFO] pavithra-subagent: [Agent-10] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-10\output_20260617_152909.json
+2026-06-17 20:59:09,475 [INFO] orchestrator: agent-10 completed with status: COMPLETED
+2026-06-17 20:59:09,475 [INFO] orchestrator: Verifying agent-1 output using agent-2 (adversary)
+2026-06-17 20:59:09,478 [INFO] adversary: Adversary-2 verifying output from agent-1
+2026-06-17 20:59:09,480 [INFO] adversary: Adversary-2 verdict for agent-1: PASS (score=1.00)
+2026-06-17 20:59:09,481 [INFO] orchestrator: agent-1 verification: PASS
+2026-06-17 20:59:09,503 [INFO] isolation-manager: Result ACCEPTED for agent-1: output_20260617_152909.json
+2026-06-17 20:59:09,514 [INFO] isolation-manager: Result ACCEPTED for agent-1: OUTPUT_REPORT.md
+2026-06-17 20:59:09,514 [INFO] orchestrator: Verifying agent-2 output using agent-3 (adversary)
+2026-06-17 20:59:09,514 [INFO] adversary: Adversary-3 verifying output from agent-2
+2026-06-17 20:59:09,514 [INFO] adversary: Adversary-3 verdict for agent-2: PASS (score=1.00)
+2026-06-17 20:59:09,515 [INFO] orchestrator: agent-2 verification: PASS
+2026-06-17 20:59:09,522 [INFO] isolation-manager: Result ACCEPTED for agent-2: output_20260617_152909.json
+2026-06-17 20:59:09,527 [INFO] isolation-manager: Result ACCEPTED for agent-2: OUTPUT_REPORT.md
+2026-06-17 20:59:09,528 [INFO] orchestrator: Verifying agent-3 output using agent-4 (adversary)
+2026-06-17 20:59:09,528 [INFO] adversary: Adversary-4 verifying output from agent-3
+2026-06-17 20:59:09,528 [INFO] adversary: Adversary-4 verdict for agent-3: PASS (score=1.00)
+2026-06-17 20:59:09,528 [INFO] orchestrator: agent-3 verification: PASS
+2026-06-17 20:59:09,534 [INFO] isolation-manager: Result ACCEPTED for agent-3: output_20260617_152909.json
+2026-06-17 20:59:09,538 [INFO] isolation-manager: Result ACCEPTED for agent-3: OUTPUT_REPORT.md
+2026-06-17 20:59:09,540 [INFO] orchestrator: Verifying agent-4 output using agent-5 (adversary)
+2026-06-17 20:59:09,540 [INFO] adversary: Adversary-5 verifying output from agent-4
+2026-06-17 20:59:09,540 [INFO] adversary: Adversary-5 verdict for agent-4: PASS (score=1.00)
+2026-06-17 20:59:09,540 [INFO] orchestrator: agent-4 verification: PASS
+2026-06-17 20:59:09,557 [INFO] isolation-manager: Result ACCEPTED for agent-4: output_20260617_152909.json
+2026-06-17 20:59:09,568 [INFO] isolation-manager: Result ACCEPTED for agent-4: OUTPUT_REPORT.md
+2026-06-17 20:59:09,568 [INFO] orchestrator: Verifying agent-5 output using agent-6 (adversary)
+2026-06-17 20:59:09,570 [INFO] adversary: Adversary-6 verifying output from agent-5
+2026-06-17 20:59:09,570 [INFO] adversary: Adversary-6 verdict for agent-5: PASS (score=1.00)
+2026-06-17 20:59:09,570 [INFO] orchestrator: agent-5 verification: PASS
+2026-06-17 20:59:09,577 [INFO] isolation-manager: Result ACCEPTED for agent-5: output_20260617_152909.json
+2026-06-17 20:59:09,584 [INFO] isolation-manager: Result ACCEPTED for agent-5: OUTPUT_REPORT.md
+2026-06-17 20:59:09,584 [INFO] orchestrator: Verifying agent-6 output using agent-7 (adversary)
+2026-06-17 20:59:09,584 [INFO] adversary: Adversary-7 verifying output from agent-6
+2026-06-17 20:59:09,584 [INFO] adversary: Adversary-7 verdict for agent-6: PASS (score=1.00)
+2026-06-17 20:59:09,584 [INFO] orchestrator: agent-6 verification: PASS
+2026-06-17 20:59:09,588 [INFO] isolation-manager: Result ACCEPTED for agent-6: output_20260617_152909.json
+2026-06-17 20:59:09,593 [INFO] isolation-manager: Result ACCEPTED for agent-6: OUTPUT_REPORT.md
+2026-06-17 20:59:09,593 [INFO] orchestrator: Verifying agent-7 output using agent-8 (adversary)
+2026-06-17 20:59:09,593 [INFO] adversary: Adversary-8 verifying output from agent-7
+2026-06-17 20:59:09,594 [INFO] adversary: Adversary-8 verdict for agent-7: PASS (score=1.00)
+2026-06-17 20:59:09,594 [INFO] orchestrator: agent-7 verification: PASS
+2026-06-17 20:59:09,599 [INFO] isolation-manager: Result ACCEPTED for agent-7: output_20260617_152909.json
+2026-06-17 20:59:09,603 [INFO] isolation-manager: Result ACCEPTED for agent-7: OUTPUT_REPORT.md
+2026-06-17 20:59:09,605 [INFO] orchestrator: Verifying agent-8 output using agent-9 (adversary)
+2026-06-17 20:59:09,605 [INFO] adversary: Adversary-9 verifying output from agent-8
+2026-06-17 20:59:09,605 [INFO] adversary: Adversary-9 verdict for agent-8: PASS (score=1.00)
+2026-06-17 20:59:09,605 [INFO] orchestrator: agent-8 verification: PASS
+2026-06-17 20:59:09,620 [INFO] isolation-manager: Result ACCEPTED for agent-8: output_20260617_152909.json
+2026-06-17 20:59:09,627 [INFO] isolation-manager: Result ACCEPTED for agent-8: OUTPUT_REPORT.md
+2026-06-17 20:59:09,627 [INFO] orchestrator: Verifying agent-9 output using agent-10 (adversary)
+2026-06-17 20:59:09,627 [INFO] adversary: Adversary-10 verifying output from agent-9
+2026-06-17 20:59:09,628 [INFO] adversary: Adversary-10 verdict for agent-9: PASS (score=1.00)
+2026-06-17 20:59:09,628 [INFO] orchestrator: agent-9 verification: PASS
+2026-06-17 20:59:09,632 [INFO] isolation-manager: Result ACCEPTED for agent-9: output_20260617_152909.json
+2026-06-17 20:59:09,636 [INFO] isolation-manager: Result ACCEPTED for agent-9: OUTPUT_REPORT.md
+2026-06-17 20:59:09,636 [INFO] orchestrator: Verifying agent-10 output using agent-1 (adversary)
+2026-06-17 20:59:09,636 [INFO] adversary: Adversary-1 verifying output from agent-10
+2026-06-17 20:59:09,636 [INFO] adversary: Adversary-1 verdict for agent-10: PASS (score=0.80)
+2026-06-17 20:59:09,636 [INFO] orchestrator: agent-10 verification: PASS
+2026-06-17 20:59:09,640 [INFO] isolation-manager: Result ACCEPTED for agent-10: output_20260617_152909.json
+2026-06-17 20:59:09,645 [INFO] isolation-manager: Result ACCEPTED for agent-10: OUTPUT_REPORT.md
+2026-06-17 20:59:09,863 [INFO] orchestrator: Pipeline 81bfeae540ef complete: 10 accepted / 0 rejected in 0.74s
+2026-06-17 21:00:04,606 [INFO] orchestrator: Orchestrator initialized | agents=6 | run_id=2e0887da
+2026-06-17 21:00:04,606 [INFO] orchestrator: Pipeline 4112c7078699 started with 6 tasks
+2026-06-17 21:00:04,677 [INFO] isolation-manager: IsolationManager initialized at C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work
+2026-06-17 21:00:04,681 [INFO] isolation-manager: Input manifest created for agent-1: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-1\manifest.json
+2026-06-17 21:00:04,685 [INFO] pavithra-subagent: Subagent-1 initialized with task: analysis
+2026-06-17 21:00:04,685 [INFO] orchestrator: Fanned out agent-1: analysis
+2026-06-17 21:00:04,689 [INFO] isolation-manager: Input manifest created for agent-2: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-2\manifest.json
+2026-06-17 21:00:04,695 [INFO] pavithra-subagent: Subagent-2 initialized with task: analysis
+2026-06-17 21:00:04,695 [INFO] orchestrator: Fanned out agent-2: analysis
+2026-06-17 21:00:04,699 [INFO] isolation-manager: Input manifest created for agent-3: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-3\manifest.json
+2026-06-17 21:00:04,705 [INFO] pavithra-subagent: Subagent-3 initialized with task: analysis
+2026-06-17 21:00:04,707 [INFO] orchestrator: Fanned out agent-3: analysis
+2026-06-17 21:00:04,713 [INFO] isolation-manager: Input manifest created for agent-4: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-4\manifest.json
+2026-06-17 21:00:04,717 [INFO] pavithra-subagent: Subagent-4 initialized with task: analysis
+2026-06-17 21:00:04,717 [INFO] orchestrator: Fanned out agent-4: analysis
+2026-06-17 21:00:04,721 [INFO] isolation-manager: Input manifest created for agent-5: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-5\manifest.json
+2026-06-17 21:00:04,727 [INFO] pavithra-subagent: Subagent-5 initialized with task: analysis
+2026-06-17 21:00:04,729 [INFO] orchestrator: Fanned out agent-5: analysis
+2026-06-17 21:00:04,735 [INFO] isolation-manager: Input manifest created for agent-6: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\inputs\agent-6\manifest.json
+2026-06-17 21:00:04,737 [INFO] pavithra-subagent: Subagent-6 initialized with task: analysis
+2026-06-17 21:00:04,737 [INFO] orchestrator: Fanned out agent-6: analysis
+2026-06-17 21:00:04,737 [INFO] orchestrator: Executing agent-1...
+2026-06-17 21:00:04,741 [INFO] pavithra-subagent: [Agent-1] determine: Starting determination phase
+2026-06-17 21:00:04,745 [INFO] pavithra-subagent: [Agent-1] determine: Determination complete. Hash: 562e3a4d318fd116...
+2026-06-17 21:00:04,747 [INFO] pavithra-subagent: [Agent-1] execute: Starting execution phase
+2026-06-17 21:00:04,751 [INFO] pavithra-subagent: [Agent-1] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-1\output_20260617_153004.json
+2026-06-17 21:00:04,751 [INFO] orchestrator: agent-1 completed with status: COMPLETED
+2026-06-17 21:00:04,751 [INFO] orchestrator: Executing agent-2...
+2026-06-17 21:00:04,753 [INFO] pavithra-subagent: [Agent-2] determine: Starting determination phase
+2026-06-17 21:00:04,755 [INFO] pavithra-subagent: [Agent-2] determine: Determination complete. Hash: 9a65feb6378d354c...
+2026-06-17 21:00:04,757 [INFO] pavithra-subagent: [Agent-2] execute: Starting execution phase
+2026-06-17 21:00:04,761 [INFO] pavithra-subagent: [Agent-2] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-2\output_20260617_153004.json
+2026-06-17 21:00:04,761 [INFO] orchestrator: agent-2 completed with status: COMPLETED
+2026-06-17 21:00:04,763 [INFO] orchestrator: Executing agent-3...
+2026-06-17 21:00:04,763 [INFO] pavithra-subagent: [Agent-3] determine: Starting determination phase
+2026-06-17 21:00:04,769 [INFO] pavithra-subagent: [Agent-3] determine: Determination complete. Hash: 4042776b4dfc7960...
+2026-06-17 21:00:04,769 [INFO] pavithra-subagent: [Agent-3] execute: Starting execution phase
+2026-06-17 21:00:04,778 [INFO] pavithra-subagent: [Agent-3] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-3\output_20260617_153004.json
+2026-06-17 21:00:04,778 [INFO] orchestrator: agent-3 completed with status: COMPLETED
+2026-06-17 21:00:04,780 [INFO] orchestrator: Executing agent-4...
+2026-06-17 21:00:04,780 [INFO] pavithra-subagent: [Agent-4] determine: Starting determination phase
+2026-06-17 21:00:04,782 [INFO] pavithra-subagent: [Agent-4] determine: Determination complete. Hash: 985d121b99e024b8...
+2026-06-17 21:00:04,784 [INFO] pavithra-subagent: [Agent-4] execute: Starting execution phase
+2026-06-17 21:00:04,786 [INFO] pavithra-subagent: [Agent-4] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-4\output_20260617_153004.json
+2026-06-17 21:00:04,786 [INFO] orchestrator: agent-4 completed with status: COMPLETED
+2026-06-17 21:00:04,788 [INFO] orchestrator: Executing agent-5...
+2026-06-17 21:00:04,788 [INFO] pavithra-subagent: [Agent-5] determine: Starting determination phase
+2026-06-17 21:00:04,792 [INFO] pavithra-subagent: [Agent-5] determine: Determination complete. Hash: 7518ec72d8caeb69...
+2026-06-17 21:00:04,792 [INFO] pavithra-subagent: [Agent-5] execute: Starting execution phase
+2026-06-17 21:00:04,796 [INFO] pavithra-subagent: [Agent-5] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-5\output_20260617_153004.json
+2026-06-17 21:00:04,796 [INFO] orchestrator: agent-5 completed with status: COMPLETED
+2026-06-17 21:00:04,796 [INFO] orchestrator: Executing agent-6...
+2026-06-17 21:00:04,796 [INFO] pavithra-subagent: [Agent-6] determine: Starting determination phase
+2026-06-17 21:00:04,800 [INFO] pavithra-subagent: [Agent-6] determine: Determination complete. Hash: 820759ca803e88d2...
+2026-06-17 21:00:04,800 [INFO] pavithra-subagent: [Agent-6] execute: Starting execution phase
+2026-06-17 21:00:04,802 [INFO] pavithra-subagent: [Agent-6] execute: Execution complete. Output written to C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator\work\outputs\agent-6\output_20260617_153004.json
+2026-06-17 21:00:04,804 [INFO] orchestrator: agent-6 completed with status: COMPLETED
+2026-06-17 21:00:04,804 [INFO] orchestrator: Verifying agent-1 output using agent-2 (adversary)
+2026-06-17 21:00:04,811 [INFO] adversary: Adversary-2 verifying output from agent-1
+2026-06-17 21:00:04,811 [INFO] adversary: Adversary-2 verdict for agent-1: PASS (score=1.00)
+2026-06-17 21:00:04,811 [INFO] orchestrator: agent-1 verification: PASS
+2026-06-17 21:00:04,821 [INFO] isolation-manager: Result ACCEPTED for agent-1: output_20260617_153004.json
+2026-06-17 21:00:04,828 [INFO] isolation-manager: Result ACCEPTED for agent-1: OUTPUT_REPORT.md
+2026-06-17 21:00:04,828 [INFO] orchestrator: Verifying agent-2 output using agent-3 (adversary)
+2026-06-17 21:00:04,828 [INFO] adversary: Adversary-3 verifying output from agent-2
+2026-06-17 21:00:04,830 [INFO] adversary: Adversary-3 verdict for agent-2: PASS (score=1.00)
+2026-06-17 21:00:04,830 [INFO] orchestrator: agent-2 verification: PASS
+2026-06-17 21:00:04,836 [INFO] isolation-manager: Result ACCEPTED for agent-2: output_20260617_153004.json
+2026-06-17 21:00:04,840 [INFO] isolation-manager: Result ACCEPTED for agent-2: OUTPUT_REPORT.md
+2026-06-17 21:00:04,842 [INFO] orchestrator: Verifying agent-3 output using agent-4 (adversary)
+2026-06-17 21:00:04,842 [INFO] adversary: Adversary-4 verifying output from agent-3
+2026-06-17 21:00:04,842 [INFO] adversary: Adversary-4 verdict for agent-3: PASS (score=1.00)
+2026-06-17 21:00:04,843 [INFO] orchestrator: agent-3 verification: PASS
+2026-06-17 21:00:04,848 [INFO] isolation-manager: Result ACCEPTED for agent-3: output_20260617_153004.json
+2026-06-17 21:00:04,856 [INFO] isolation-manager: Result ACCEPTED for agent-3: OUTPUT_REPORT.md
+2026-06-17 21:00:04,856 [INFO] orchestrator: Verifying agent-4 output using agent-5 (adversary)
+2026-06-17 21:00:04,857 [INFO] adversary: Adversary-5 verifying output from agent-4
+2026-06-17 21:00:04,859 [INFO] adversary: Adversary-5 verdict for agent-4: PASS (score=1.00)
+2026-06-17 21:00:04,859 [INFO] orchestrator: agent-4 verification: PASS
+2026-06-17 21:00:04,865 [INFO] isolation-manager: Result ACCEPTED for agent-4: output_20260617_153004.json
+2026-06-17 21:00:04,869 [INFO] isolation-manager: Result ACCEPTED for agent-4: OUTPUT_REPORT.md
+2026-06-17 21:00:04,869 [INFO] orchestrator: Verifying agent-5 output using agent-6 (adversary)
+2026-06-17 21:00:04,871 [INFO] adversary: Adversary-6 verifying output from agent-5
+2026-06-17 21:00:04,871 [INFO] adversary: Adversary-6 verdict for agent-5: PASS (score=1.00)
+2026-06-17 21:00:04,871 [INFO] orchestrator: agent-5 verification: PASS
+2026-06-17 21:00:04,878 [INFO] isolation-manager: Result ACCEPTED for agent-5: output_20260617_153004.json
+2026-06-17 21:00:04,881 [INFO] isolation-manager: Result ACCEPTED for agent-5: OUTPUT_REPORT.md
+2026-06-17 21:00:04,882 [INFO] orchestrator: Verifying agent-6 output using agent-1 (adversary)
+2026-06-17 21:00:04,882 [INFO] adversary: Adversary-1 verifying output from agent-6
+2026-06-17 21:00:04,882 [INFO] adversary: Adversary-1 verdict for agent-6: PASS (score=1.00)
+2026-06-17 21:00:04,882 [INFO] orchestrator: agent-6 verification: PASS
+2026-06-17 21:00:04,887 [INFO] isolation-manager: Result ACCEPTED for agent-6: output_20260617_153004.json
+2026-06-17 21:00:04,892 [INFO] isolation-manager: Result ACCEPTED for agent-6: OUTPUT_REPORT.md
+2026-06-17 21:00:04,971 [INFO] orchestrator: Pipeline 4112c7078699 complete: 6 accepted / 0 rejected in 0.36s

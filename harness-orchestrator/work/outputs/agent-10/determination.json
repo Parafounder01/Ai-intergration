@@ -1,0 +1,34 @@
+{
+  "agent_id": 10,
+  "determined_at": "2026-06-17T15:29:09.464851",
+  "task": {
+    "type": "Build a webapp",
+    "params": {
+      "path": ".",
+      "target": "."
+    }
+  },
+  "task_scope": {
+    "description": "Custom task: Build a webapp",
+    "estimated_work": "Execute task as specified",
+    "complexity": "unknown"
+  },
+  "required_data": [
+    {
+      "type": "file_path",
+      "value": ".",
+      "purpose": "Target for reading/analysis"
+    }
+  ],
+  "methods": [
+    "general_execution"
+  ],
+  "output_format": {
+    "type": "markdown",
+    "sections": [
+      "results"
+    ]
+  },
+  "risks": [],
+  "determination_hash": "3af3568985f8947aeb49fec98eed8285e5eb038292c5ad096045bb2391ed88d6"
+}

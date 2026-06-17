@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "description": "Mixed task types: {'deep-read', 'analysis', 'search', 'summary'}",
+  "agents_spawned": 4,
+  "task_types": [
+    "deep-read",
+    "analysis",
+    "search",
+    "summary"
+  ],
+  "outputs_accepted": 4,
+  "elapsed": 1.51,
+  "test": 8
+}

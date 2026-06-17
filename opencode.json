@@ -1,0 +1,137 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "claudeMythos",
+  "instructions": [
+    "Ai-intergration/AGENTS.md",
+    "C:\\Users\\anant\\testFile"
+  ],
+  "command": {
+    "read": {
+      "description": "Deep search Reddit for any topic. Usage: /read machine learning or /read Python --limit 10",
+      "template": "python C:\\Users\\anant\\.config\\opencode\\reader\\read.py {topic}"
+    },
+    "read-top": {
+      "description": "Search Reddit sorted by top. Usage: /read-top AI",
+      "template": "python C:\\Users\\anant\\.config\\opencode\\reader\\read.py {topic} --sort top"
+    },
+    "read-new": {
+      "description": "Search Reddit sorted by newest. Usage: /read-new ChatGPT",
+      "template": "python C:\\Users\\anant\\.config\\opencode\\reader\\read.py {topic} --sort new"
+    },
+    "talk": {
+      "description": "Speak text aloud. Auto-detects Tamil/Tanglish uses Indian voice. Usage: /talk Vanakkam da mapla",
+      "template": "python C:\\Users\\anant\\.config\\opencode\\tts\\talk.py {text}"
+    },
+    "talk-tamil": {
+      "description": "Speak with Indian Tamil voice (Valluvar - male). Usage: /talk-tamil Vanakkam eppadi iruka",
+      "template": "python C:\\Users\\anant\\.config\\opencode\\tts\\talk.py --voice Valluvar {text}"
+    },
+    "talk-tamil-female": {
+      "description": "Speak with Indian Tamil voice (Pallavi - female). Usage: /talk-tamil-female Vanakkam",
+      "template": "python C:\\Users\\anant\\.config\\opencode\\tts\\talk.py --voice Pallavi {text}"
+    },
+    "voices": {
+      "description": "List all available TTS voices (edge-tts + Windows SAPI)",
+      "template": "python C:\\Users\\anant\\.config\\opencode\\tts\\talk.py --list-voices"
+    },
+    "clone-voice": {
+      "description": "Check voice cloning status and guide to install Python 3.11 + Coqui TTS",
+      "template": "python C:\\Users\\anant\\.config\\opencode\\tts\\voice_cloner.py --check"
+    },
+    "voice-samples": {
+      "description": "List audio files in Downloads that can be used for voice cloning",
+      "template": "python C:\\Users\\anant\\.config\\opencode\\tts\\voice_cloner.py --list-samples"
+    },
+    "fast": {
+      "description": "20ms fast mode zero CPU/GPU impact in-memory only. Usage: /fast 5 (for 5 agents)",
+      "template": "python C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\orchestrator.py --fast --agents {agents}"
+    },
+    "test-harness": {
+      "description": "Run a harness test case (1-10). Usage: /test-harness 6",
+      "template": "python C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\orchestrator.py --test {testnum}"
+    },
+    "orchestrate": {
+      "description": "Full 10-agent fan-out. @pavithragent spawns agents 1-10 with a prompt. Usage: /orchestrate Analyze the codebase",
+      "template": "python C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\orchestrator.py --orchestrate \"{prompt}\" --agents 10"
+    },
+    "save": {
+      "description": "View the latest save checkpoint (save.md)",
+      "template": "type C:\\Users\\anant\\OneDrive\\Documents\\opencode\\save.md"
+    },
+    "cache": {
+      "description": "View the session cache (cache.md)",
+      "template": "type C:\\Users\\anant\\OneDrive\\Documents\\opencode\\cache.md"
+    },
+    "github-backup": {
+      "description": "Backup harness-orchestrator to GitHub. Usage: /github-backup",
+      "template": "cd /d C:\\Users\\anant\\OneDrive\\Documents\\opencode && git add -A && git commit -m \"chore: auto-backup\" && git push"
+    }
+  },
+  "agent": {
+    "pavithragent": {
+      "description": "Main orchestrator. Deep file reader + thread deep leader. Spawns subagents 1-10 for parallel fan-out.",
+      "mode": "subagent",
+      "permission": { "edit": "allow", "bash": "allow", "read": "allow" }
+    },
+    "pavithragent_1": {
+      "description": "Deep-Read Specialist. Reads files/folders in-depth with full content analysis.",
+      "mode": "subagent",
+      "permission": { "edit": "allow", "read": "allow" }
+    },
+    "pavithragent_2": {
+      "description": "Thread-Analysis Specialist. Analyzes Reddit threads and online discussions.",
+      "mode": "subagent",
+      "permission": { "edit": "allow", "bash": "allow", "read": "allow" }
+    },
+    "pavithragent_3": {
+      "description": "Summary Specialist. Generates comprehensive folder/project summaries.",
+      "mode": "subagent",
+      "permission": { "edit": "allow", "read": "allow" }
+    },
+    "pavithragent_4": {
+      "description": "Search Specialist. Searches files for keywords with context extraction.",
+      "mode": "subagent",
+      "permission": { "edit": "allow", "bash": "allow", "read": "allow" }
+    },
+    "pavithragent_5": {
+      "description": "Analysis Specialist. Deep analysis with architecture review and pattern detection.",
+      "mode": "subagent",
+      "permission": { "edit": "allow", "read": "allow" }
+    },
+    "pavithragent_6": {
+      "description": "Verification Specialist (Adversary). Cross-checks outputs with 5 adversarial checks.",
+      "mode": "subagent",
+      "permission": { "edit": "allow", "read": "allow" }
+    },
+    "pavithragent_7": {
+      "description": "Security-Audit Specialist. Finds vulnerabilities, misconfigurations, risky patterns.",
+      "mode": "subagent",
+      "permission": { "edit": "allow", "bash": "allow", "read": "allow" }
+    },
+    "pavithragent_8": {
+      "description": "Cross-Reference Specialist. Finds imports, includes, function calls, dependencies.",
+      "mode": "subagent",
+      "permission": { "edit": "allow", "read": "allow" }
+    },
+    "pavithragent_9": {
+      "description": "Error-Recovery Specialist. Repairs failed outputs and re-verifies.",
+      "mode": "subagent",
+      "permission": { "edit": "allow", "read": "allow" }
+    },
+    "pavithragent_10": {
+      "description": "Conclusion Aggregator. Collects all outputs and generates final consolidated report.",
+      "mode": "subagent",
+      "permission": { "edit": "allow", "read": "allow" }
+    },
+    "jawis": {
+      "description": "Fast automation and scripting agent. Python batch scrape generate parse.",
+      "mode": "subagent",
+      "permission": { "edit": "allow", "bash": "allow" }
+    },
+    "me": {
+      "description": "Personal AI assistant for Anantha. Knows your setup preferences and projects.",
+      "mode": "subagent",
+      "permission": { "edit": "ask", "bash": "ask" }
+    }
+  }
+}
