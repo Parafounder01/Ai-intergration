@@ -194,6 +194,120 @@ Orchestrator collects all accepted results from `work/results/agent-N/` and gene
 ### Step 6: GitHub Backup
 Results are committed and pushed to the GitHub repository.
 
+## Example Prompts Using the Harness Architecture
+
+Here are real-world prompts you can give the harness — it will fan each out to N subagents, isolate them, verify adversarially, and collect accepted results.
+
+### Prompt 1: Multi-Agent Code Auditing
+```powershell
+.\harness.ps1 -Task "security-audit" -AgentCount 5
+```
+**What it fans out:**
+```
+Agent-1: Scan Python files for injection vulnerabilities
+Agent-2: Scan JavaScript files for XSS patterns
+Agent-3: Check credentials/config leakage
+Agent-4: Audit dependency versions (known CVEs)
+Agent-5: Review file permissions & access control
+```
+**Adversary check:** Each agent's findings cross-verified by the next agent.
+**Output:** `work/results/agent-N/` — 5 individual audit reports + merged summary.
+
+### Prompt 2: Competitive Research on Reddit
+```powershell
+.\harness.ps1 -Task "thread-analysis" -AgentCount 3
+```
+**What it fans out:**
+```
+Agent-1: Deep-read top 5 Reddit threads on topic
+Agent-2: Extract user sentiment & pain points
+Agent-3: Summarize competitor mentions & alternatives
+```
+**Adversary check:** Agent-1's thread data verified by Agent-2's sentiment mapping.
+**Output:** Competitive intelligence report with verified sources.
+
+### Prompt 3: Parallel File System Analysis
+```powershell
+.\harness.ps1 -Task "deep-read" -AgentCount 4
+```
+**What it fans out:**
+```
+Agent-1: Analyze C:\Projects\src\    (all source files)
+Agent-2: Analyze C:\Projects\docs\   (all documentation)
+Agent-3: Analyze C:\Projects\tests\  (all test files)
+Agent-4: Analyze C:\Projects\config\ (all config files)
+```
+**Adversary check:** Agent-4 (config) verifies Agent-1 (src) didn't expose secrets.
+**Output:** Complete project analysis with cross-referenced findings.
+
+### Prompt 4: AI-Powered Research Pipeline
+```powershell
+.\harness.ps1 -Task "analysis" -AgentCount 6 -Backup
+```
+**What it fans out:**
+```
+Agent-1: Research latest papers on the topic
+Agent-2: Extract key methodologies from papers
+Agent-3: Identify gaps & open questions
+Agent-4: Propose novel solutions
+Agent-5: Adversarially verify all outputs
+Agent-6: Generate final research summary
+```
+**Adversary check:** Agent-5 (dedicated verifier) checks ALL other agents.
+**Backup:** Results pushed to GitHub via `-Backup` flag.
+
+### Prompt 5: Mixed-Task Full Sprint
+```powershell
+.\harness.ps1 -Task "" -AgentCount 0   # Don't use this — use --all for full test
+# Instead, compose tasks programmatically:
+python orchestrator.py --task "deep-read" --agents 3
+```
+**Orchestrator-level prompt composition** (for developers):
+```python
+from orchestrator import Orchestrator
+
+orch = Orchestrator(agent_count=4)
+tasks = [
+    {"type": "deep-read", "params": {"path": "./src"}},
+    {"type": "search",    "params": {"keyword": "TODO", "path": "./src"}},
+    {"type": "summary",   "params": {"path": "./docs"}},
+    {"type": "analysis",  "params": {"target": "architecture", "analysis_type": "security"}},
+]
+result = orch.run_pipeline(tasks)
+print(f"Accepted: {result['outputs_accepted']}, Rejected: {result['outputs_rejected']}")
+```
+
+### Prompt Pattern: Decompose + Fan-Out
+
+The harness works best when you decompose your task into **N independent subtasks**:
+
+```
+Original Problem: "Is my codebase secure?"
+                        ↓
+Harness decomposition:  ┌─────────────────────┐
+                        │  5 subagents, each   │
+                        │  analyzing ONE angle │
+                        ├─────────────────────┤
+                        │ A1: SQL injection    │
+                        │ A2: XSS patterns     │
+                        │ A3: Hardcoded keys   │
+                        │ A4: Dependency CVEs  │
+                        │ A5: Permission model │
+                        └─────────────────────┘
+                              ↓
+                    Each isolated, each adversarially verified
+                              ↓
+                    Only ACCEPTED findings → final report
+```
+
+### Fast Prompt: Zero-CPU Quick Check
+```powershell
+.\harness.ps1 -Fast -AgentCount 10 -Task "health-check"
+```
+Runs 10 in-memory agents in ~6ms. No disk I/O, no GPU. Use for quick sanity checks before deep dives.
+
+---
+
 ## Environment Variables
 
 | Variable | Description | Default |

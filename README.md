@@ -323,6 +323,91 @@ python test_runner.py --all
 
 ---
 
+## 💡 Example Prompts Using the Harness Architecture
+
+Give the harness any of these real prompts — it fans each out to N isolated subagents, verifies adversarially, and collects accepted results.
+
+### 🔒 Multi-Agent Code Audit
+```powershell
+.\harness.ps1 -Task "security-audit" -AgentCount 5
+```
+Fan-out decomposition:
+```
+Agent-1: Scan Python files for injection vulnerabilities
+Agent-2: Scan JS/TS files for XSS patterns
+Agent-3: Check credentials & secrets leakage
+Agent-4: Audit dependency versions (known CVEs)
+Agent-5: Review file permissions & access control
+```
+Adversary: Each agent's findings cross-verified by the next agent.
+Output: 5 individual audit reports + merged summary in `work/results/`.
+
+### 🕵️ Competitive Research Pipeline
+```powershell
+.\harness.ps1 -Task "thread-analysis" -AgentCount 3
+```
+```
+Agent-1: Deep-read top 5 Reddit threads on the topic
+Agent-2: Extract user sentiment, pain points, upvote ratios
+Agent-3: Summarize competitor mentions & alternatives
+```
+Adversary: Agent-1's thread data verified by Agent-2's sentiment mapping.
+Output: Competitive intelligence report with verified sources.
+
+### 📂 Parallel File System Analysis
+```powershell
+.\harness.ps1 -Task "deep-read" -AgentCount 4
+```
+```
+Agent-1: Analyze ./src/        (all source files)
+Agent-2: Analyze ./docs/       (all documentation)
+Agent-3: Analyze ./tests/      (all test files)
+Agent-4: Analyze ./config/     (all config files)
+```
+Adversary: Agent-4 (config) verifies Agent-1 (src) didn't expose secrets.
+Output: Complete project analysis with cross-referenced findings.
+
+### 🧠 AI-Powered Research Sprint + Backup
+```powershell
+.\harness.ps1 -Task "analysis" -AgentCount 6 -Backup
+```
+```
+Agent-1: Research latest papers on the topic
+Agent-2: Extract key methodologies from papers
+Agent-3: Identify research gaps & open questions
+Agent-4: Propose novel solutions
+Agent-5: Dedicated adversary — verifies ALL other agents
+Agent-6: Generate final research summary
+```
+Results auto-pushed to GitHub with `-Backup`.
+
+### 📝 Decompose → Fan-Out → Verify Pattern
+
+Best practice for writing harness prompts:
+
+```
+Problem: "Is my codebase deploy-ready?"
+                    ↓
+Decompose into N angles:
+  A1: Lint errors & warnings
+  A2: Test coverage gaps
+  A3: Security vulnerabilities
+  A4: Dependency freshness
+  A5: Config sanity check
+                    ↓
+Each runs isolated → adversarially verified → collected
+                    ↓
+Only ACCEPTED results → final deploy-ready report
+```
+
+### ⚡ Zero-CPU Quick Check
+```powershell
+.\harness.ps1 -Fast -AgentCount 10 -Task "health-check"
+```
+10 agents in ~6ms. In-memory only. No disk I/O, no GPU. Use before deep dives.
+
+---
+
 ## 🎨 README Diff Syntax Reference
 
 Use `diff` language tags in Markdown to show changes with colored lines:
