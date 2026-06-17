@@ -1,0 +1,184 @@
+{
+  "task_type": "search",
+  "keyword": "Pavithra",
+  "target": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator",
+  "matches_found": 35,
+  "matches": [
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\adversary.py",
+      "line": 4,
+      "context": "Implements Rule 3 of the Pavithra Harness Orchestrator:"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\agent_template.py",
+      "line": 2,
+      "context": "agent_template.py \u2014 Base Pavithra Subagent Template"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\agent_template.py",
+      "line": 10,
+      "context": "agent = PavithraSubagent(agent_id=1, task={\"type\": \"deep-read\", \"path\": \"...\"})"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\agent_template.py",
+      "line": 25,
+      "context": "logger = logging.getLogger(\"pavithra-subagent\")"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\agent_template.py",
+      "line": 28,
+      "context": "class PavithraSubagent:"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\agent_template.py",
+      "line": 30,
+      "context": "Represents a single @pavithragent subagent in the fan-out architecture."
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\agent_template.py",
+      "line": 233,
+      "context": "This simulates what a real @pavithragent subagent would do:"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\agent_template.py",
+      "line": 602,
+      "context": "def create_subagent(agent_id: int, task: dict, base_dir: str) -> PavithraSubagent:"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\agent_template.py",
+      "line": 608,
+      "context": "return PavithraSubagent(agent_id, task, input_dir, output_dir, results_dir)"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\architecture.md",
+      "line": 1,
+      "context": "# \ud83c\udfd7\ufe0f Pavithra Harness \u2192 Orchestrator \u2192 Fan-Out Architecture"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\architecture.md",
+      "line": 32,
+      "context": "\u2502  FAN-OUT: N Pavithra Subagents  \u2502"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\architecture.md",
+      "line": 33,
+      "context": "\u2502  @pavithragent-1  \u2192 Task 1      \u2502"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\architecture.md",
+      "line": 34,
+      "context": "\u2502  @pavithragent-2  \u2192 Task 2      \u2502"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\architecture.md",
+      "line": 35,
+      "context": "\u2502  @pavithragent-3  \u2192 Task 3      \u2502"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\architecture.md",
+      "line": 37,
+      "context": "\u2502  @pavithragent-N  \u2192 Task N      \u2502"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\github_backup.ps1",
+      "line": 3,
+      "context": "GitHub Backup Script for Pavithra Harness Orchestrator"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\github_backup.ps1",
+      "line": 67,
+      "context": "Write-Host \"\u2551  GITHUB BACKUP \u2014 Pavithra Harness Orchestrator           \u2551\" -ForegroundColor Cyan"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\github_backup.ps1",
+      "line": 250,
+      "context": "git commit -m $CommitMsg -m \"Auto-backup from Pavithra Harness Orchestrator\" -m \"- Run label: $RunLabel\" -m \"- Date: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')\""
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\harness.ps1",
+      "line": 3,
+      "context": "Pavithra Harness Orchestrator \u2014 Windows PowerShell Entry Point"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\harness.ps1",
+      "line": 6,
+      "context": "The Harness is the CLI entry point for the Pavithra multi-agent system."
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\harness.sh",
+      "line": 3,
+      "context": "# Pavithra Harness Orchestrator \u2014 Linux Bash Entry Point"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\orchestrator.py",
+      "line": 2,
+      "context": "orchestrator.py \u2014 Master Controller for Pavithra Harness Orchestrator"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\README.md",
+      "line": 1,
+      "context": "# Pavithra Harness Orchestrator"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\requirements.txt",
+      "line": 1,
+      "context": "# Pavithra Harness Orchestrator \u2014 Dependencies"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\test_runner.py",
+      "line": 2,
+      "context": "test_runner.py \u2014 10-Test-Case Executor for Pavithra Harness Orchestrator"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\.github\\workflows\\harness-ci.yml",
+      "line": 2,
+      "context": "# Pavithra Harness Orchestrator \u2014 GitHub Actions CI Pipeline"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\tests\\test_10_full_pipeline\\README.md",
+      "line": 4,
+      "context": "The complete end-to-end test of the Pavithra Harness Orchestrator. Runs 3 agents with different tasks, runs adversarial verification, collects accepted results, and prepares the GitHub backup."
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\inputs\\agent-3\\manifest.json",
+      "line": 7,
+      "context": "\"keyword\": \"Pavithra\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\logs\\orchestrator.log",
+      "line": 7,
+      "context": "2026-06-17 20:34:44,056 [INFO] pavithra-subagent: Subagent-1 initialized with task: deep-read"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-3\\determination.json",
+      "line": 7,
+      "context": "\"keyword\": \"Pavithra\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-3\\DETERMINATION.md",
+      "line": 8,
+      "context": "Search for 'Pavithra' in C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-3\\output_20260617_150525.json",
+      "line": 3,
+      "context": "\"keyword\": \"Pavithra\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-3\\output_20260617_150526.json",
+      "line": 3,
+      "context": "\"keyword\": \"Pavithra\","
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\__pycache__\\adversary.cpython-312.pyc",
+      "line": 17,
+      "context": "Implements Rule 3 of the Pavithra Harness Orchestrator:"
+    },
+    {
+      "file": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\__pycache__\\agent_template.cpython-312.pyc",
+      "line": 9,
+      "context": "agent_template.py \u2014 Base Pavithra Subagent Template"
+    }
+  ],
+  "completed_at": "2026-06-17T15:05:26.813652"
+}

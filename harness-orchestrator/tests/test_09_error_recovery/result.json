@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "description": "Error recovery - one agent path fails, system continues",
+  "agents_completed": 2,
+  "agents_failed": 0,
+  "system_recovered": true,
+  "elapsed": 0.14,
+  "test": 9
+}

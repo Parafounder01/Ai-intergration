@@ -1,0 +1,24 @@
+{
+  "task_type": "deep-read",
+  "target": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\inputs\\agent-4",
+  "files_found": 2,
+  "file_details": [
+    {
+      "name": ".isolation_marker",
+      "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\inputs\\agent-4\\.isolation_marker",
+      "size": 37,
+      "modified": "2026-06-17T20:36:06.955156"
+    },
+    {
+      "name": "manifest.json",
+      "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\inputs\\agent-4\\manifest.json",
+      "size": 2047,
+      "modified": "2026-06-17T20:36:07.113910"
+    }
+  ],
+  "analysis": {
+    "total_size": 2084,
+    "file_count": 2
+  },
+  "completed_at": "2026-06-17T15:06:07.318823"
+}

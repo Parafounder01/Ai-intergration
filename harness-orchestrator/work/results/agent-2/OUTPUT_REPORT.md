@@ -1,0 +1,83 @@
+# Agent-2 — Output Report
+
+**Task Type:** summary
+**Status:** COMPLETED
+**Completed At:** 2026-06-17T15:07:07.558933
+
+## Results
+
+- **target**: C:\Users\anant\OneDrive\Documents\opencode\harness-orchestrator
+### structure
+- **name**: .github
+- **type**: directory
+- **size**: 0
+
+- **name**: adversary.py
+- **type**: file
+- **size**: 16122
+
+- **name**: agent_template.py
+- **type**: file
+- **size**: 24755
+
+- **name**: architecture.md
+- **type**: file
+- **size**: 4792
+
+- **name**: github_backup.ps1
+- **type**: file
+- **size**: 12702
+
+- **name**: harness.ps1
+- **type**: file
+- **size**: 7985
+
+- **name**: harness.sh
+- **type**: file
+- **size**: 8165
+
+- **name**: isolation_manager.py
+- **type**: file
+- **size**: 11564
+
+- **name**: orchestrator.py
+- **type**: file
+- **size**: 29222
+
+- **name**: README.md
+- **type**: file
+- **size**: 7516
+
+- **name**: requirements.txt
+- **type**: file
+- **size**: 408
+
+- **name**: tests
+- **type**: directory
+- **size**: 0
+
+- **name**: test_agent
+- **type**: directory
+- **size**: 0
+
+- **name**: test_isolation
+- **type**: directory
+- **size**: 0
+
+- **name**: test_runner.py
+- **type**: file
+- **size**: 12461
+
+- **name**: work
+- **type**: directory
+- **size**: 0
+
+- **name**: __pycache__
+- **type**: directory
+- **size**: 0
+
+- **total_entries**: 17
+### key_patterns
+- Mixed file types present
+- Standard directory structure
+- Contains multiple subdirectories

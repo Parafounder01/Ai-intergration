@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "description": "Adversarial rejection with retry recovery",
+  "agents_spawned": 2,
+  "any_retried": false,
+  "all_final_pass": true,
+  "elapsed": 0.13,
+  "details": {
+    "verifications": [
+      {
+        "agent_id": 1,
+        "verifier_id": 2,
+        "verdict": "PASS",
+        "checks": [
+          {
+            "check": "schema_check",
+            "passed": true,
+            "details": "Schema valid",
+            "weight": 0.3
+          },
+          {
+            "check": "isolation_check",
+            "passed": false,
+            "details": "Isolation issues: Contains reference to agent-2: 'agent-2'; Contains reference to agent-3: 'agent-3'; Contains reference to agent-4: 'agent-4'; Contains reference to agent-5: 'agent-5'",
+            "weight": 0.2
+          },
+          {
+            "check": "consistency_check",
+            "passed": true,
+            "details": "Consistency checks passed",
+            "weight": 0.2
+          },
+          {
+            "check": "completeness_check",
+            "passed": true,
+            "details": "All fields present and non-null",
+            "weight": 0.2
+          },
+          {
+            "check": "security_check",
+            "passed": true,
+            "details": "Security scan clean",
+            "weight": 0.1
+          }
+        ],
+        "score": 0.8,
+        "summary": "Verification PASSED: 4/5 checks passed (score: 0.80)",
+        "retries": 0
+      },
+      {
+        "agent_id": 2,
+        "verifier_id": 1,
+        "verdict": "PASS",
+        "checks": [
+          {
+            "check": "schema_check",
+            "passed": true,
+            "details": "Schema valid",
+            "weight": 0.3
+          },
+          {
+            "check": "isolation_check",
+            "passed": true,
+            "details": "No isolation violations",
+            "weight": 0.2
+          },
+          {
+            "check": "consistency_check",
+            "passed": true,
+            "details": "Consistency checks passed",
+            "weight": 0.2
+          },
+          {
+            "check": "completeness_check",
+            "passed": true,
+            "details": "All fields present and non-null",
+            "weight": 0.2
+          },
+          {
+            "check": "security_check",
+            "passed": true,
+            "details": "Security scan clean",
+            "weight": 0.1
+          }
+        ],
+        "score": 1.0,
+        "summary": "Verification PASSED: 5/5 checks passed (score: 1.00)",
+        "retries": 0
+      }
+    ],
+    "retry_info": "Verification system attempted retries on failed outputs"
+  },
+  "test": 5
+}

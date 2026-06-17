@@ -1,0 +1,26 @@
+{
+  "agent_id": 1,
+  "created_at": "2026-06-17T15:07:07.284555",
+  "task": {
+    "type": "deep-read",
+    "params": {
+      "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator"
+    }
+  },
+  "isolation_boundary": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\inputs\\agent-1",
+  "allowed_read_paths": [
+    "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\inputs\\agent-1"
+  ],
+  "allowed_write_paths": [
+    "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-1",
+    "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\inputs\\agent-1"
+  ],
+  "restricted_paths": [
+    "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-2",
+    "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-2",
+    "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\inputs\\agent-2\\manifest.json",
+    "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\outputs\\agent-3",
+    "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\results\\agent-3",
+    "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator\\work\\inputs\\agent-3\\manifest.json"
+  ]
+}

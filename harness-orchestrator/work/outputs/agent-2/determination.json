@@ -1,0 +1,39 @@
+{
+  "agent_id": 2,
+  "determined_at": "2026-06-17T15:07:07.548028",
+  "task": {
+    "type": "summary",
+    "params": {
+      "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator"
+    }
+  },
+  "task_scope": {
+    "description": "Generate summary of C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator",
+    "estimated_work": "Read structure, identify patterns, summarize",
+    "complexity": "low"
+  },
+  "required_data": [
+    {
+      "type": "file_path",
+      "value": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator",
+      "purpose": "Target for reading/analysis"
+    }
+  ],
+  "methods": [
+    "read_tool",
+    "directory_analysis",
+    "pattern_detection"
+  ],
+  "output_format": {
+    "type": "markdown",
+    "sections": [
+      "purpose",
+      "structure",
+      "patterns",
+      "key_files",
+      "recommendations"
+    ]
+  },
+  "risks": [],
+  "determination_hash": "44002b7c245d71b59992c12e94279ea61cf4171416311594faa1d58bbda17f81"
+}

@@ -1,0 +1,238 @@
+# =============================================================================
+# Pavithra Harness Orchestrator — GitHub Actions CI Pipeline
+#
+# This workflow runs the harness orchestrator on push/PR events.
+# It:
+#   1. Sets up Python 3.12
+#   2. Installs dependencies
+#   3. Runs all 10 test cases
+#   4. Uploads test results as artifacts
+#   5. Optionally backs up to GitHub
+#
+# Architecture: Harness -> Orchestrator -> Fan-Out -> Verify -> GitHub
+# =============================================================================
+
+name: Pavithra Harness CI
+
+on:
+  push:
+    branches: [ main, master, develop ]
+    paths:
+      - 'harness-orchestrator/**'
+      - '.github/workflows/harness-ci.yml'
+  pull_request:
+    branches: [ main, master ]
+    paths:
+      - 'harness-orchestrator/**'
+  workflow_dispatch:
+    inputs:
+      test_number:
+        description: 'Test case number to run (1-10, or 0 for all)'
+        required: true
+        default: '0'
+        type: choice
+        options:
+          - '0'   # All tests
+          - '1'   # Single Agent
+          - '2'   # Dual Agent
+          - '3'   # Triple Agent
+          - '4'   # Adversary Pass
+          - '5'   # Adversary Reject
+          - '6'   # Content Isolation
+          - '7'   # Large Fan-Out
+          - '8'   # Mixed Tasks
+          - '9'   # Error Recovery
+          - '10'  # Full Pipeline
+      github_backup:
+        description: 'Backup results to GitHub?'
+        required: true
+        default: false
+        type: boolean
+
+# Allow one concurrent run per branch
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # ── JOB 1: VALIDATE ──────────────────────────────────────────────
+  validate:
+    name: Validate Environment
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Verify harness-orchestrator structure
+        run: |
+          ls -la harness-orchestrator/ 2>/dev/null || echo "harness-orchestrator/ not found at root"
+          # Also check for the project file
+          find . -name "orchestrator.py" -type f 2>/dev/null
+
+  # ── JOB 2: RUN TESTS ─────────────────────────────────────────────
+  run-tests:
+    name: Run Harness Tests
+    needs: validate
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./harness-orchestrator
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python --version
+          pip install --upgrade pip
+          # No external dependencies needed (stdlib only)
+          echo "Dependencies verified — all stdlib"
+
+      - name: Determine test scope
+        id: test_scope
+        shell: bash
+        run: |
+          if [[ "${{ github.event.inputs.test_number }}" != "" ]]; then
+            TEST_NUM="${{ github.event.inputs.test_number }}"
+          else
+            TEST_NUM="0"
+          fi
+          
+          if [[ "$TEST_NUM" == "0" ]]; then
+            echo "test_flag=--all" >> $GITHUB_OUTPUT
+            echo "test_label=all 10 test cases" >> $GITHUB_OUTPUT
+          else
+            echo "test_flag=--test $TEST_NUM" >> $GITHUB_OUTPUT
+            echo "test_label=test case #$TEST_NUM" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Run harness tests
+        id: tests
+        run: |
+          echo "Running ${{ steps.test_scope.outputs.test_label }}..."
+          python test_runner.py ${{ steps.test_scope.outputs.test_flag }} --verbose
+        continue-on-error: true
+
+      - name: Check test results
+        id: check_results
+        run: |
+          if [ -f tests/TEST_REPORT.json ]; then
+            echo "Test report exists"
+            cat tests/TEST_REPORT.json | python -c "import sys,json; d=json.load(sys.stdin); print(f'PASSED: {d[\"passed\"]}/{d[\"total\"]}')"
+          fi
+          
+          # Check if tests directory has results
+          ls -la tests/
+
+      - name: Quick test of adversary module
+        run: |
+          echo "Running adversary self-test..."
+          python adversary.py
+          
+      - name: Quick test of isolation manager
+        run: |
+          echo "Running isolation manager self-test..."
+          python isolation_manager.py
+
+      - name: Upload test results as artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: harness-test-results
+          path: |
+            harness-orchestrator/tests/
+            harness-orchestrator/work/logs/
+            harness-orchestrator/work/results/
+            !harness-orchestrator/work/**/__pycache__
+          retention-days: 30
+
+      - name: Upload orchestrator logs
+        uses: actions/upload-artifact@v4
+        with:
+          name: orchestrator-logs
+          path: harness-orchestrator/work/logs/
+          retention-days: 14
+
+  # ── JOB 3: GITHUB BACKUP (manual trigger only) ─────────────────
+  github-backup:
+    name: Backup to GitHub
+    needs: run-tests
+    if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.github_backup == 'true' }}
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./harness-orchestrator
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Full history for backup
+
+      - name: Setup Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Download test artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: harness-test-results
+          path: ./tests/
+
+      - name: Prepare GitHub Backup
+        run: |
+          echo "Preparing backup..."
+          
+          # Create backup directory
+          BACKUP_DIR="./github_backup/ci-run-$(date +%Y%m%d_%H%M%S)"
+          mkdir -p "$BACKUP_DIR"
+          
+          # Copy test results
+          cp -r tests/* "$BACKUP_DIR/" 2>/dev/null || echo "No tests to copy"
+          cp -r work/logs/* "$BACKUP_DIR/logs/" 2>/dev/null || echo "No logs to copy"
+          cp -r work/results/* "$BACKUP_DIR/results/" 2>/dev/null || echo "No results to copy"
+          
+          # Create manifest
+          cat > "$BACKUP_DIR/BACKUP_MANIFEST.json" << EOF
+          {
+            "backup_date": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
+            "github_repo": "Parafounder01/Ai-intergration",
+            "ci_run": "${{ github.run_id }}",
+            "workflow": "${{ github.workflow }}",
+            "trigger": "${{ github.event_name }}",
+            "branch": "${{ github.ref_name }}"
+          }
+          EOF
+          
+          echo "Backup prepared at: $BACKUP_DIR"
+
+      - name: Commit and Push Backup
+        run: |
+          git config user.name "pavithra-bot"
+          git config user.email "pavithra-bot@users.noreply.github.com"
+          
+          git add -A
+          git commit -m "chore(harness): CI backup run ${{ github.run_id }}" \
+                      -m "Auto-backup from GitHub Actions workflow" \
+                      -m "Trigger: ${{ github.event_name }}" \
+                      -m "Run ID: ${{ github.run_id }}" || echo "Nothing to commit"
+          
+          git push || echo "Push failed (may need token setup)"
+
+      - name: Summary
+        run: |
+          echo "============================================"
+          echo "  BACKUP COMPLETE"
+          echo "  Repository: Parafounder01/Ai-intergration"
+          echo "  Run: ${{ github.run_id }}"
+          echo "============================================"

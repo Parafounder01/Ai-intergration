@@ -1,0 +1,11 @@
+{
+  "task_type": "deep-read",
+  "target": "/nonexistent/path/that/does/not/exist",
+  "files_found": 0,
+  "file_details": [],
+  "analysis": {
+    "total_size": 0,
+    "file_count": 0
+  },
+  "completed_at": "2026-06-17T15:06:09.658030"
+}

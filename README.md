@@ -276,6 +276,88 @@ Write-Output "✅ Agent injected into ALL tools!"
 
 ---
 
+## 🧪 NEW — Harness Orchestrator (Multi-Agent Fan-Out)
+
+A **Python stdlib-only** multi-agent system that spawns N independent @pavithragent subagents, runs each in an isolated sandbox, verifies every output adversarially, and collects accepted results.
+
+```
+        USER
+          |
+     ORCHESTRATOR
+      /    |    \
+    A1    A2    AN    (isolated subagents)
+      \    |    /
+   ADVERSARIAL CHECK
+          |
+     ACCEPTED RESULTS
+```
+
+### Quick Start
+```powershell
+cd harness-orchestrator
+.\harness.ps1 -Task "analyze" -AgentCount 3
+```
+
+### 10 Tests — All Passing
+```powershell
+python test_runner.py --all
+# → 10/10 PASSED in 4.29s
+```
+
+### Fast Mode (20ms target)
+```powershell
+.\harness.ps1 -Fast -AgentCount 10
+# → 10 agents in ~6ms (0.6ms/agent)
+```
+
+### Architecture
+| File | Purpose |
+|------|---------|
+| `orchestrator.py` | Master controller — fan-out, verify, collect |
+| `agent_template.py` | Base PavithraSubagent class |
+| `adversary.py` | 5-check verification engine |
+| `isolation_manager.py` | Sandboxed per-agent directories |
+| `harness.ps1` / `.sh` | CLI entry points |
+| `test_runner.py` | 10-test-case executor |
+| `github_backup.ps1` | Push results to GitHub |
+
+---
+
+## 🎨 README Diff Syntax Reference
+
+Use `diff` language tags in Markdown to show changes with colored lines:
+
+```diff
+- text in red      # removed / old
++ text in green    # added / new
+! text in orange   # warning / changed
+# text in gray     # comment / metadata
+@@ text in purple (and bold) @@   # section header / diff hunk
+```
+
+### Example: Changelog
+```diff
+@@ Version 3.0 → 3.1 @@
+# This release adds fast mode
+! orchestrator.py — modified (added --fast flag)
++ Fast 20ms mode: 10 agents in 6ms
+- Old mode: 10 agents in 2.4s
+# Perf improvement: 400x faster
+```
+
+### Example: Code Snippet
+```diff
+def process(data):
+-    old_result = slow_analysis(data)
++    result = fast_analysis(data)  # 400x speedup
+!    if result is None:
+!        log.warning("fallback triggered")
+#    validate before returning
+     return result
+```
+
+---
+
 ## 🛡️ ETHICS
 
 | ✅ Always | ❌ Never |

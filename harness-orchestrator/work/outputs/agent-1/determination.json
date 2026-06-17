@@ -1,0 +1,39 @@
+{
+  "agent_id": 1,
+  "determined_at": "2026-06-17T15:07:07.311621",
+  "task": {
+    "type": "deep-read",
+    "params": {
+      "path": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator"
+    }
+  },
+  "task_scope": {
+    "description": "Deep-read files at C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator",
+    "estimated_work": "Read all files, analyze structure, report findings",
+    "complexity": "medium"
+  },
+  "required_data": [
+    {
+      "type": "file_path",
+      "value": "C:\\Users\\anant\\OneDrive\\Documents\\opencode\\harness-orchestrator",
+      "purpose": "Target for reading/analysis"
+    }
+  ],
+  "methods": [
+    "read_tool",
+    "glob_tool",
+    "grep_tool",
+    "file_analysis"
+  ],
+  "output_format": {
+    "type": "markdown",
+    "sections": [
+      "summary",
+      "file_analysis",
+      "cross_references",
+      "recommendations"
+    ]
+  },
+  "risks": [],
+  "determination_hash": "c60e3c706ac35874ad50984b3031a663904d971bd12f07ea63d7647053620c77"
+}

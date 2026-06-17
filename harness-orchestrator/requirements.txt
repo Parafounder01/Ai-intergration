@@ -1,0 +1,11 @@
+# Pavithra Harness Orchestrator — Dependencies
+# The core system uses only Python standard library (zero external deps)
+# These are optional tools for enhanced features:
+
+# For GitHub CLI operations (required for backup):
+#   Install from: https://cli.github.com/
+#   Authenticate: gh auth login
+
+# For running the harness:
+#   Python 3.12+ (stdlib only)
+#   PowerShell 5.1+ (Windows) or Bash 4.0+ (Linux)
