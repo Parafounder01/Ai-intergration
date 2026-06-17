@@ -276,6 +276,173 @@ Write-Output "✅ Agent injected into ALL tools!"
 
 ---
 
+## 🧪 NEW — Harness Orchestrator (Multi-Agent Fan-Out)
+
+A **Python stdlib-only** multi-agent system that spawns N independent @pavithragent subagents, runs each in an isolated sandbox, verifies every output adversarially, and collects accepted results.
+
+```
+        USER
+          |
+     ORCHESTRATOR
+      /    |    \
+    A1    A2    AN    (isolated subagents)
+      \    |    /
+   ADVERSARIAL CHECK
+          |
+     ACCEPTED RESULTS
+```
+
+### Quick Start
+```powershell
+cd harness-orchestrator
+.\harness.ps1 -Task "analyze" -AgentCount 3
+```
+
+### 10 Tests — All Passing
+```powershell
+python test_runner.py --all
+# → 10/10 PASSED in 4.29s
+```
+
+### Fast Mode (20ms target)
+```powershell
+.\harness.ps1 -Fast -AgentCount 10
+# → 10 agents in ~6ms (0.6ms/agent)
+```
+
+### Architecture
+| File | Purpose |
+|------|---------|
+| `orchestrator.py` | Master controller — fan-out, verify, collect |
+| `agent_template.py` | Base PavithraSubagent class |
+| `adversary.py` | 5-check verification engine |
+| `isolation_manager.py` | Sandboxed per-agent directories |
+| `harness.ps1` / `.sh` | CLI entry points |
+| `test_runner.py` | 10-test-case executor |
+| `github_backup.ps1` | Push results to GitHub |
+
+---
+
+## 💡 Example Prompts Using the Harness Architecture
+
+Give the harness any of these real prompts — it fans each out to N isolated subagents, verifies adversarially, and collects accepted results.
+
+### 🔒 Multi-Agent Code Audit
+```powershell
+.\harness.ps1 -Task "security-audit" -AgentCount 5
+```
+Fan-out decomposition:
+```
+Agent-1: Scan Python files for injection vulnerabilities
+Agent-2: Scan JS/TS files for XSS patterns
+Agent-3: Check credentials & secrets leakage
+Agent-4: Audit dependency versions (known CVEs)
+Agent-5: Review file permissions & access control
+```
+Adversary: Each agent's findings cross-verified by the next agent.
+Output: 5 individual audit reports + merged summary in `work/results/`.
+
+### 🕵️ Competitive Research Pipeline
+```powershell
+.\harness.ps1 -Task "thread-analysis" -AgentCount 3
+```
+```
+Agent-1: Deep-read top 5 Reddit threads on the topic
+Agent-2: Extract user sentiment, pain points, upvote ratios
+Agent-3: Summarize competitor mentions & alternatives
+```
+Adversary: Agent-1's thread data verified by Agent-2's sentiment mapping.
+Output: Competitive intelligence report with verified sources.
+
+### 📂 Parallel File System Analysis
+```powershell
+.\harness.ps1 -Task "deep-read" -AgentCount 4
+```
+```
+Agent-1: Analyze ./src/        (all source files)
+Agent-2: Analyze ./docs/       (all documentation)
+Agent-3: Analyze ./tests/      (all test files)
+Agent-4: Analyze ./config/     (all config files)
+```
+Adversary: Agent-4 (config) verifies Agent-1 (src) didn't expose secrets.
+Output: Complete project analysis with cross-referenced findings.
+
+### 🧠 AI-Powered Research Sprint + Backup
+```powershell
+.\harness.ps1 -Task "analysis" -AgentCount 6 -Backup
+```
+```
+Agent-1: Research latest papers on the topic
+Agent-2: Extract key methodologies from papers
+Agent-3: Identify research gaps & open questions
+Agent-4: Propose novel solutions
+Agent-5: Dedicated adversary — verifies ALL other agents
+Agent-6: Generate final research summary
+```
+Results auto-pushed to GitHub with `-Backup`.
+
+### 📝 Decompose → Fan-Out → Verify Pattern
+
+Best practice for writing harness prompts:
+
+```
+Problem: "Is my codebase deploy-ready?"
+                    ↓
+Decompose into N angles:
+  A1: Lint errors & warnings
+  A2: Test coverage gaps
+  A3: Security vulnerabilities
+  A4: Dependency freshness
+  A5: Config sanity check
+                    ↓
+Each runs isolated → adversarially verified → collected
+                    ↓
+Only ACCEPTED results → final deploy-ready report
+```
+
+### ⚡ Zero-CPU Quick Check
+```powershell
+.\harness.ps1 -Fast -AgentCount 10 -Task "health-check"
+```
+10 agents in ~6ms. In-memory only. No disk I/O, no GPU. Use before deep dives.
+
+---
+
+## 🎨 README Diff Syntax Reference
+
+Use `diff` language tags in Markdown to show changes with colored lines:
+
+```diff
+- text in red      # removed / old
++ text in green    # added / new
+! text in orange   # warning / changed
+# text in gray     # comment / metadata
+@@ text in purple (and bold) @@   # section header / diff hunk
+```
+
+### Example: Changelog
+```diff
+@@ Version 3.0 → 3.1 @@
+# This release adds fast mode
+! orchestrator.py — modified (added --fast flag)
++ Fast 20ms mode: 10 agents in 6ms
+- Old mode: 10 agents in 2.4s
+# Perf improvement: 400x faster
+```
+
+### Example: Code Snippet
+```diff
+def process(data):
+-    old_result = slow_analysis(data)
++    result = fast_analysis(data)  # 400x speedup
+!    if result is None:
+!        log.warning("fallback triggered")
+#    validate before returning
+     return result
+```
+
+---
+
 ## 🛡️ ETHICS
 
 | ✅ Always | ❌ Never |
